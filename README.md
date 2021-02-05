@@ -1,4 +1,4 @@
-# Altanai's Github.io page
+# Altanai's CV on Github.io page
 
 - My CV https://altanai.github.io/ 
 
@@ -7,7 +7,7 @@ Telecom R&D : https://telecom.altanai.com/
 WebRTC Integrator's Guide book : https://www.amazon.com/WebRTC-Integrators-Guide-Altanai/dp/1783981261
 
 
-## Work experinec and Code 
+## Work experience and Code 
 
 LinkedIn : http://in.linkedin.com/pub/altanai-bisht/11/677/89
 
