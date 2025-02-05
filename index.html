@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -11,32 +12,38 @@
       padding: 0;
       box-sizing: border-box;
     }
+
     body {
       font-family: 'Roboto', sans-serif;
       background-color: #f3f4f6;
       color: #333;
       line-height: 1.6;
     }
+
     header {
       background: #1a202c;
       color: white;
       padding: 2rem 0;
       text-align: center;
     }
+
     header h1 {
       font-size: 2.5rem;
     }
+
     nav {
       background: #2d3748;
       padding: 1rem 0;
       text-align: center;
     }
+
     nav a {
       color: white;
       text-decoration: none;
       margin: 0 15px;
       font-weight: bold;
     }
+
     .container {
       max-width: 900px;
       margin: 2rem auto;
@@ -45,44 +52,55 @@
       box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
       border-radius: 8px;
     }
+
     h2 {
       color: #2d3748;
       margin-bottom: 0.5rem;
     }
+
     .section {
       margin-bottom: 2rem;
     }
+
     ul {
       list-style: none;
       padding: 0;
     }
+
     ul li {
       margin-bottom: 0.75rem;
     }
+
     footer {
       text-align: center;
       background: #1a202c;
       color: white;
       padding: 1rem 0;
     }
+
     .experience-item {
       margin-bottom: 1.5rem;
     }
+
     .experience-item h3 {
       margin-bottom: 0.3rem;
       font-size: 1.2rem;
     }
+
     .experience-item p {
       font-size: 0.9rem;
       color: #666;
     }
-    .skills-list, .project-list {
+
+    .skills-list,
+    .project-list {
       display: grid;
       grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
       gap: 0.5rem;
     }
   </style>
 </head>
+
 <body>
   <header>
     <h1>Altanai Bisht</h1>
@@ -135,7 +153,8 @@
         <h3>Senior Software Engineer at Plivo (2018 - 2020)</h3>
         <ul>
           <li>Designed the SIP trunk service architecture for Plivo Zentrunk.</li>
-          <li>Owned and optimized core SIP backend platform, including inbound call flows, security, and media route optimization.</li>
+          <li>Owned and optimized core SIP backend platform, including inbound call flows, security, and media route
+            optimization.</li>
         </ul>
       </div>
       <div class="experience-item">
@@ -148,7 +167,8 @@
       <div class="experience-item">
         <h3>Software Engineer at Above Solutions (2014 - 2016)</h3>
         <ul>
-          <li>Programmed modules for Wowza engine, CloudFront distribution, and adaptive streams for HLS, RTSP, and RTMP.</li>
+          <li>Programmed modules for Wowza engine, CloudFront distribution, and adaptive streams for HLS, RTSP, and
+            RTMP.</li>
           <li>Researched and innovated media engines for WebRTC to legacy codecs.</li>
         </ul>
       </div>
@@ -156,7 +176,8 @@
         <h3>Software Engineer at Tech Mahindra (2011 - 2014)</h3>
         <ul>
           <li>Conceptualized and implemented "Telecom Service Orchestration and Transformation Engine" for clients.</li>
-          <li>Designed call flows and architecture for interaction of IMS SIP Servlets with existing telecom applications.</li>
+          <li>Designed call flows and architecture for interaction of IMS SIP Servlets with existing telecom
+            applications.</li>
         </ul>
       </div>
       <div>
@@ -181,86 +202,91 @@
     </section>
 
     <!-- Projects -->
-    <section id="Projects" class="section">
+    <section id="projects" class="section">
       <h2>Projects</h2>
 
       <style>
         .repo-box {
-            border: 1px solid #ccc;
-            padding: 15px;
-            width: 300px;
-            margin: 20px;
-            font-family: Arial, sans-serif;
-            background-color: #f9f9f9;
-            display: inline-block;
-            vertical-align: top;
+          border: 1px solid #ccc;
+          padding: 15px;
+          width: 300px;
+          margin: 20px;
+          font-family: Arial, sans-serif;
+          background-color: #f9f9f9;
+          display: inline-block;
+          vertical-align: top;
         }
+
         .repo-box h2 {
-            margin-top: 0;
+          margin-top: 0;
         }
+
         .repo-box div {
-            margin: 5px 0;
+          margin: 5px 0;
         }
+
         .repo-avatar {
-            width: 50px;
-            height: 50px;
-            border-radius: 50%;
+          width: 50px;
+          height: 50px;
+          border-radius: 50%;
         }
+
         .repo-link {
-            color: #0366d6;
-            text-decoration: none;
+          color: #0366d6;
+          text-decoration: none;
         }
+
         .repo-link:hover {
-            text-decoration: underline;
+          text-decoration: underline;
         }
-    </style>
+      </style>
 
-<script>
+      <script>
 
-  async function fetchRepoLanguages(repoName) {
-      const response = await fetch(`https://api.github.com/repos/${repoName}/languages`);
-      const languages = await response.json();
-      return Object.keys(languages).join(', ') || 'None';
-  }
+        async function fetchRepoLanguages(repoName) {
+          const response = await fetch(`https://api.github.com/repos/${repoName}/languages`);
+          const languages = await response.json();
+          return Object.keys(languages).join(', ') || 'None';
+        }
 
-  async function fetchRepoInfo(repoName) {
-      const response = await fetch(`https://api.github.com/repos/${repoName}`);
-      const data = await response.json();
+        async function fetchRepoInfo(repoName) {
+          const response = await fetch(`https://api.github.com/repos/${repoName}`);
+          const data = await response.json();
 
-      if (data.message === "Not Found") {
-          return { name: repoName, message: 'Repository not found.' };
-      }
+          if (data.message === "Not Found") {
+            return { name: repoName, message: 'Repository not found.' };
+          }
 
-      const owner = data.owner.login;
-      const avatarUrl = data.owner.avatar_url;
-      const repoUrl = data.html_url;
-      const languages = await fetchRepoLanguages(repoName);
+          const owner = data.owner.login;
+          const avatarUrl = data.owner.avatar_url;
+          const repoUrl = data.html_url;
+          const languages = await fetchRepoLanguages(repoName);
 
-      return {
-          name: data.name,
-          stars: data.stargazers_count,
-          forks: data.forks_count,
-          // languages: Object.keys(data.languages || {}).join(', ') || 'None',
-          languages: languages,
-          description: data.description || 'No description available.',
-          avatarUrl: avatarUrl,
-          repoUrl: repoUrl,
-          owner: owner
-      };
-  }
+          return {
+            name: data.name,
+            stars: data.stargazers_count,
+            forks: data.forks_count,
+            // languages: Object.keys(data.languages || {}).join(', ') || 'None',
+            languages: languages,
+            description: data.description || 'No description available.',
+            avatarUrl: avatarUrl,
+            repoUrl: repoUrl,
+            owner: owner
+          };
+        }
 
-  async function displayRepos() {
-      const repoNames = ['altanai/kamailioexamples', 'altanai/opensipsexamples', 'altanai/freeswitchexamples', 'altanai/asteriskexamples']; 
-      const container = document.getElementById('repos-container');
+        async function displayRepos() {
+          const repoNames = ['altanai/kamailioexamples', 'altanai/opensipsexamples', 'altanai/freeswitchexamples', 'altanai/asteriskexamples'];
+          const container = document.getElementById('repos-container');
 
-      for (const repoName of repoNames) {
-          const repoData = await fetchRepoInfo(repoName);
-          const repoBox = document.createElement('div');
-          repoBox.className = 'repo-box';
+          for (const repoName of repoNames) {
+            const repoData = await fetchRepoInfo(repoName);
+            const repoBox = document.createElement('div');
+            repoBox.className = 'repo-box';
 
-          if (repoData.message) {
+            if (repoData.message) {
               repoBox.innerHTML = `<h2>${repoData.name}</h2><div>${repoData.message}</div>`;
-          } else {
+            } else {
               repoBox.innerHTML = `
                   <img class="repo-avatar" src="${repoData.avatarUrl}" alt="${repoData.owner}'s avatar" />
                   <h2><a class="repo-link" href="${repoData.repoUrl}" target="_blank">${repoData.name}</a></h2>
@@ -269,130 +295,167 @@
                   <div>Languages: ${repoData.languages}</div>
                   <div>Description: ${repoData.description}</div>
               `;
+            }
+
+            container.appendChild(repoBox);
           }
+        }
 
-          container.appendChild(repoBox);
-      }
-    }
+        window.onload = displayRepos;
+      </script>
 
-    window.onload = displayRepos;
-  </script>
+      <h2>Enterprise Projects</h2>
 
-    <h2>Enterprise Projects</h2>
+      I have worked on following enterprise projects in various capacities
+      Cisco Secure Connect and Cisco Secure Access
 
-    I have worked on following enterprise projects in various capacities
-    Cisco Secure Connect and Cisco Secure Access
-    Netflix OpenConnect
-    AirtelIQ
-    Unigy360
-    Zentrunk
+      <h4> Netflix OpenConnect as Research Intern</h4>
+      Netflix Open Connect is a content delivery network (CDN) owned and operated by Netflix. It is designed to deliver high quality video streaming to Netflix subscribers around the world. The CDN consists of a network of servers strategically located in various regions to cache and deliver Netflix content efficiently. By bringing content closer to users, Open Connect helps reduce latency and improve streaming performance.
 
+      <h4>AirtelIQ </h4>
+      AirtelIQ is a cloud-based communication platform that provides businesses with a range of communication and engagement solutions. It offers services such as voice calls, SMS, email, and chat, allowing businesses to connect with their customers through multiple channels. AirtelIQ aims to enhance customer engagement, streamline communication processes, and provide businesses with tools for effective customer relationship management.
 
+      <h4>Plivo Zentrunk </h4>
+      Plivo Zentrunk is a cloud-based communication service for large volume voice calls.
 
-    <li>Jiyo Health</li>
-
-    Customer
-It is a product . Partners include Moxtra , Apollo , Deepak Chopra foundation among others 
-Description
-Jiyo is a health and wellness platform . It tracks user behaviour by connecting with phone’s and other external wearable services like fibits to offer insights and suggestions based on habits and activities. This kind of 360-degree wellness covers exercise, meditation, relationships, finances, finding purpose and meaning in the everyday.  
-Roles and Responsibilities
-Completely owned and implemented Livestreaming service called Jiyo NOW.
-Build and uploaded to store iOS based publisher app for the expert to broadcast themselves on Jiyo
-Classroom usecase using Moxtra Services 
-Server APIs over php for scheduling clasrooms , broadcasts , notifications , authorization etc .
-JSX widgets as part of front end . 
-Tools/Environment
-PHP Server Side   + ReactJS and backbone.js for interface + mysql database and communication over REST. AWS for hosting.
-
-<li>Live streaming using Wowza </li>
+      <h4>Unigy360</h4>
+      Unigy 360 is a unified communications platform designed for the financial services industry. It provides a comprehensive suite of communication and collaboration tools, including voice, video, messaging, and conferencing capabilities. Unigy 360 aims to enhance productivity, streamline workflows, and improve communication among teams within financial institutions.
 
 
-Description
-LiveStreaming Solutions is a publisher to player setup including authentication, REST APIs , transcoders , multi formatting , adaptive bit rate , CDN distribution and is device agnostic in nature .    
-Roles and Responsibilities
-Setup AWS with Wowza service and cloudfront as distribution unit. 
-Develop applications and modules using Wowza SDK . 
-Security in streams using session cookies .
- Code for publisher in flex and webrtc webpage . 
- REST notification to client environment as soon as a user tries publishing a stream 
-Ffmpeg commands and templates for transcoding . 
-Player webpage for HLS and RTMP streams .  
-Vimeo SDK to store the archives and playback
-Build transcoders for webrtc to legacy codecs like H264 using gateways and media codec libraries like ffmpeg , gstreamer , libvpx , videoconverter.js , openh264.
-Handle transcoding , adaptive streaming and session security
+      <h4>Jiyo Health</h4>
+
+      B2C product. Partners include Moxtra , Apollo , Deepak Chopra foundation among others
+      
+      Jiyo is a health and wellness platform . It tracks user behaviour by connecting with phone’s and other external
+      wearable services like fibits to offer insights and suggestions based on habits and activities. This kind of
+      360-degree wellness covers exercise, meditation, relationships, finances, finding purpose and meaning in the
+      everyday.
+      
+      My roles and responsibilities  
+      Completely owned and implemented Livestreaming service called Jiyo NOW.
+      Build and uploaded to store iOS based publisher app for the expert to broadcast themselves on Jiyo
+      Classroom usecase using Moxtra Services
+      Server APIs over php for scheduling clasrooms , broadcasts , notifications , authorization etc .
+      JSX widgets as part of front end .
+      Tools/Environment
+      PHP Server Side + ReactJS and backbone.js for interface + mysql database and communication over REST. AWS for
+      hosting.
+
+      <h4>Live streaming using Wowza </h4>
 
 
-Tools/Environment
-Wowza Streaming engine , AWS ec2 , cloudfront , flex , flash , JS ,  codecs , ffmpeg , gstreamer , gocoder , Flash Media Live Encoder . 
+      Description
+      LiveStreaming Solutions is a publisher to player setup including authentication, REST APIs , transcoders , multi
+      formatting , adaptive bit rate , CDN distribution and is device agnostic in nature .
+      Roles and Responsibilities
+      Setup AWS with Wowza service and cloudfront as distribution unit.
+      Develop applications and modules using Wowza SDK .
+      Security in streams using session cookies .
+      Code for publisher in flex and webrtc webpage .
+      REST notification to client environment as soon as a user tries publishing a stream
+      Ffmpeg commands and templates for transcoding .
+      Player webpage for HLS and RTMP streams .
+      Vimeo SDK to store the archives and playback
+      Build transcoders for webrtc to legacy codecs like H264 using gateways and media codec libraries like ffmpeg ,
+      gstreamer , libvpx , videoconverter.js , openh264.
+      Handle transcoding , adaptive streaming and session security
 
-<li>TFX CaaS</li>
 
-Customer
-Free Service on Chrome Webstore  and TangoFX CaaS  as a Service Offering
-Description
-TangoFX Sessions is a plug and play platform for Internet calling. It not only does video calling but also comes preloaded with some immensely interactive widgets like Code , Draw , Screenshare , Multi language voice chatting , 2 player games. TFX is essentially just the core platform exposing the APIs to let developers make their own interactive widgets over existing communication framework . Few widgets developed by contributors include chess , face detection .  
-Roles and Responsibilities
-Design and developed TFX a chrome webrtc extension and standalone platform with modular structure and set of  APIs and SDK to plugin and play as widget  
-Overall coding , integration and UI from basic libraries like simplewebrtc, signal master and many small other open source libraries .
-COTURN Integration and enhancement on custom TURN server for ICE and NAT traversal
-Tools/Environment
- HTML5, JavaScript, WebRTC APIs, Nodejs, socketio , redis , TURN , Chrome extensions .
+      Tools/Environment
+      Wowza Streaming engine , AWS ec2 , cloudfront , flex , flash , JS , codecs , ffmpeg , gstreamer , gocoder , Flash
+      Media Live Encoder .
+
+      <h4>TFX CaaS</h4>
+
+      Customer
+      Free Service on Chrome Webstore and TangoFX CaaS as a Service Offering
+      Description
+      TangoFX Sessions is a plug and play platform for Internet calling. It not only does video calling but also comes
+      preloaded with some immensely interactive widgets like Code , Draw , Screenshare , Multi language voice chatting ,
+      2 player games. TFX is essentially just the core platform exposing the APIs to let developers make their own
+      interactive widgets over existing communication framework . Few widgets developed by contributors include chess ,
+      face detection .
+      Roles and Responsibilities
+      Design and developed TFX a chrome webrtc extension and standalone platform with modular structure and set of APIs
+      and SDK to plugin and play as widget
+      Overall coding , integration and UI from basic libraries like simplewebrtc, signal master and many small other
+      open source libraries .
+      COTURN Integration and enhancement on custom TURN server for ICE and NAT traversal
+      Tools/Environment
+      HTML5, JavaScript, WebRTC APIs, Nodejs, socketio , redis , TURN , Chrome extensions .
 
 
- <li> UCC WebRTC Platform</li>
+      <h4> UCC WebRTC Platform</h4>
 
- Customer
- Elisa , rich interest from other operators 
- Description
- The WebRTC client is a web based sip phone using HTML5 and JavaScript. This offers communication capabilities directly without any plugins or installations . It is bundled with rich services like phonebook syncing , voicemails , geolocation ,oauth , advertisement engine etc . The Websocket gateway server to convert SIP over Websockets  to SIP and inhouse developed SIP server is used to provide the signalling  
- Roles and Responsibilities
- Design and develop the Web Client in HTML5.
- Configure Kamailio SIP server for earlier POCs. Setup Media Server.  Freeswitch for transcoding to interact with other SIP endpoints . 
- Tools/Environment
- Web platform , WebRTC APIs, Nodejs, Spring , EJB MVC
- 
- 
- <li>  IVR based Call Completion</li>
+      Customer
+      Elisa , rich interest from other operators
+      Description
+      The WebRTC client is a web based sip phone using HTML5 and JavaScript. This offers communication capabilities
+      directly without any plugins or installations . It is bundled with rich services like phonebook syncing ,
+      voicemails , geolocation ,oauth , advertisement engine etc . The Websocket gateway server to convert SIP over
+      Websockets to SIP and inhouse developed SIP server is used to provide the signalling
+      Roles and Responsibilities
+      Design and develop the Web Client in HTML5.
+      Configure Kamailio SIP server for earlier POCs. Setup Media Server. Freeswitch for transcoding to interact with
+      other SIP endpoints .
+      Tools/Environment
+      Web platform , WebRTC APIs, Nodejs, Spring , EJB MVC
 
- Customer
- Belgium Based Service Provider
- Description
- Menu Based Call Screening where Caller decides the handling of call . It is implemented as per the Options provided with Android Application Plug  top SIP Based Application or Interactive Voice Respondent with DTMF inputs or  with a Web based provisioning system.
- Roles and Responsibilities
- o	Design and develop Web provisioning system.o       Program the JAINSLEE logic behind the application.    Deploy on Open IMS platform
- Tools/Environment
- OpenCloud SDK, FSM tool, Rhino TAS , Open IMS,  Monster SIP/IMS  Softphones,  Wireshark , Voxpilot Media Server , Darwin Streaming Server , Kannel SMS Gateway.
- 
-  
- <li>  Session Mobility</li>
 
- Customer
- TCS Telecom Practice 
- Description
- Session Mobility is an application which allows the user to change the access networks. With this application in place, a user attending a VOIP or SIP call on his mobile device can transfer the voice session to another device (say, a desktop machine) and vice-versa.  Since this employs make-before-break rule, the other party attending the call cannot observe that the call has been transferred
- Roles and Responsibilities
- o	Designing use cases and call flows.
- o	Program  the SIP servlets and deploy on Weblogic Sip Server
- o      Develop VXML scripts for Media Server 
- Tools/Environment
- OpenCloud SDK, FSM tool, Open IMS, Weblogic SIP Server, Monster SIP/IMS , Softphones,  Wireshark , Voxpilot Media Server , Darwin Streaming Server
- 
-  
- <li>  Service Orchestration and Transformation Engine</li>
+      <h4> IVR based Call Completion</h4>
 
- Customer
- Belgium Based Service Provider
- Description
- Service Orchestration and Transformation Engine is a software component which helps in orchestrating the interaction between different services. It enables reusing the existing services by allowing orchestration between IN –IN services, IN –SIP services, SIP – SIP services and SIP-Web services.
- Roles and Responsibilities
- Design and development of SIP services like Call Screening , Find Me Follow Me , Call Transferring , Voice Mail. Defining and executing interaction logic between various SIP services. Configuration of OpenCloud Service broker platform. Combining the existing and new services on a migrated network for client. Independently handling various tasks assigned with precision and quality within stipulated time.
- Tools/Environment
- OpenCloud SDK, FSM tool, Open IMS, Rhino VAS , Softphones,  Wireshark
- 
- 
+      Customer
+      Belgium Based Service Provider
+      Description
+      Menu Based Call Screening where Caller decides the handling of call . It is implemented as per the Options
+      provided with Android Application Plug top SIP Based Application or Interactive Voice Respondent with DTMF inputs
+      or with a Web based provisioning system.
+      Roles and Responsibilities
+      o Design and develop Web provisioning system.o Program the JAINSLEE logic behind the application. Deploy on Open
+      IMS platform
+      Tools/Environment
+      OpenCloud SDK, FSM tool, Rhino TAS , Open IMS, Monster SIP/IMS Softphones, Wireshark , Voxpilot Media Server ,
+      Darwin Streaming Server , Kannel SMS Gateway.
 
-    <h2>Open Source Projects</h2>
-    <div id="repos-container"></div>
+
+      <h4> Session Mobility</h4>
+
+      Customer TCS Telecom Practice
+      
+      Session Mobility is an application which allows the user to change the access networks. With this application in
+      place, a user attending a VOIP or SIP call on his mobile device can transfer the voice session to another device
+      (say, a desktop machine) and vice-versa. Since this employs make-before-break rule, the other party attending the
+      call cannot observe that the call has been transferred
+      
+      Roles and Responsibilities
+      o Designing use cases and call flows.
+      o Program the SIP servlets and deploy on Weblogic Sip Server
+      o Develop VXML scripts for Media Server
+      Tools/Environment
+      OpenCloud SDK, FSM tool, Open IMS, Weblogic SIP Server, Monster SIP/IMS , Softphones, Wireshark , Voxpilot Media
+      Server , Darwin Streaming Server
+
+
+      <h4> Service Orchestration and Transformation Engine</h4>
+
+      Customer is a  Belgium Based Service Provider
+
+      Service Orchestration and Transformation Engine is a software component which helps in orchestrating the
+      interaction between different services. It enables reusing the existing services by allowing orchestration between
+      IN–IN services, IN–SIP services, SIP – SIP services and SIP-Web services.
+      
+      Roles and Responsibilities
+      Design and development of SIP services like Call Screening , Find Me Follow Me , Call Transferring , Voice Mail.
+      Defining and executing interaction logic between various SIP services. Configuration of OpenCloud Service broker
+      platform. Combining the existing and new services on a migrated network for client. Independently handling various
+      tasks assigned with precision and quality within stipulated time.
+      
+      Tools/Environment
+      OpenCloud SDK, FSM tool, Open IMS, Rhino VAS , Softphones, Wireshark
+
+
+      <h2>Open Source Projects</h2>
+      <div id="repos-container"></div>
 
     </section>
 
@@ -402,319 +465,370 @@ Tools/Environment
 
       <style>
         body {
-            font-family: Arial, sans-serif;
-            line-height: 1.6;
+          font-family: Arial, sans-serif;
+          line-height: 1.6;
         }
-        .skills-section {
-            margin: 20px 0;
-        }
-        .skills-section h2 {
-            text-align: center;
-            color: #333;
-        }
-        .skills-list {
-            display: grid;
-            grid-template-columns: repeat(3, 1fr);
-            gap: 20px;
-        }
-        .skill-item {
-            background-color: #f4f4f4;
-            padding: 15px;
-            border-radius: 5px;
-            text-align: center;
-            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-        }
-        .skill-item h3 {
-            color: #0073e6;
-        }
-    </style>
 
-<div class="skills-list">
-  <div class="skill-item">
-      <h3>Networking</h3>
-      <ul>
-          <li>IP Routing</li>
-          <li>Firewall Configuration</li>
-          <li>SASE</li>
-          <li>Tunneling SD WAN, , VPN, NAT,</li>
-          <li> MASQUE, IPSec, AutoVPN</li>
-          <li>Traffic analyzer tshark, sipP, tcpdump, sngrep, iperf</li>
-      </ul>
-  </div>
-  <div class="skill-item">
-    <h3>RealTime Communication and Streaming</h3>
-    <ul>
-        <li> WebRTC</li>
-        <li>Low latency streaming with RTP/RTCP UDP packetization. Rate adaptation and Congestion control models.</li>
-        <li>SIP trunks via Kamailio, Asterisk, Freeswitch, Opensips </li>
-        <li>SDP manipulation, call routing</li>
-        <li>Media Server Wowza, Live 555, Janus, RTPengine, MP4 parserN</li>
-        <li>RTP topologies Mesh, MCU, SVC, SFU, mixers, bridges
-          FFmpeg, GStreamer, Janus</li>
-    </ul>
-</div>
-  <div class="skill-item">
-      <h3>Programming Languages</h3>
-      <ul>
-        <li>Rust</li>
-        <li>Go</li>
-        <li>Python</li>
-          <li>NodeJs and JavaScript</li>
-          <li>C++</li>
-          <li>Java</li>
-          <li>Lua</li>
-      </ul>
-  </div>
-  <div class="skill-item">
-      <h3>System Design and Architecture</h3>
-      <ul>
-          <li>Scalable System Design</li>
-          <li>Git</li>
-          <li>Jenkins</li>
-          <li>AWS</li>
-          <li>Distributed across PoPs. serverless, distributed reliable queue, Event driven systems.</li>
-      </ul>
-    </di>
+        .skills-section {
+          margin: 20px 0;
+        }
+
+        .skills-section h2 {
+          text-align: center;
+          color: #333;
+        }
+
+        .skills-list {
+          display: grid;
+          grid-template-columns: repeat(3, 1fr);
+          gap: 20px;
+        }
+
+        .skill-item {
+          background-color: #f4f4f4;
+          padding: 15px;
+          border-radius: 5px;
+          text-align: center;
+          box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        }
+
+        .skill-item h3 {
+          color: #0073e6;
+        }
+      </style>
+
+      <div class="skills-list">
+        <div class="skill-item">
+          <h3>Networking</h3>
+          <ul>
+            <li>IP Routing</li>
+            <li>Firewall Configuration</li>
+            <li>SASE</li>
+            <li>Tunneling SD WAN, , VPN, NAT,</li>
+            <li> MASQUE, IPSec, AutoVPN</li>
+            <li>Traffic analyzer tshark, sipP, tcpdump, sngrep, iperf</li>
+          </ul>
+        </div>
+        <div class="skill-item">
+          <h3>RealTime Communication and Streaming</h3>
+          <ul>
+            <li> WebRTC</li>
+            <li>Low latency streaming with RTP/RTCP UDP packetization. Rate adaptation and Congestion control models.
+            </li>
+            <li>SIP trunks via Kamailio, Asterisk, Freeswitch, Opensips </li>
+            <li>SDP manipulation, call routing</li>
+            <li>Media Server Wowza, Live 555, Janus, RTPengine, MP4 parserN</li>
+            <li>RTP topologies Mesh, MCU, SVC, SFU, mixers, bridges
+              FFmpeg, GStreamer, Janus</li>
+          </ul>
+        </div>
+        <div class="skill-item">
+          <h3>Programming Languages</h3>
+          <ul>
+            <li>Rust</li>
+            <li>Go</li>
+            <li>Python</li>
+            <li>NodeJs and JavaScript</li>
+            <li>C++</li>
+            <li>Java</li>
+            <li>Lua</li>
+          </ul>
+        </div>
+        <div class="skill-item">
+          <h3>System Design and Architecture</h3>
+          <ul>
+            <li>Scalable System Design</li>
+            <li>Git</li>
+            <li>Jenkins</li>
+            <li>AWS</li>
+            <li>Distributed across PoPs. serverless, distributed reliable queue, Event driven systems.</li>
+          </ul>
+          </di>
 
     </section>
 
+    <!-- Publications  -->
     <section id="publications" className="section">
-        <h2>Publications</h2>
-        <ul>
-          <!-- <li>
+      <h2>Publications</h2>
+      <ul>
+        <!-- <li>
             <strong>Book:</strong> WebRTC: APIs and RTCWEB Protocols of the HTML5 Real-Time Web<br />
             <strong>Authors:</strong> Altanai Bisht<br />
             <strong>Publication Year:</strong> 2014<br />
             <strong>Summary:</strong> This book provides an in-depth understanding of WebRTC, covering its APIs and the RTCWEB protocols that enable real-time communication in web browsers.
           </li> -->
-          <li>
-            <strong>Book:</strong> WebRTC Integrator's Guide<br />
-            <strong>Authors:</strong> Altanai Bisht<br />
-            <strong>Year:</strong> 2014<br />
-            Bisht, A. (2014). WebRTC Integrator’s Guide ISBN 9781783981267. Https://Www. Packtpub. Com/Web-Development/Webrtc-Integrators-Guide, Vol. 1, p. 382. https://www.packtpub.com/in/web-development/webrtc-integrators-guide ISBN ….
+        <li>
+          <strong>Book:</strong> WebRTC Integrator's Guide<br />
+          <strong>Authors:</strong> Altanai Bisht<br />
+          <strong>Year:</strong> 2014<br />
+          Bisht, A. (2014). WebRTC Integrator’s Guide ISBN 9781783981267. Https://Www. Packtpub.
+          Com/Web-Development/Webrtc-Integrators-Guide, Vol. 1, p. 382.
+          https://www.packtpub.com/in/web-development/webrtc-integrators-guide ISBN ….
 
-            A comprehensive guide for developers integrating WebRTC into their applications, detailing practical implementation strategies and best practices.
-          </li>
-
-          <li>
-            <strong>Patent:</strong> Multimedia conferencing.<br />
-            <strong>Authors:</strong> Afsari, F., Bisht, A., Parvarandeh, P., & Dhote, S.<br />
-            <strong>Year:</strong> 2019<br />
-             (jul # ‘ 16’, note=US Patent 10,353,663 2019). 
-          </li>
-          
-
-          <li>
-            <strong>Technical Disclosure:</strong> Bisht, A. (2023). TUNNEL WEIGHT ALGORITHM TO IMPROVE VIRTUAL PRIVATE NETWORK PERFORMANCE.
-          </li>
-          
-          <li>
-            <strong>Technical Disclosure:</strong> Sabra, A., Gopikrishnan, R., Bisht, A., Dahir, H., Babu, K. B. H., & Kini, S. (2024). MULTI-MODAL CONTEXTUAL SEARCH FOR ENTERPRISE CONTENT.
-          </li>
-
-
-          <li>
-            Wilson, A., Bisht, A., & Milkowski, L. (2023). Robotic Tomato Detection Using YOLOv3 with Pre and Post-Processing: Evaluation Through Gazebo Simulation and Real-World Laboratory Testing. 2023 Seventh IEEE International Conference on Robotic Computing (IRC), 255–259. IEEE.
-            [ <a target="_blank" href="https://ieeexplore.ieee.org/document/10473556">Full Paper</a> ] 
-            
-          </li>
-          
-
-          <li>
-            Bisht, A., Mendes, A. C. de S., Thoreson, J. D., II, & Samavi, S. (2023). Low Latency Video Denoising for Online Conferencing Using CNN Architectures. arXiv Preprint arXiv:2302. 08638.
-          </li>
-
-          <li>
-            Mishra, A., Bisht, A., & Zhu, T. (2023). Do batteries for peak shaving green the grid? Proceedings of the 14th International Green and Sustainable Computing Conference, 29–35.
-            [ <a target="_blank" href="https://www.academia.edu/11925353/TangoFX_Sessions_WebRTC_Chrome_Extension">Full Paper</a> ] 
-            [ <a target="_blank" href="https://youtu.be/sKOT_6cYgbs?si=-hm_h6T3h8J8HDs6&t=58">Demo</a> ] 
-            <!-- [ <a target="_blank" href="https://blog.apnic.net/2022/11/11/continuous-in-network-round-trip-time-monitoring/">Blog post</a> ]  -->
-            <!-- [ <a target="_blank" href="docs/slides/2022_sigcomm_dart.pptx">Slides</a> ]  -->
-            [ <a target="_blank" href="docs/posters/poster v5.5 Does Renewable and Energy Storage Integration  Green the Electric Grid_.pdf">Poster</a> ] 
-            [ <a target="_blank" href="https://dl.acm.org/doi/10.1145/3634769.3634805">ACM DL</a> ]</p>
-          </li>
-
-          <li>
-            <strong>Journal:</strong>   Abdelraouf, A., Adeleye, A., Agarwal, T., Aggarwal, A., Agumey, P., Akbarinigjeh, M., … Others. (n.d.). 2023 Seventh IEEE International Conference on Robotic Computing (IRC)| 979-8-3503-9574-7/23/$31.00© 2023 IEEE| DOI: 10.1109/IRC59093. 2023.00070.
-          </li>
-
-          <li>
-            Bisht, A., Wilson, A., Jeffreys, Z., & Samavi, S. (2022). Does crypto kill? Relationship between electricity consumption carbon footprints and bitcoin transactions. arXiv Preprint arXiv:2206. 03227.
-          </li>
-          
-          <li>
-            Bisht, A. (2021). Carbon Footprint by Battery based Energy storage and Peak shaving Algorithms - Altanai​.
-            <!-- [ <a target="_blank" href="https://www.academia.edu/11925353/TangoFX_Sessions_WebRTC_Chrome_Extension">Full Paper</a> ]  -->
-            [ <a target="_blank" href="https://www.youtube.com/watch?v=J8XV9_e7cCw&t=1538s">Presentation</a> ] 
-            [ <a target="_blank" href="https://www.seattleu.edu/cejs/events/earth-talks/earth-talks-2022/">Article</a> ] 
-            [ <a target="_blank" href="docs/slides/2022_sigcomm_dart.pptx">Slides</a> ] 
-            <!-- [ <a target="_blank" href="https://dl.acm.org/doi/10.1145/3544216.3544222">ACM DL</a> ]</p> -->
-          </li>
-
-
-          <li>
-            Bisht, A. (2019). Ramudroid: An Open Source Powered Robot. Https://Www.Opensourceindia.in/Speakers-2019/Altanai-Bisht/, 2019, Open-Source.
-            [ <a target="_blank" href="https://www.academia.edu/11925353/TangoFX_Sessions_WebRTC_Chrome_Extension">Full Paper</a> ] 
-            [ <a target="_blank" href="https://youtu.be/sKOT_6cYgbs?si=-hm_h6T3h8J8HDs6&t=58">Demo</a> ] 
-            [ <a target="_blank" href="https://blog.apnic.net/2022/11/11/continuous-in-network-round-trip-time-monitoring/">Blog post</a> ] 
-            [ <a target="_blank" href="docs/slides/2022_sigcomm_dart.pptx">Slides</a> ] 
-            [ <a target="_blank" href="https://dl.acm.org/doi/10.1145/3544216.3544222">ACM DL</a> ]</p>
-          </li>
-
-          <li>
-            Aagri, D. K., & Bisht, A. (2018). Export and import of renewable energy by hybrid MicroGrid via IoT. 2018 3rd International Conference on Internet of Things: Smart Innovation and Usages (IoT-SIU), 1–4. IEEE.
-            [ <a target="_blank" href="https://www.academia.edu/11925353/TangoFX_Sessions_WebRTC_Chrome_Extension">Full Paper</a> ] 
-            <!-- [ <a target="_blank" href="https://youtu.be/sKOT_6cYgbs?si=-hm_h6T3h8J8HDs6&t=58">Demo</a> ]  -->
-            <!-- [ <a target="_blank" href="https://blog.apnic.net/2022/11/11/continuous-in-network-round-trip-time-monitoring/">Blog post</a> ]  -->
-            [ <a target="_blank" href="docs/slides/Solar Hybrid Micro Grid and Power transactions_altanai.pdf">Slides</a> ] 
-            <!-- [ <a target="_blank" href="docs/posters/poster v5.5 Does Renewable and Energy Storage Integration  Green the Electric Grid_.pdf">Poster</a> ]  -->
-            [ <a target="_blank" href="https://dl.acm.org/doi/10.1145/3634769.3634805">ACM DL</a> ]</p>
-          </li>
-
-          <li>
-            Bisht, A. (2017). TangoFX Sessions WebRTC Chrome Extension. Https://Www. Academia. Edu/11925353/TangoFX_Sessions_WebRTC_Chrome_Extension.
-            [ <a target="_blank" href="https://www.academia.edu/11925353/TangoFX_Sessions_WebRTC_Chrome_Extension">Full Paper</a> ] 
-            [ <a target="_blank" href="https://youtu.be/sKOT_6cYgbs?si=-hm_h6T3h8J8HDs6&t=58">Demo</a> ] 
-            [ <a target="_blank" href="https://telecom.altanai.com/tag/tfx-sessions/">Blog post</a> ] 
-            [ <a target="_blank" href="https://www.linkedin.com/pulse/tangofx-sessions-altanai-bisht/">Article</a> ] 
-            <!-- [ <a target="_blank" href="docs/slides/2022_sigcomm_dart.pptx">Slides</a> ]  -->
-            [ <a target="_blank" href="https://dl.acm.org/doi/10.1145/3544216.3544222">ACM DL</a> ]</p>
+          A comprehensive guide for developers integrating WebRTC into their applications, detailing practical
+          implementation strategies and best practices.
         </li>
 
         <li>
-          <strong>whitepaper:</strong> Bisht, A. (2012b). webrtc whitepaper. Https://Www. Academia. Edu/4293745/Webrtc_whitepaper.
-          <p class="presources">
-            [ <a target="_blank" href="https://www.academia.edu/4293745/webrtc_whitepaper">Full Paper</a> ] 
-            [ <a target="_blank" href="https://telecom.altanai.com/tag/webrtc-2/">Blog post</a> ] 
-            [ <a target="_blank" href="docs/slides/2022_sigcomm_dart.pptx">Slides</a> ] 
+          <strong>Patent:</strong> Multimedia conferencing.<br />
+          <strong>Authors:</strong> Afsari, F., Bisht, A., Parvarandeh, P., & Dhote, S.<br />
+          <strong>Year:</strong> 2019<br />
+          (jul # ‘ 16’, note=US Patent 10,353,663 2019).
         </li>
 
 
-          <li>
-            Bisht, A. (2012a). Converged Telecom Services - Brochure. Https://Www. Academia. Edu/3648658/Converged_Telecom_Services_-_Brochure.
-            <!-- [ <a target="_blank" href="https://www.academia.edu/4293745/webrtc_whitepaper">Full Paper</a> ] 
+        <li>
+          <strong>Technical Disclosure:</strong> Bisht, A. (2023). TUNNEL WEIGHT ALGORITHM TO IMPROVE VIRTUAL PRIVATE
+          NETWORK PERFORMANCE.
+        </li>
+
+        <li>
+          <strong>Technical Disclosure:</strong> Sabra, A., Gopikrishnan, R., Bisht, A., Dahir, H., Babu, K. B. H., &
+          Kini, S. (2024). MULTI-MODAL CONTEXTUAL SEARCH FOR ENTERPRISE CONTENT.
+        </li>
+
+
+        <li>
+          Wilson, A., Bisht, A., & Milkowski, L. (2023). Robotic Tomato Detection Using YOLOv3 with Pre and
+          Post-Processing: Evaluation Through Gazebo Simulation and Real-World Laboratory Testing. 2023 Seventh IEEE
+          International Conference on Robotic Computing (IRC), 255–259. IEEE.
+          [ <a target="_blank" href="https://ieeexplore.ieee.org/document/10473556">Full Paper</a> ]
+
+        </li>
+
+
+        <li>
+          Bisht, A., Mendes, A. C. de S., Thoreson, J. D., II, & Samavi, S. (2023). Low Latency Video Denoising for
+          Online Conferencing Using CNN Architectures. arXiv Preprint arXiv:2302. 08638.
+        </li>
+
+        <li>
+          Mishra, A., Bisht, A., & Zhu, T. (2023). Do batteries for peak shaving green the grid? Proceedings of the 14th
+          International Green and Sustainable Computing Conference, 29–35.
+          [ <a target="_blank" href="https://www.academia.edu/11925353/TangoFX_Sessions_WebRTC_Chrome_Extension">Full
+            Paper</a> ]
+          [ <a target="_blank" href="https://youtu.be/sKOT_6cYgbs?si=-hm_h6T3h8J8HDs6&t=58">Demo</a> ]
+          <!-- [ <a target="_blank" href="https://blog.apnic.net/2022/11/11/continuous-in-network-round-trip-time-monitoring/">Blog post</a> ]  -->
+          <!-- [ <a target="_blank" href="docs/slides/2022_sigcomm_dart.pptx">Slides</a> ]  -->
+          [ <a target="_blank"
+            href="docs/posters/poster v5.5 Does Renewable and Energy Storage Integration  Green the Electric Grid_.pdf">Poster</a>
+          ]
+          [ <a target="_blank" href="https://dl.acm.org/doi/10.1145/3634769.3634805">ACM DL</a> ]</p>
+        </li>
+
+        <li>
+          <strong>Journal:</strong> Abdelraouf, A., Adeleye, A., Agarwal, T., Aggarwal, A., Agumey, P., Akbarinigjeh,
+          M., … Others. (n.d.). 2023 Seventh IEEE International Conference on Robotic Computing (IRC)|
+          979-8-3503-9574-7/23/$31.00© 2023 IEEE| DOI: 10.1109/IRC59093. 2023.00070.
+        </li>
+
+        <li>
+          Bisht, A., Wilson, A., Jeffreys, Z., & Samavi, S. (2022). Does crypto kill? Relationship between electricity
+          consumption carbon footprints and bitcoin transactions. arXiv Preprint arXiv:2206. 03227.
+        </li>
+
+        <li>
+          Bisht, A. (2021). Carbon Footprint by Battery based Energy storage and Peak shaving Algorithms - Altanai​.
+          <!-- [ <a target="_blank" href="https://www.academia.edu/11925353/TangoFX_Sessions_WebRTC_Chrome_Extension">Full Paper</a> ]  -->
+          [ <a target="_blank" href="https://www.youtube.com/watch?v=J8XV9_e7cCw&t=1538s">Presentation</a> ]
+          [ <a target="_blank" href="https://www.seattleu.edu/cejs/events/earth-talks/earth-talks-2022/">Article</a> ]
+          [ <a target="_blank" href="docs/slides/2022_sigcomm_dart.pptx">Slides</a> ]
+          <!-- [ <a target="_blank" href="https://dl.acm.org/doi/10.1145/3544216.3544222">ACM DL</a> ]</p> -->
+        </li>
+
+
+        <li>
+          Bisht, A. (2019). Ramudroid: An Open Source Powered Robot.
+          Https://Www.Opensourceindia.in/Speakers-2019/Altanai-Bisht/, 2019, Open-Source.
+          [ <a target="_blank" href="https://www.academia.edu/11925353/TangoFX_Sessions_WebRTC_Chrome_Extension">Full
+            Paper</a> ]
+          [ <a target="_blank" href="https://youtu.be/sKOT_6cYgbs?si=-hm_h6T3h8J8HDs6&t=58">Demo</a> ]
+          [ <a target="_blank"
+            href="https://blog.apnic.net/2022/11/11/continuous-in-network-round-trip-time-monitoring/">Blog post</a> ]
+          [ <a target="_blank" href="docs/slides/2022_sigcomm_dart.pptx">Slides</a> ]
+          [ <a target="_blank" href="https://dl.acm.org/doi/10.1145/3544216.3544222">ACM DL</a> ]</p>
+        </li>
+
+        <li>
+          Aagri, D. K., & Bisht, A. (2018). Export and import of renewable energy by hybrid MicroGrid via IoT. 2018 3rd
+          International Conference on Internet of Things: Smart Innovation and Usages (IoT-SIU), 1–4. IEEE.
+          [ <a target="_blank" href="https://www.academia.edu/11925353/TangoFX_Sessions_WebRTC_Chrome_Extension">Full
+            Paper</a> ]
+          <!-- [ <a target="_blank" href="https://youtu.be/sKOT_6cYgbs?si=-hm_h6T3h8J8HDs6&t=58">Demo</a> ]  -->
+          <!-- [ <a target="_blank" href="https://blog.apnic.net/2022/11/11/continuous-in-network-round-trip-time-monitoring/">Blog post</a> ]  -->
+          [ <a target="_blank" href="docs/slides/Solar Hybrid Micro Grid and Power transactions_altanai.pdf">Slides</a>
+          ]
+          <!-- [ <a target="_blank" href="docs/posters/poster v5.5 Does Renewable and Energy Storage Integration  Green the Electric Grid_.pdf">Poster</a> ]  -->
+          [ <a target="_blank" href="https://dl.acm.org/doi/10.1145/3634769.3634805">ACM DL</a> ]</p>
+        </li>
+
+        <li>
+          Bisht, A. (2017). TangoFX Sessions WebRTC Chrome Extension. Https://Www. Academia.
+          Edu/11925353/TangoFX_Sessions_WebRTC_Chrome_Extension.
+          [ <a target="_blank" href="https://www.academia.edu/11925353/TangoFX_Sessions_WebRTC_Chrome_Extension">Full
+            Paper</a> ]
+          [ <a target="_blank" href="https://youtu.be/sKOT_6cYgbs?si=-hm_h6T3h8J8HDs6&t=58">Demo</a> ]
+          [ <a target="_blank" href="https://telecom.altanai.com/tag/tfx-sessions/">Blog post</a> ]
+          [ <a target="_blank" href="https://www.linkedin.com/pulse/tangofx-sessions-altanai-bisht/">Article</a> ]
+          <!-- [ <a target="_blank" href="docs/slides/2022_sigcomm_dart.pptx">Slides</a> ]  -->
+          [ <a target="_blank" href="https://dl.acm.org/doi/10.1145/3544216.3544222">ACM DL</a> ]</p>
+        </li>
+
+        <li>
+          <strong>whitepaper:</strong> Bisht, A. (2012b). webrtc whitepaper. Https://Www. Academia.
+          Edu/4293745/Webrtc_whitepaper.
+          <p class="presources">
+            [ <a target="_blank" href="https://www.academia.edu/4293745/webrtc_whitepaper">Full Paper</a> ]
+            [ <a target="_blank" href="https://telecom.altanai.com/tag/webrtc-2/">Blog post</a> ]
+            [ <a target="_blank" href="docs/slides/2022_sigcomm_dart.pptx">Slides</a> ]
+        </li>
+
+
+        <li>
+          Bisht, A. (2012a). Converged Telecom Services - Brochure. Https://Www. Academia.
+          Edu/3648658/Converged_Telecom_Services_-_Brochure.
+          <!-- [ <a target="_blank" href="https://www.academia.edu/4293745/webrtc_whitepaper">Full Paper</a> ] 
             [ <a target="_blank" href="https://telecom.altanai.com/tag/webrtc-2/">Blog post</a> ] 
             [ <a target="_blank" href="docs/slides/2022_sigcomm_dart.pptx">Slides</a> ]  -->
-          </li>
+        </li>
 
-          <li>
-            Bisht, A. (n.d.-a). Cloud computing charecteristics and types. Https://Www. Academia. Edu/4159671/Cloud_computing_charecteristics_and_types_altanai_bisht_2nd_year_part_III.
-          </li>
+        <li>
+          Bisht, A. (n.d.-a). Cloud computing charecteristics and types. Https://Www. Academia.
+          Edu/4159671/Cloud_computing_charecteristics_and_types_altanai_bisht_2nd_year_part_III.
+        </li>
 
-          <li>
-            Bisht, A. (2010). Latest Trends in IT Enterprise Content Management System. Https://Www. Academia. Edu/4159672/Current_Trends_in_Information_Technology_altanai_bisht_college_3rd_year.
-          </li>
+        <li>
+          Bisht, A. (2010). Latest Trends in IT Enterprise Content Management System. Https://Www. Academia.
+          Edu/4159672/Current_Trends_in_Information_Technology_altanai_bisht_college_3rd_year.
+        </li>
 
-          <li>
-            Bisht, A. (2008). INTERNET ACCESS TO THE RURAL AREAS USING Wi-Fi TECHNOLOGY. Https://Www. Academia. Edu/4159676/Internet_acess_to_rural_areas_using_wifi_altanai_bisht_1st_year.
-          </li>
-
-
-          <li>
-            Bisht, A. (n.d.-b). Legacy ( Intelligent Network SS7) to Next Generation ( IMS JAINSLEE SIP ) Transformation. Https://Www. Academia. Edu/7412324/Legacy_Intelligent_Network_SS7_to_Next_Generation_IMS_JAINSLEE_SIP_Transformation.
-          </li>
+        <li>
+          Bisht, A. (2008). INTERNET ACCESS TO THE RURAL AREAS USING Wi-Fi TECHNOLOGY. Https://Www. Academia.
+          Edu/4159676/Internet_acess_to_rural_areas_using_wifi_altanai_bisht_1st_year.
+        </li>
 
 
-          <li>
-            Bisht, A. (2011). Information Highway , Digital key controlled Vehicle Access system. Https://Www. Researchgate. Net/Publication/345224453_INFORMATION_HIGHWAY_Digital_key-controlled_Vehicle_Access_system. Vel Tech MultiTech Dr RR Dr SR Engineering college.
-          </li>
-
-          
-        </ul>
-      </section>
-
-      <!-- Awards -->
-      <section id="awards" class="section">
-      
-        <h2>Awards and Honors</h2>
-        <ul>
-          <li>Winner at Microsoft's Azure AI hackathon.</li>
-          <!-- <li>Open Source contributor to OpenStack.</li> -->
-          <li>Company technical Excellence Award for the year 2013 at Tata Consultancy Services</li>
-          <li>Information highway - Final Year Project 
-            Integrating mobile devices, vehicles and internet via GSM, GPS and GIS
-            Front End : JavaME and JavaEE	Back End : SQLyog
-              Won the best final year project title with 100% marks from external invigilator 
-            </li>
-          <li>Secured 1st position in the National Level Technical Symposium, 2009.</li>
-          <li>First position at QQuest Case Analysis at Anna University</li>
-          <li>Automatic data capturing and geo-location technology (J2ME, RFID ,Wireless)- 2nd position in Veltech University, Sai Ram Engineering college </li>
-          <li>ECMS (Electronic Content management system )- 2nd position in GKM Engg. college, DMI college </li>
-        </ul>
-
-      </section>
-
-        <section id="media" class="section">
-
-          <ul>
-            <li>Top 50 Global Thought Leaders and Influencers on Telecom 2025,  2025 Annual Ranking
-            
-            Link : https://www.thinkers360.com/top-50-global-thought-leaders-and-influencers-on-telecom-2025/
-          </li>
-          
-          </ul>
+        <li>
+          Bisht, A. (n.d.-b). Legacy ( Intelligent Network SS7) to Next Generation ( IMS JAINSLEE SIP ) Transformation.
+          Https://Www. Academia.
+          Edu/7412324/Legacy_Intelligent_Network_SS7_to_Next_Generation_IMS_JAINSLEE_SIP_Transformation.
+        </li>
 
 
-        </section>
+        <li>
+          Bisht, A. (2011). Information Highway , Digital key controlled Vehicle Access system. Https://Www.
+          Researchgate. Net/Publication/345224453_INFORMATION_HIGHWAY_Digital_key-controlled_Vehicle_Access_system. Vel
+          Tech MultiTech Dr RR Dr SR Engineering college.
+        </li>
 
-        <!-- Contact -->
-        <section id="contact" class="section">
-          <h2>Contact</h2>
-  <!-- FontAwesome for icons -->
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
-  <style>
 
-    .social-icons {
-      display: flex;
-      justify-content: center;
-      gap: 20px;
-      margin-top: 20px;
-    }
-    .social-icons a {
-      font-size: 30px;
-      color: #333;
-      text-decoration: none;
-      padding: 10px;
-      transition: color 0.3s;
-    }
-    .social-icons a:hover {
-      color: #0077b5; /* Change color on hover */
-    }
-    .social-icons a.linkedin:hover {
-      color: #0e76a8; /* LinkedIn blue */
-    }
-    .social-icons a.stackoverflow:hover {
-      color: #f48024; /* StackOverflow orange */
-    }
-    .social-icons a.blog:hover {
-      color: #0a74da; /* Blog blue */
-    }
-  </style>
+      </ul>
+    </section>
 
-<p>Feel free to reach out via any of the following platforms:</p>
+    <!-- Awards -->
+    <section id="awards" class="section">
 
-  <div class="social-icons">
-    <!-- LinkedIn Icon -->
-    <a href="https://www.linkedin.com/in/your-profile" target="_blank" class="linkedin" title="LinkedIn">
-      <i class="fab fa-linkedin"></i>
-    </a>
+      <h2>Awards and Honors</h2>
+      <ul>
+        <li>Winner at Microsoft's Azure AI hackathon.</li>
+        <!-- <li>Open Source contributor to OpenStack.</li> -->
+        <li>Company technical Excellence Award for the year 2013 at Tata Consultancy Services</li>
+        <li>Information highway - Final Year Project
+          Integrating mobile devices, vehicles and internet via GSM, GPS and GIS
+          Front End : JavaME and JavaEE Back End : SQLyog
+          Won the best final year project title with 100% marks from external invigilator
+        </li>
+        <li>Secured 1st position in the National Level Technical Symposium, 2009.</li>
+        <li>First position at QQuest Case Analysis at Anna University</li>
+        <li>Automatic data capturing and geo-location technology (J2ME, RFID ,Wireless)- 2nd position in Veltech
+          University, Sai Ram Engineering college </li>
+        <li>ECMS (Electronic Content management system )- 2nd position in GKM Engg. college, DMI college </li>
+      </ul>
 
-    <!-- StackOverflow Icon -->
-    <a href="https://stackoverflow.com/users/your-user-id" target="_blank" class="stackoverflow" title="StackOverflow">
-      <i class="fab fa-stack-overflow"></i>
-    </a>
+    </section>
 
-    <!-- Blog Icon -->
-    <a href="https://your-blog.com" target="_blank" class="blog" title="My Blog">
-      <i class="fas fa-rss"></i>
-    </a>
+    <!-- Media Coverage -->
+    <section id="media" class="section">
+
+      <ul>
+        <li>Top 50 Global Thought Leaders and Influencers on Telecom 2025, 2025 Annual Ranking
+
+          Link : https://www.thinkers360.com/top-50-global-thought-leaders-and-influencers-on-telecom-2025/
+        </li>
+
+      </ul>
+
+
+    </section>
+
+    <!-- Contact -->
+    <section id="contact" class="section">
+      <h2>Contact</h2>
+      <!-- FontAwesome for icons -->
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+      <style>
+        .social-icons {
+          display: flex;
+          justify-content: center;
+          gap: 20px;
+          margin-top: 20px;
+        }
+
+        .social-icons a {
+          font-size: 30px;
+          color: #333;
+          text-decoration: none;
+          padding: 10px;
+          transition: color 0.3s;
+        }
+
+        .social-icons a:hover {
+          color: #0077b5;
+          /* Change color on hover */
+        }
+
+        .social-icons a.linkedin:hover {
+          color: #0e76a8;
+          /* LinkedIn blue */
+        }
+
+        .social-icons a.stackoverflow:hover {
+          color: #f48024;
+          /* StackOverflow orange */
+        }
+
+        .social-icons a.blog:hover {
+          color: #0a74da;
+          /* Blog blue */
+        }
+      </style>
+
+      <p>Feel free to reach out via any of the following platforms:</p>
+
+      <div class="social-icons">
+        <!-- LinkedIn Icon -->
+        <a href="https://www.linkedin.com/in/your-profile" target="_blank" class="linkedin" title="LinkedIn">
+          <i class="fab fa-linkedin"></i>
+        </a>
+
+        <!-- StackOverflow Icon -->
+        <a href="https://stackoverflow.com/users/your-user-id" target="_blank" class="stackoverflow"
+          title="StackOverflow">
+          <i class="fab fa-stack-overflow"></i>
+        </a>
+
+        <!-- Blog Icon -->
+        <a href="https://your-blog.com" target="_blank" class="blog" title="My Blog">
+          <i class="fas fa-rss"></i>
+        </a>
+      </div>
+
+    </section>
+
+    <footer>
+      <p>&copy; 2025 Altanai Bisht. All Rights Reserved.</p>
+    </footer>
   </div>
+</body>
 
-          </section>
-
-      <footer>
-        <p>&copy; 2025 Altanai Bisht. All Rights Reserved.</p>
-      </footer>
-    </div>
-    </body>
-    </html>
+</html>
