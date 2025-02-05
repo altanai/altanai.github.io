@@ -203,7 +203,261 @@
 
     <!-- Projects -->
     <section id="projects" class="section">
-      <h2>Projects</h2>
+
+      <style>
+        /* Projects Section */
+        /* #projects {
+          background-color: #f8f9fa;
+          padding: 50px 10%;
+          text-align: center;
+        }
+    
+        #projects h2 {
+          font-size: 36px;
+          margin-bottom: 30px;
+          color: #333;
+        } */
+    
+        .projects-container {
+          display: grid;
+          grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+          gap: 20px;
+        }
+    
+        .project-card {
+          background-color: #ffffff;
+          border: 1px solid #ddd;
+          padding: 20px;
+          border-radius: 10px;
+          box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+          transition: transform 0.2s, box-shadow 0.2s;
+        }
+    
+        .project-card:hover {
+          transform: translateY(-5px);
+          box-shadow: 0 8px 15px rgba(0, 0, 0, 0.15);
+        }
+    
+        .project-card h3 {
+          font-size: 24px;
+          color: #007bff;
+          margin-bottom: 10px;
+        }
+    
+        .project-card p {
+          color: #555;
+          font-size: 16px;
+          line-height: 1.6;
+          margin-bottom: 15px;
+        }
+    
+        .project-card a {
+          display: inline-block;
+          color: #fff;
+          background-color: #007bff;
+          padding: 10px 15px;
+          border-radius: 5px;
+          text-decoration: none;
+          transition: background-color 0.2s;
+        }
+    
+        .project-card a:hover {
+          background-color: #0056b3;
+        }
+      </style>
+
+      <h2>Enterprise Projects</h2>
+
+      I have worked on following enterprise projects in various capacities
+
+      <div class="projects-container">
+    
+        <!-- Project 1 -->
+        <div class="project-card">
+          <h3>Cisco Secure Connect and Cisco Secure Access</h3>
+          <p> Core contributor to propertiary protocol design and developemnt on AutoVPN</p>
+          <!-- <a href="https://github.com/YourProjectLink" target="_blank">View on GitHub</a> -->
+        </div>
+    
+        <!-- Project 2 -->
+        <div class="project-card">
+          <h3> Netflix OpenConnect as Research Intern</h3>
+          <p> Netflix Open Connect is a content delivery network (CDN) owned and operated by Netflix. It is designed to deliver high quality video streaming to Netflix subscribers around the world. The CDN consists of a network of servers strategically located in various regions to cache and deliver Netflix content efficiently. By bringing content closer to users, Open Connect helps reduce latency and improve streaming performance.
+          </p>
+          <!-- <a href="https://your-project-link.com" target="_blank">View Project</a> -->
+        </div>
+    
+        <!-- Project 3 -->
+        <div class="project-card">
+          <h3>AirtelIQ</h3>
+          <p>AirtelIQ is a cloud-based communication platform that provides businesses with a range of communication and engagement solutions. It offers services such as voice calls, SMS, email, and chat, allowing businesses to connect with their customers through multiple channels. AirtelIQ aims to enhance customer engagement, streamline communication processes, and provide businesses with tools for effective customer relationship management.
+          </p>
+          <!-- <a href="https://traffic-monitoring-app.com" target="_blank">View Project</a> -->
+        </div>
+
+        <!-- Project 3 -->
+        <div class="project-card">
+          <h3>Plivo Zentrunk</h3>
+          <p> Plivo Zentrunk is a cloud-based communication service for large volume voice calls.</p>
+          <!-- <a href="https://traffic-monitoring-app.com" target="_blank">View Project</a> -->
+        </div>
+
+
+        <div class="project-card">
+          <h3>Unigy360</h3>
+          <p> Unigy 360 is a unified communications platform designed for the financial services industry. It provides a comprehensive suite of communication and collaboration tools, including voice, video, messaging, and conferencing capabilities. Unigy 360 aims to enhance productivity, streamline workflows, and improve communication among teams within financial institutions.
+          </p>
+          <!-- <a href="https://traffic-monitoring-app.com" target="_blank">View Project</a> -->
+        </div>
+
+
+
+
+       <div class="project-card">
+        <h3>Unified Communication and collaboration WebRTC Platform</h3>
+        <p> The WebRTC client is a web based sip phone using HTML5 and JavaScript. This offers communication capabilities
+          directly without any plugins or installations . It is bundled with rich services like phonebook syncing ,
+          voicemails , geolocation ,oauth , advertisement engine etc . The Websocket gateway server to convert SIP over
+          Websockets to SIP and inhouse developed SIP server is used to provide the signalling
+        
+          Customer : Elisa, rich interest from another European telecom operator
+        </p>
+        <!-- <a href="https://traffic-monitoring-app.com" target="_blank">View Project</a> -->
+      </div>
+
+<!--      
+      Roles and Responsibilities
+      Design and develop the Web Client in HTML5.
+      Configure Kamailio SIP server for earlier POCs. Setup Media Server. Freeswitch for transcoding to interact with
+      other SIP endpoints .
+      Tools/Environment
+      Web platform , WebRTC APIs, Nodejs, Spring , EJB MVC -->
+
+
+      <div class="project-card">
+        <h3>Jiyo Health</h3>
+        <p> B2C health and wellness platform product. Partners include Moxtra, Apollo Hospitals, Deepak Chopra foundation among others.
+          
+          <!-- . It tracks user behaviour by connecting with phone’s and other external
+          wearable services like fibits to offer insights and suggestions based on habits and activities. This kind of
+          360-degree wellness covers exercise, meditation, relationships, finances, finding purpose and meaning in the
+          everyday. -->
+          
+          I owned and implemented Livestreaming service called Jiyo NOW.
+          <!-- Build and uploaded to store iOS based publisher app for the expert to broadcast themselves on Jiyo
+          Classroom usecase using Moxtra Services -->
+          Server APIs over php for scheduling clasrooms, broadcasts, notifications, authorization etc.
+          <!-- Tools/Environment
+          PHP Server Side + ReactJS and backbone.js for interface + mysql database and communication over REST. AWS for
+          hosting. -->.</p>
+        <a href="https://techcrunch.com/video/deepak-chopras-new-wellness-app-jiyo/" target="_blank">View Project</a>
+      </div>
+
+
+      <div class="project-card">
+        <h3>WebRTC Live streaming using Wowza</h3>
+        <p> LiveStreaming Solutions is a publisher to player setup including authentication, transcoders, multiformatting , adaptive bit rate, CDN distribution and is device agnostic in nature .
+          <!-- Roles and Responsibilities
+          Setup AWS with Wowza service and cloudfront as distribution unit.
+          Develop applications and modules using Wowza SDK .
+          Security in streams using session cookies .
+          Code for publisher in flex and webrtc webpage .
+          REST notification to client environment as soon as a user tries publishing a stream
+          Ffmpeg commands and templates for transcoding .
+          Player webpage for HLS and RTMP streams .
+          Vimeo SDK to store the archives and playback
+          Build transcoders for webrtc to legacy codecs like H264 using gateways and media codec libraries like ffmpeg ,
+          gstreamer , libvpx , videoconverter.js , openh264.
+          Handle transcoding , adaptive streaming and session security
+    
+    
+          Tools/Environment
+          Wowza Streaming engine , AWS ec2 , cloudfront , flex , flash , JS , codecs , ffmpeg , gstreamer , gocoder , Flash
+          Media Live Encoder . -->
+        </p>
+        <a href="https://traffic-monitoring-app.com" target="_blank">View Project</a>
+      </div>
+
+      </div>
+
+
+
+
+      <h4>TFX CaaS</h4>
+
+      Customer
+      Free Service on Chrome Webstore and TangoFX CaaS as a Service Offering
+      Description
+      TangoFX Sessions is a plug and play platform for Internet calling. It not only does video calling but also comes
+      preloaded with some immensely interactive widgets like Code , Draw , Screenshare , Multi language voice chatting ,
+      2 player games. TFX is essentially just the core platform exposing the APIs to let developers make their own
+      interactive widgets over existing communication framework . Few widgets developed by contributors include chess ,
+      face detection .
+      Roles and Responsibilities
+      Design and developed TFX a chrome webrtc extension and standalone platform with modular structure and set of APIs
+      and SDK to plugin and play as widget
+      Overall coding , integration and UI from basic libraries like simplewebrtc, signal master and many small other
+      open source libraries .
+      COTURN Integration and enhancement on custom TURN server for ICE and NAT traversal
+      Tools/Environment
+      HTML5, JavaScript, WebRTC APIs, Nodejs, socketio , redis , TURN , Chrome extensions .
+
+
+
+      <h4> IVR based Call Completion</h4>
+
+      Customer
+      Belgium Based Service Provider
+      Description
+      Menu Based Call Screening where Caller decides the handling of call . It is implemented as per the Options
+      provided with Android Application Plug top SIP Based Application or Interactive Voice Respondent with DTMF inputs
+      or with a Web based provisioning system.
+      Roles and Responsibilities
+      o Design and develop Web provisioning system.o Program the JAINSLEE logic behind the application. Deploy on Open
+      IMS platform
+      Tools/Environment
+      OpenCloud SDK, FSM tool, Rhino TAS , Open IMS, Monster SIP/IMS Softphones, Wireshark , Voxpilot Media Server ,
+      Darwin Streaming Server , Kannel SMS Gateway.
+
+
+      <h4> Session Mobility</h4>
+
+      Customer TCS Telecom Practice
+      
+      Session Mobility is an application which allows the user to change the access networks. With this application in
+      place, a user attending a VOIP or SIP call on his mobile device can transfer the voice session to another device
+      (say, a desktop machine) and vice-versa. Since this employs make-before-break rule, the other party attending the
+      call cannot observe that the call has been transferred
+      
+      Roles and Responsibilities
+      o Designing use cases and call flows.
+      o Program the SIP servlets and deploy on Weblogic Sip Server
+      o Develop VXML scripts for Media Server
+      Tools/Environment
+      OpenCloud SDK, FSM tool, Open IMS, Weblogic SIP Server, Monster SIP/IMS , Softphones, Wireshark , Voxpilot Media
+      Server , Darwin Streaming Server
+
+
+      <h4> Service Orchestration and Transformation Engine</h4>
+
+      Customer is a  Belgium Based Service Provider
+
+      Service Orchestration and Transformation Engine is a software component which helps in orchestrating the
+      interaction between different services. It enables reusing the existing services by allowing orchestration between
+      IN–IN services, IN–SIP services, SIP – SIP services and SIP-Web services.
+      
+      Roles and Responsibilities
+      Design and development of SIP services like Call Screening , Find Me Follow Me , Call Transferring , Voice Mail.
+      Defining and executing interaction logic between various SIP services. Configuration of OpenCloud Service broker
+      platform. Combining the existing and new services on a migrated network for client. Independently handling various
+      tasks assigned with precision and quality within stipulated time.
+      
+      Tools/Environment
+      OpenCloud SDK, FSM tool, Open IMS, Rhino VAS , Softphones, Wireshark
+
+
+
+<!-- Open Source Projects -->
 
       <style>
         .repo-box {
@@ -240,7 +494,6 @@
           text-decoration: underline;
         }
       </style>
-
       <script>
 
         async function fetchRepoLanguages(repoName) {
@@ -303,156 +556,6 @@
 
         window.onload = displayRepos;
       </script>
-
-      <h2>Enterprise Projects</h2>
-
-      I have worked on following enterprise projects in various capacities
-      Cisco Secure Connect and Cisco Secure Access
-
-      <h4> Netflix OpenConnect as Research Intern</h4>
-      Netflix Open Connect is a content delivery network (CDN) owned and operated by Netflix. It is designed to deliver high quality video streaming to Netflix subscribers around the world. The CDN consists of a network of servers strategically located in various regions to cache and deliver Netflix content efficiently. By bringing content closer to users, Open Connect helps reduce latency and improve streaming performance.
-
-      <h4>AirtelIQ </h4>
-      AirtelIQ is a cloud-based communication platform that provides businesses with a range of communication and engagement solutions. It offers services such as voice calls, SMS, email, and chat, allowing businesses to connect with their customers through multiple channels. AirtelIQ aims to enhance customer engagement, streamline communication processes, and provide businesses with tools for effective customer relationship management.
-
-      <h4>Plivo Zentrunk </h4>
-      Plivo Zentrunk is a cloud-based communication service for large volume voice calls.
-
-      <h4>Unigy360</h4>
-      Unigy 360 is a unified communications platform designed for the financial services industry. It provides a comprehensive suite of communication and collaboration tools, including voice, video, messaging, and conferencing capabilities. Unigy 360 aims to enhance productivity, streamline workflows, and improve communication among teams within financial institutions.
-
-
-      <h4>Jiyo Health</h4>
-
-      B2C product. Partners include Moxtra , Apollo , Deepak Chopra foundation among others
-      
-      Jiyo is a health and wellness platform . It tracks user behaviour by connecting with phone’s and other external
-      wearable services like fibits to offer insights and suggestions based on habits and activities. This kind of
-      360-degree wellness covers exercise, meditation, relationships, finances, finding purpose and meaning in the
-      everyday.
-      
-      My roles and responsibilities  
-      Completely owned and implemented Livestreaming service called Jiyo NOW.
-      Build and uploaded to store iOS based publisher app for the expert to broadcast themselves on Jiyo
-      Classroom usecase using Moxtra Services
-      Server APIs over php for scheduling clasrooms , broadcasts , notifications , authorization etc .
-      JSX widgets as part of front end .
-      Tools/Environment
-      PHP Server Side + ReactJS and backbone.js for interface + mysql database and communication over REST. AWS for
-      hosting.
-
-      <h4>Live streaming using Wowza </h4>
-
-
-      Description
-      LiveStreaming Solutions is a publisher to player setup including authentication, REST APIs , transcoders , multi
-      formatting , adaptive bit rate , CDN distribution and is device agnostic in nature .
-      Roles and Responsibilities
-      Setup AWS with Wowza service and cloudfront as distribution unit.
-      Develop applications and modules using Wowza SDK .
-      Security in streams using session cookies .
-      Code for publisher in flex and webrtc webpage .
-      REST notification to client environment as soon as a user tries publishing a stream
-      Ffmpeg commands and templates for transcoding .
-      Player webpage for HLS and RTMP streams .
-      Vimeo SDK to store the archives and playback
-      Build transcoders for webrtc to legacy codecs like H264 using gateways and media codec libraries like ffmpeg ,
-      gstreamer , libvpx , videoconverter.js , openh264.
-      Handle transcoding , adaptive streaming and session security
-
-
-      Tools/Environment
-      Wowza Streaming engine , AWS ec2 , cloudfront , flex , flash , JS , codecs , ffmpeg , gstreamer , gocoder , Flash
-      Media Live Encoder .
-
-      <h4>TFX CaaS</h4>
-
-      Customer
-      Free Service on Chrome Webstore and TangoFX CaaS as a Service Offering
-      Description
-      TangoFX Sessions is a plug and play platform for Internet calling. It not only does video calling but also comes
-      preloaded with some immensely interactive widgets like Code , Draw , Screenshare , Multi language voice chatting ,
-      2 player games. TFX is essentially just the core platform exposing the APIs to let developers make their own
-      interactive widgets over existing communication framework . Few widgets developed by contributors include chess ,
-      face detection .
-      Roles and Responsibilities
-      Design and developed TFX a chrome webrtc extension and standalone platform with modular structure and set of APIs
-      and SDK to plugin and play as widget
-      Overall coding , integration and UI from basic libraries like simplewebrtc, signal master and many small other
-      open source libraries .
-      COTURN Integration and enhancement on custom TURN server for ICE and NAT traversal
-      Tools/Environment
-      HTML5, JavaScript, WebRTC APIs, Nodejs, socketio , redis , TURN , Chrome extensions .
-
-
-      <h4> UCC WebRTC Platform</h4>
-
-      Customer
-      Elisa , rich interest from other operators
-      Description
-      The WebRTC client is a web based sip phone using HTML5 and JavaScript. This offers communication capabilities
-      directly without any plugins or installations . It is bundled with rich services like phonebook syncing ,
-      voicemails , geolocation ,oauth , advertisement engine etc . The Websocket gateway server to convert SIP over
-      Websockets to SIP and inhouse developed SIP server is used to provide the signalling
-      Roles and Responsibilities
-      Design and develop the Web Client in HTML5.
-      Configure Kamailio SIP server for earlier POCs. Setup Media Server. Freeswitch for transcoding to interact with
-      other SIP endpoints .
-      Tools/Environment
-      Web platform , WebRTC APIs, Nodejs, Spring , EJB MVC
-
-
-      <h4> IVR based Call Completion</h4>
-
-      Customer
-      Belgium Based Service Provider
-      Description
-      Menu Based Call Screening where Caller decides the handling of call . It is implemented as per the Options
-      provided with Android Application Plug top SIP Based Application or Interactive Voice Respondent with DTMF inputs
-      or with a Web based provisioning system.
-      Roles and Responsibilities
-      o Design and develop Web provisioning system.o Program the JAINSLEE logic behind the application. Deploy on Open
-      IMS platform
-      Tools/Environment
-      OpenCloud SDK, FSM tool, Rhino TAS , Open IMS, Monster SIP/IMS Softphones, Wireshark , Voxpilot Media Server ,
-      Darwin Streaming Server , Kannel SMS Gateway.
-
-
-      <h4> Session Mobility</h4>
-
-      Customer TCS Telecom Practice
-      
-      Session Mobility is an application which allows the user to change the access networks. With this application in
-      place, a user attending a VOIP or SIP call on his mobile device can transfer the voice session to another device
-      (say, a desktop machine) and vice-versa. Since this employs make-before-break rule, the other party attending the
-      call cannot observe that the call has been transferred
-      
-      Roles and Responsibilities
-      o Designing use cases and call flows.
-      o Program the SIP servlets and deploy on Weblogic Sip Server
-      o Develop VXML scripts for Media Server
-      Tools/Environment
-      OpenCloud SDK, FSM tool, Open IMS, Weblogic SIP Server, Monster SIP/IMS , Softphones, Wireshark , Voxpilot Media
-      Server , Darwin Streaming Server
-
-
-      <h4> Service Orchestration and Transformation Engine</h4>
-
-      Customer is a  Belgium Based Service Provider
-
-      Service Orchestration and Transformation Engine is a software component which helps in orchestrating the
-      interaction between different services. It enables reusing the existing services by allowing orchestration between
-      IN–IN services, IN–SIP services, SIP – SIP services and SIP-Web services.
-      
-      Roles and Responsibilities
-      Design and development of SIP services like Call Screening , Find Me Follow Me , Call Transferring , Voice Mail.
-      Defining and executing interaction logic between various SIP services. Configuration of OpenCloud Service broker
-      platform. Combining the existing and new services on a migrated network for client. Independently handling various
-      tasks assigned with precision and quality within stipulated time.
-      
-      Tools/Environment
-      OpenCloud SDK, FSM tool, Open IMS, Rhino VAS , Softphones, Wireshark
-
 
       <h2>Open Source Projects</h2>
       <div id="repos-container"></div>
