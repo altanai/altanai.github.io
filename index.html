@@ -32,9 +32,13 @@
     }
 
     nav {
+      position: sticky;
+      top: 0;
       background: #2d3748;
       padding: 1rem 0;
       text-align: center;
+      z-index: 1000;
+      border-bottom: 1px solid #ddd;
     }
 
     nav a {
@@ -43,9 +47,13 @@
       margin: 0 15px;
       font-weight: bold;
     }
+    nav a:hover {
+      text-decoration: underline;
+    } 
 
     .container {
-      max-width: 900px;
+      /* max-width: 900px; */
+      max-width: 1200px;;
       margin: 2rem auto;
       padding: 1rem;
       background: white;
@@ -58,6 +66,9 @@
       margin-bottom: 0.5rem;
     }
 
+    /* h3 {
+      color: #244a73;
+    } */
     .section {
       margin-bottom: 2rem;
     }
@@ -119,7 +130,40 @@
   </nav>
 
   <div class="container">
+
+
+    Specialized in SDWAN, VPN, Secure CPaaS, carrier-grade WebRTC-SIP platforms for Unified communication-collaboration, signaling gateways, SBC, soft turrets and telecom integrations. 
+    Interests : Protocol Design and ultra-low-latency real-time media streaming.
+
     <section id="experience" class="section">
+      <style>
+        /* Styling for Experience Section */
+        #experience {
+          background-color: #f9f9f9;
+          padding: 2em;
+          border-radius: 10px;
+          box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+          margin-top: 2em;
+        }
+        .experience-item {
+          margin-bottom: 2em;
+          border-left: 4px solid #007bff;
+          padding-left: 1em;
+        }
+        .experience-item h3 {
+          color: #244a73;
+          font-size: 1.2em;
+          margin-bottom: 0.2em;
+        }
+        .experience-item ul {
+          list-style: disc;
+          margin-left: 1.5em;
+        }
+        .experience-item ul li {
+          color: #555;
+          margin-bottom: 0.5em;
+        }
+      </style>
       <h2>Experience</h2>
       <div class="experience-item">
         <h3>Senior Software Engineer - Cloud VPN at Cisco Meraki (2022 - Present)</h3>
@@ -190,6 +234,37 @@
     </section>
 
     <section id="education" class="section">
+      <style>
+        /* Styling for Education Section */
+        #education {
+          background-color: #f9f9f9;
+          padding: 2em;
+          border-radius: 10px;
+          box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+          margin-top: 2em;
+        }
+        .education-item {
+          margin-bottom: 2em;
+        }
+        .education-item h3 {
+          color: #007bff;
+          font-size: 1.2em;
+          margin-bottom: 0.2em;
+        }
+        .education-item p {
+          font-size: 1em;
+          color: #555;
+          margin: 0.2em 0;
+        }
+        .education-item ul {
+          list-style: square;
+          margin-left: 1.5em;
+        }
+        .education-item ul li {
+          color: #555;
+          margin-bottom: 0.5em;
+        }
+      </style>
       <h2>Education</h2>
       <h3>Master of Science in Computer Science</h3>
       <p>Seattle University (2021 - 2022, GPA: 3.83/4)</p>
@@ -206,17 +281,17 @@
 
       <style>
         /* Projects Section */
-        /* #projects {
+        #projects {
           background-color: #f8f9fa;
-          padding: 50px 10%;
-          text-align: center;
+          /* padding: 50px 10%; */
+          /* text-align: center; */
         }
     
         #projects h2 {
-          font-size: 36px;
+          /* font-size: 36px; */
           margin-bottom: 30px;
           color: #333;
-        } */
+        }
     
         .projects-container {
           display: grid;
@@ -240,7 +315,7 @@
     
         .project-card h3 {
           font-size: 24px;
-          color: #007bff;
+          color: #244a73;
           margin-bottom: 10px;
         }
     
@@ -310,15 +385,10 @@
           <!-- <a href="https://traffic-monitoring-app.com" target="_blank">View Project</a> -->
         </div>
 
-
-
-
        <div class="project-card">
         <h3>Unified Communication and collaboration WebRTC Platform</h3>
-        <p> The WebRTC client is a web based sip phone using HTML5 and JavaScript. This offers communication capabilities
-          directly without any plugins or installations . It is bundled with rich services like phonebook syncing ,
-          voicemails , geolocation ,oauth , advertisement engine etc . The Websocket gateway server to convert SIP over
-          Websockets to SIP and inhouse developed SIP server is used to provide the signalling
+        <p> The WebRTC client is a web based sip phone with communication capabilities without any plugins or installations. It is bundled with rich services like phonebook syncing,
+          voicemail, geolocation, oauth, advertisement engine. The Websocket gateway server to convert SIP over Websockets to SIP and inhouse developed SIP server is used to provide the signalling
         
           Customer : Elisa, rich interest from another European telecom operator
         </p>
@@ -364,97 +434,85 @@
           Code for publisher in flex and webrtc webpage .
           REST notification to client environment as soon as a user tries publishing a stream
           Ffmpeg commands and templates for transcoding .
-          Player webpage for HLS and RTMP streams .
+          Player webpage for HLS and RTMP streams.
           Vimeo SDK to store the archives and playback
           Build transcoders for webrtc to legacy codecs like H264 using gateways and media codec libraries like ffmpeg ,
           gstreamer , libvpx , videoconverter.js , openh264.
           Handle transcoding , adaptive streaming and session security
-    
-    
+          -->
           Tools/Environment
           Wowza Streaming engine , AWS ec2 , cloudfront , flex , flash , JS , codecs , ffmpeg , gstreamer , gocoder , Flash
-          Media Live Encoder . -->
+          Media Live Encoder . 
         </p>
         <a href="https://traffic-monitoring-app.com" target="_blank">View Project</a>
       </div>
 
+
+      <div class="project-card">
+        <h3>TangoFX chrome Extension </h3>
+        <p> TangoFX Sessions is a plug and play platform for Internet calling with collaborative tools like Code, Draw, Screenshare, multi language realtime translation while talking,
+          2 player games. TFX is essentially just the core platform exposing the APIs to let developers make their own interactive widgets over existing communication framework. Few widgets developed by contributors include chess,
+          face detection.
+          I designed and developed TFX a chrome webrtc extension and standalone platform with modular structure and set of APIs
+          and SDK to plugin and play as widget.
+          COTURN Integration and enhancement on custom TURN server for ICE and NAT traversal</p>
+        <a href="https://traffic-monitoring-app.com" target="_blank">View Project</a>
+      </div>
+
+      <div class="project-card">
+        <h3> IVR based Call Completion</h3>
+        <p>
+          <!-- Customer is Belgium Based Service Provider -->
+          Interactive Voice Respondent with DTMF inputs
+          <!-- Menu Based Call Screening where Caller decides the handling of call. It is implemented as per the Options
+          provided with Android Application Plug atop SIP Based Application or  -->
+          <!-- or with a Web based provisioning system. -->
+          I programmed the JAINSLEE logic and tested on Open IMS platform
+          Tools/Environment
+          OpenCloud SDK, FSM tool, Rhino TAS, Open IMS, Monster SIP/IMS Softphones, Wireshark, Voxpilot Media Server,
+          Darwin Streaming Server, Kannel SMS Gateway</p>
+        <!-- <a href="https://traffic-monitoring-app.com" target="_blank">View Project</a> -->
+      </div>
+
+      <div class="project-card">
+        <h3> Session Mobility</h3>
+        <p> 
+          Session Mobility is an application which allows the user to change the access networks. With this application in
+          place, a user attending a VOIP or SIP call on his mobile device can transfer the voice session to another device
+          <!-- (say, a desktop machine) and vice-versa. Since this employs make-before-break rule, the other party attending the
+          call cannot observe that the call has been transferred -->
+          
+          My roles was to 
+          o Designing use cases and call flows.
+          o Program the SIP servlets and deploy on Weblogic Sip Server
+          o Develop VXML scripts for Media Server
+          
+          Tools/Environment : OpenCloud SDK, FSM tool, Open IMS, Weblogic SIP Server, Monster SIP/IMS , Softphones, Wireshark , Voxpilot Media
+          Server , Darwin Streaming Server</p>
+        <a href="https://traffic-monitoring-app.com" target="_blank">View Project</a>
       </div>
 
 
+      <div class="project-card">
+        <h3>Service Orchestration and Transformation Engine</h3>
+        <p> 
+          Customer is a  Belgium Based Service Provider
 
+          Service Orchestration and Transformation Engine is a software component which helps in orchestrating the interaction between different services. It enables reusing the existing services by allowing orchestration between
+          IN–IN services, IN–SIP services, SIP–SIP services and SIP-Web services.
+          
+          Roles and Responsibilities
+          Design and development of SIP services like Call Screening, Find Me Follow Me, Call Transferring, Voice Mail.
+          Defining and executing interaction logic between various SIP services. Configuration of OpenCloud Service broker platform. 
+          <!-- Combining the existing and new services on a migrated network for client.  -->
+          Independently handling various tasks assigned with precision and quality within stipulated time.
+          
+          Tools/Environment
+          OpenCloud SDK, FSM tool, Open IMS, Rhino VAS, Softphones, Wireshark</p>
+        <a href="https://traffic-monitoring-app.com" target="_blank">View Project</a>
+      </div>
 
-      <h4>TFX CaaS</h4>
-
-      Customer
-      Free Service on Chrome Webstore and TangoFX CaaS as a Service Offering
-      Description
-      TangoFX Sessions is a plug and play platform for Internet calling. It not only does video calling but also comes
-      preloaded with some immensely interactive widgets like Code , Draw , Screenshare , Multi language voice chatting ,
-      2 player games. TFX is essentially just the core platform exposing the APIs to let developers make their own
-      interactive widgets over existing communication framework . Few widgets developed by contributors include chess ,
-      face detection .
-      Roles and Responsibilities
-      Design and developed TFX a chrome webrtc extension and standalone platform with modular structure and set of APIs
-      and SDK to plugin and play as widget
-      Overall coding , integration and UI from basic libraries like simplewebrtc, signal master and many small other
-      open source libraries .
-      COTURN Integration and enhancement on custom TURN server for ICE and NAT traversal
-      Tools/Environment
-      HTML5, JavaScript, WebRTC APIs, Nodejs, socketio , redis , TURN , Chrome extensions .
-
-
-
-      <h4> IVR based Call Completion</h4>
-
-      Customer
-      Belgium Based Service Provider
-      Description
-      Menu Based Call Screening where Caller decides the handling of call . It is implemented as per the Options
-      provided with Android Application Plug top SIP Based Application or Interactive Voice Respondent with DTMF inputs
-      or with a Web based provisioning system.
-      Roles and Responsibilities
-      o Design and develop Web provisioning system.o Program the JAINSLEE logic behind the application. Deploy on Open
-      IMS platform
-      Tools/Environment
-      OpenCloud SDK, FSM tool, Rhino TAS , Open IMS, Monster SIP/IMS Softphones, Wireshark , Voxpilot Media Server ,
-      Darwin Streaming Server , Kannel SMS Gateway.
-
-
-      <h4> Session Mobility</h4>
-
-      Customer TCS Telecom Practice
-      
-      Session Mobility is an application which allows the user to change the access networks. With this application in
-      place, a user attending a VOIP or SIP call on his mobile device can transfer the voice session to another device
-      (say, a desktop machine) and vice-versa. Since this employs make-before-break rule, the other party attending the
-      call cannot observe that the call has been transferred
-      
-      Roles and Responsibilities
-      o Designing use cases and call flows.
-      o Program the SIP servlets and deploy on Weblogic Sip Server
-      o Develop VXML scripts for Media Server
-      Tools/Environment
-      OpenCloud SDK, FSM tool, Open IMS, Weblogic SIP Server, Monster SIP/IMS , Softphones, Wireshark , Voxpilot Media
-      Server , Darwin Streaming Server
-
-
-      <h4> Service Orchestration and Transformation Engine</h4>
-
-      Customer is a  Belgium Based Service Provider
-
-      Service Orchestration and Transformation Engine is a software component which helps in orchestrating the
-      interaction between different services. It enables reusing the existing services by allowing orchestration between
-      IN–IN services, IN–SIP services, SIP – SIP services and SIP-Web services.
-      
-      Roles and Responsibilities
-      Design and development of SIP services like Call Screening , Find Me Follow Me , Call Transferring , Voice Mail.
-      Defining and executing interaction logic between various SIP services. Configuration of OpenCloud Service broker
-      platform. Combining the existing and new services on a migrated network for client. Independently handling various
-      tasks assigned with precision and quality within stipulated time.
-      
-      Tools/Environment
-      OpenCloud SDK, FSM tool, Open IMS, Rhino VAS , Softphones, Wireshark
-
+      </div>
 
 
 <!-- Open Source Projects -->
@@ -608,7 +666,7 @@
             <li>Firewall Configuration</li>
             <li>SASE</li>
             <li>Tunneling SD WAN, , VPN, NAT,</li>
-            <li> MASQUE, IPSec, AutoVPN</li>
+            <li>MASQUE, IPSec, AutoVPN</li>
             <li>Traffic analyzer tshark, sipP, tcpdump, sngrep, iperf</li>
           </ul>
         </div>
@@ -646,51 +704,43 @@
             <li>AWS</li>
             <li>Distributed across PoPs. serverless, distributed reliable queue, Event driven systems.</li>
           </ul>
-          </di>
+        </di>
 
     </section>
 
     <!-- Publications  -->
     <section id="publications" className="section">
-      <h2>Publications</h2>
+      <!-- <h2>Publications</h2> -->
       <ul>
-        <!-- <li>
-            <strong>Book:</strong> WebRTC: APIs and RTCWEB Protocols of the HTML5 Real-Time Web<br />
-            <strong>Authors:</strong> Altanai Bisht<br />
-            <strong>Publication Year:</strong> 2014<br />
-            <strong>Summary:</strong> This book provides an in-depth understanding of WebRTC, covering its APIs and the RTCWEB protocols that enable real-time communication in web browsers.
-          </li> -->
-        <li>
-          <strong>Book:</strong> WebRTC Integrator's Guide<br />
-          <strong>Authors:</strong> Altanai Bisht<br />
-          <strong>Year:</strong> 2014<br />
-          Bisht, A. (2014). WebRTC Integrator’s Guide ISBN 9781783981267. Https://Www. Packtpub.
-          Com/Web-Development/Webrtc-Integrators-Guide, Vol. 1, p. 382.
-          https://www.packtpub.com/in/web-development/webrtc-integrators-guide ISBN ….
-
-          A comprehensive guide for developers integrating WebRTC into their applications, detailing practical
-          implementation strategies and best practices.
-        </li>
-
-        <li>
-          <strong>Patent:</strong> Multimedia conferencing.<br />
-          <strong>Authors:</strong> Afsari, F., Bisht, A., Parvarandeh, P., & Dhote, S.<br />
-          <strong>Year:</strong> 2019<br />
-          (jul # ‘ 16’, note=US Patent 10,353,663 2019).
-        </li>
+        <h2>Books</h2>
+        <ul>
+          <li>
+            <strong>WebRTC Integrator's Guide</strong> <br>
+            Authors: Altanai Bisht <br>
+            Year: 2014 <br>
+            <a href="https://www.packtpub.com/in/web-development/webrtc-integrators-guide">More Details</a>
+          </li>
+        </ul>
+  
+        <h2>Patents</h2>
+        <ul>
+          <li>
+            <strong>Multimedia conferencing</strong> <br>
+            Authors: F. Afsari, A. Bisht, P. Parvarandeh, & S. Dhote <br>
+            Year: 2019 <br>
+            <em>US Patent 10,353,663</em>
+          </li>
+        </ul>
 
 
-        <li>
-          <strong>Technical Disclosure:</strong> Bisht, A. (2023). TUNNEL WEIGHT ALGORITHM TO IMPROVE VIRTUAL PRIVATE
-          NETWORK PERFORMANCE.
-        </li>
+        <h2>Technical Disclosures</h2>
+        <ul>
+          <li>Tunnel Weight Algorithm to Improve Virtual Private Network Performance (2023) - Altanai Bisht</li>
+          <li>Multi-Modal Contextual Search for Enterprise Content (2024) - Sabra, A., Gopikrishnan, R., Bisht, A., Dahir, H., Babu, K. B. H., &
+            Kini, S. (2024). MULTI-MODAL CONTEXTUAL SEARCH FOR ENTERPRISE CONTENT.</li>
+        </ul>
 
-        <li>
-          <strong>Technical Disclosure:</strong> Sabra, A., Gopikrishnan, R., Bisht, A., Dahir, H., Babu, K. B. H., &
-          Kini, S. (2024). MULTI-MODAL CONTEXTUAL SEARCH FOR ENTERPRISE CONTENT.
-        </li>
-
-
+        <h2>Research Papers</h2>
         <li>
           Wilson, A., Bisht, A., & Milkowski, L. (2023). Robotic Tomato Detection Using YOLOv3 with Pre and
           Post-Processing: Evaluation Through Gazebo Simulation and Real-World Laboratory Testing. 2023 Seventh IEEE
@@ -698,7 +748,6 @@
           [ <a target="_blank" href="https://ieeexplore.ieee.org/document/10473556">Full Paper</a> ]
 
         </li>
-
 
         <li>
           Bisht, A., Mendes, A. C. de S., Thoreson, J. D., II, & Samavi, S. (2023). Low Latency Video Denoising for
@@ -719,11 +768,11 @@
           [ <a target="_blank" href="https://dl.acm.org/doi/10.1145/3634769.3634805">ACM DL</a> ]</p>
         </li>
 
-        <li>
+        <!-- <li>
           <strong>Journal:</strong> Abdelraouf, A., Adeleye, A., Agarwal, T., Aggarwal, A., Agumey, P., Akbarinigjeh,
           M., … Others. (n.d.). 2023 Seventh IEEE International Conference on Robotic Computing (IRC)|
           979-8-3503-9574-7/23/$31.00© 2023 IEEE| DOI: 10.1109/IRC59093. 2023.00070.
-        </li>
+        </li> -->
 
         <li>
           Bisht, A., Wilson, A., Jeffreys, Z., & Samavi, S. (2022). Does crypto kill? Relationship between electricity
@@ -788,7 +837,7 @@
 
 
         <li>
-          Bisht, A. (2012a). Converged Telecom Services - Brochure. Https://Www. Academia.
+          <strong>Brochure:</strong> Bisht, A. (2012a). Converged Telecom Services - Brochure. Https://Www. Academia.
           Edu/3648658/Converged_Telecom_Services_-_Brochure.
           <!-- [ <a target="_blank" href="https://www.academia.edu/4293745/webrtc_whitepaper">Full Paper</a> ] 
             [ <a target="_blank" href="https://telecom.altanai.com/tag/webrtc-2/">Blog post</a> ] 
@@ -830,36 +879,72 @@
 
     <!-- Awards -->
     <section id="awards" class="section">
+      <style>
+        /* Styling for Awards Section */
+        #awards {
+          background-color: #f9f9f9;
+          padding: 2em;
+          border-radius: 10px;
+          box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        }
+        .award-item {
+          margin-bottom: 1.5em;
+        }
+        .award-title {
+          font-weight: bold;
+          color: #007bff;
+        }
+        .award-description {
+          margin-left: 1em;
+          color: #555;
+        }
+        .award-link a {
+          color: #007bff;
+          text-decoration: none;
+        }
+        .award-link a:hover {
+          text-decoration: underline;
+        }
+      </style>
 
       <h2>Awards and Honors</h2>
-      <ul>
-        <li>Winner at Microsoft's Azure AI hackathon.</li>
-        <!-- <li>Open Source contributor to OpenStack.</li> -->
-        <li>Company technical Excellence Award for the year 2013 at Tata Consultancy Services</li>
-        <li>Information highway - Final Year Project
-          Integrating mobile devices, vehicles and internet via GSM, GPS and GIS
-          Front End : JavaME and JavaEE Back End : SQLyog
-          Won the best final year project title with 100% marks from external invigilator
-        </li>
-        <li>Secured 1st position in the National Level Technical Symposium, 2009.</li>
-        <li>First position at QQuest Case Analysis at Anna University</li>
-        <li>Automatic data capturing and geo-location technology (J2ME, RFID ,Wireless)- 2nd position in Veltech
-          University, Sai Ram Engineering college </li>
-        <li>ECMS (Electronic Content management system )- 2nd position in GKM Engg. college, DMI college </li>
-      </ul>
+      <div class="award-item">
+        <p class="award-title">Winner at Microsoft's Azure AI Hackathon</p>
+      </div>
+      <div class="award-item">
+        <p class="award-title">Company Technical Excellence Award (2013)</p>
+        <p class="award-description">Awarded at Tata Consultancy Services for outstanding technical contributions.</p>
+      </div>
+      <div class="award-item">
+        <p class="award-title">Best Final Year Project - Information Highway</p>
+        <p class="award-description">Integration of mobile devices, vehicles, and internet using GSM, GPS, and GIS. Front-end: JavaME and JavaEE, Back-end: SQLyog. Secured 100% marks and "Best Final Year Project" award.</p>
+      </div>
+      <div class="award-item">
+        <p class="award-title">Secured 1st Position at National Level Technical Symposium (2009)</p>
+      </div>
+      <div class="award-item">
+        <p class="award-title">First Position at QQuest Case Analysis</p>
+        <p class="award-description">Organized by Anna University.</p>
+      </div>
+      <div class="award-item">
+        <p class="award-title">2nd Position at Veltech University & Sai Ram Engineering College</p>
+        <p class="award-description">Project on Automatic Data Capturing and Geo-location Technology (J2ME, RFID, Wireless).</p>
+      </div>
+      <div class="award-item">
+        <p class="award-title">2nd Position at GKM Engineering College & DMI College</p>
+        <p class="award-description">Project: Electronic Content Management System (ECMS).</p>
+      </div>
 
     </section>
 
     <!-- Media Coverage -->
     <section id="media" class="section">
-
-      <ul>
-        <li>Top 50 Global Thought Leaders and Influencers on Telecom 2025, 2025 Annual Ranking
-
-          Link : https://www.thinkers360.com/top-50-global-thought-leaders-and-influencers-on-telecom-2025/
-        </li>
-
-      </ul>
+      <h2>Media Coverage</h2>
+      <div class="award-item award-link">
+        <p class="award-title">Top 50 Global Thought Leaders and Influencers on Telecom (2025)</p>
+        <p class="award-description">Annual Ranking by Thinkers360.</p>
+        <p><a href="https://www.thinkers360.com/top-50-global-thought-leaders-and-influencers-on-telecom-2025/" target="_blank" rel="noopener noreferrer">View Ranking</a></p>
+      </div>
 
 
     </section>
