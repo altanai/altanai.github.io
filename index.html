@@ -6,123 +6,35 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Altanai Bisht - CV</title>
   <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">
-  <style>
-    * {
-      margin: 0;
-      padding: 0;
-      box-sizing: border-box;
-    }
-
-    body {
-      font-family: 'Roboto', sans-serif;
-      background-color: #f3f4f6;
-      color: #333;
-      line-height: 1.6;
-    }
-
-    header {
-      background: #1a202c;
-      color: white;
-      padding: 2rem 0;
-      text-align: center;
-    }
-
-    header h1 {
-      font-size: 2.5rem;
-    }
-
-    nav {
-      position: sticky;
-      top: 0;
-      background: #2d3748;
-      padding: 1rem 0;
-      text-align: center;
-      z-index: 1000;
-      border-bottom: 1px solid #ddd;
-    }
-
-    nav a {
-      color: white;
-      text-decoration: none;
-      margin: 0 15px;
-      font-weight: bold;
-    }
-    nav a:hover {
-      text-decoration: underline;
-    } 
-
-    .container {
-      /* max-width: 900px; */
-      max-width: 1200px;;
-      margin: 2rem auto;
-      padding: 1rem;
-      background: white;
-      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-      border-radius: 8px;
-    }
-
-    h2 {
-      color: #2d3748;
-      margin-bottom: 0.5rem;
-    }
-
-    /* h3 {
-      color: #244a73;
-    } */
-    .section {
-      margin-bottom: 2rem;
-    }
-
-    ul {
-      list-style: none;
-      padding: 0;
-    }
-
-    ul li {
-      margin-bottom: 0.75rem;
-    }
-
-    footer {
-      text-align: center;
-      background: #1a202c;
-      color: white;
-      padding: 1rem 0;
-    }
-
-    .experience-item {
-      margin-bottom: 1.5rem;
-    }
-
-    .experience-item h3 {
-      margin-bottom: 0.3rem;
-      font-size: 1.2rem;
-    }
-
-    .experience-item p {
-      font-size: 0.9rem;
-      color: #666;
-    }
-
-    .skills-list,
-    .project-list {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-      gap: 0.5rem;
-    }
-  </style>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+  <link rel="stylesheet" href="styles.css">
 </head>
 
 <body>
   <header>
+    <div style="margin-bottom: 1rem;">
+      <a href="https://www.linkedin.com/in/altanai" target="_blank" style="color: #60a5fa; text-decoration: none; font-size: 1.1rem; font-weight: 500; display: inline-flex; align-items: center; gap: 0.5rem; transition: color 0.3s ease;">
+        <i class="fab fa-linkedin"></i> linkedin.com/in/altanai
+      </a>
+    </div>
+    
+    <div class="header-content">
+      <div class="profile-section">
+        <img src="images/Altanai_profile_pic.jpg" alt="Altanai Bisht Profile Picture" class="profile-picture">
+        <div class="profile-info">
     <h1>Altanai Bisht</h1>
-    <p>Network Protocols Specialist | Author | Innovator</p>
+          <p class="profile-title">Network Protocols Specialist | Author | Innovator</p>
+          <p class="profile-subtitle">Senior Software Engineer at Cisco | WebRTC Expert | Open Source Contributor</p>
+        </div>
+      </div>
+    </div>
   </header>
 
   <nav>
     <a href="#experience">Experience</a>
     <a href="#education">Education</a>
     <a href="#projects">Projects</a>
-    <a href="#skills">Skills</a>
+    <a href="#skills">Technical Expertise</a>
     <a href="#awards">Awards and Honors</a>
     <a href="#publications">Publications</a>
     <a href="#media">Media Coverage</a>
@@ -131,97 +43,120 @@
 
   <div class="container">
 
+    <!-- Professional Summary Section -->
+    <section class="professional-summary">
 
-    Specialized in SDWAN, VPN, Secure CPaaS, carrier-grade WebRTC-SIP platforms for Unified communication-collaboration, signaling gateways, SBC, soft turrets and telecom integrations. 
-    Interests : Protocol Design and ultra-low-latency real-time media streaming.
+      <div class="summary-header">
+        <h2 class="summary-title">Senior Software Engineer</h2>
+        <p class="summary-subtitle">Cisco Systems | WebRTC & Real-Time Communications Expert</p>
+        <div class="summary-location">
+          <i class="fas fa-map-marker-alt"></i>
+          <span>Seattle, Washington, United States</span>
+        </div>
+      </div>
+
+      <div class="summary-stats">
+        <div class="stat-item">
+          <span class="stat-number">14+</span>
+          <span class="stat-label">Years Experience</span>
+        </div>
+        <div class="stat-item">
+          <span class="stat-number">50+</span>
+          <span class="stat-label">Open Source Projects</span>
+        </div>
+        <div class="stat-item">
+          <span class="stat-number">15+</span>
+          <span class="stat-label">Research Publications</span>
+        </div>
+        <div class="stat-item">
+          <span class="stat-number">1</span>
+          <span class="stat-label">Published Book</span>
+        </div>
+      </div>
+
+      <div class="summary-description">
+        <p>
+          <span class="highlight">Specialized in SDWAN, VPN, Secure CPaaS</span>, and carrier-grade WebRTC-SIP platforms for Unified communication-collaboration, 
+          signaling gateways, SBC, soft turrets and telecom integrations. Currently contributing to <span class="highlight">Cisco's SASE architecture</span> 
+          including control plane of VPN headends connecting to cybersecurity core and Cisco Umbrella via tunneling protocols.
+        </p>
+        <br>
+        <p>
+          <span class="highlight">Core Expertise:</span> Protocol Design, Ultra-low-latency Real-time Media Streaming, WebRTC Implementation, 
+          Network Security, Distributed Systems Architecture, and Open Source Development.
+        </p>
+      </div>
+    </section>
 
     <section id="experience" class="section">
-      <style>
-        /* Styling for Experience Section */
-        #experience {
-          background-color: #f9f9f9;
-          padding: 2em;
-          border-radius: 10px;
-          box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-          margin-top: 2em;
-        }
-        .experience-item {
-          margin-bottom: 2em;
-          border-left: 4px solid #007bff;
-          padding-left: 1em;
-        }
-        .experience-item h3 {
-          color: #244a73;
-          font-size: 1.2em;
-          margin-bottom: 0.2em;
-        }
-        .experience-item ul {
-          list-style: disc;
-          margin-left: 1.5em;
-        }
-        .experience-item ul li {
-          color: #555;
-          margin-bottom: 0.5em;
-        }
-      </style>
       <h2>Experience</h2>
       <div class="experience-item">
-        <h3>Senior Software Engineer - Cloud VPN at Cisco Meraki (2022 - Present)</h3>
+        <h3>Senior Software Engineer - Cisco Meraki Secure Connect (2023 - Present)</h3>
         <ul>
-          <li>Leading the development of secure cloud-based VPN solutions.</li>
-          <li>Collaborating with cross-functional teams to enhance network security features.</li>
+          <li>IC in Cisco's SASE including control plane of VPN headends connecting to cybersecurity core, Cisco Umbrella, via tunneling protocols.</li>
+          <li>Primary contributor to HA enhancement and Multi Uplinks implementation, IKEv2 integration in AutoVPN proprietary system.</li>
+          <li>Successfully grew flagship Meraki product from GA to <strong>862 customers</strong> as of June 2025.</li>
+          <li>Led development of secure cloud-based VPN solutions with focus on high availability and performance optimization.</li>
         </ul>
       </div>
       <div class="experience-item">
-        <h3>Open Connect Transport Protocol R&D Intern at Netflix (2022)</h3>
+        <h3>Transport Protocol R&D Intern at Netflix Open Connect (2022)</h3>
         <ul>
-          <li>Research and development on the algorithm for Netflix's new upcoming highly-interactive RTP/RTCP based streaming media applications. </li>
-          <li>Analyzed and leveraged heuristics for rate adaptation, bandwidth and latency estimation, congestion control and loss recovery of RTP/UDP media streams.</li>
+          <li>Conducted R&D on streaming algorithms for ultra-low latency and highly-interactive RTP/RTCP streaming applications.</li>
+          <li>Leveraged heuristics for rate adaptation, bandwidth estimation, congestion control, and loss recovery of RTP/UDP media streams.</li>
+          <li>Contributed to Netflix's next-generation transport protocol for enhanced streaming performance.</li>
         </ul>
       </div>
       <div class="experience-item">
-        <h3>Intern at WebRTC.ventures (2022)</h3>
+        <h3>WebRTC Developer Intern at WebRTC.ventures (2022)</h3>
         <ul>
-          <li>Implemented WebRTC telephony applications using SFU, MCU, and hybrid setups.</li>
-          <li>Optimized metrics for TURN and ICE.</li>
+          <li>Analyzed ICE metrics and programmed WebRTC telephony prototypes using SFU, MCU, and hybrid architectures.</li>
+          <li>Implemented solutions with Janus and Freeswitch for real-time communication applications.</li>
+          <li>Optimized TURN and ICE performance for enhanced connectivity and media quality.</li>
         </ul>
       </div>
       <div class="experience-item">
         <h3>Core Lead Engineer at Airtel IQ (2020)</h3>
         <ul>
-          <li>Designed and implemented VoIP backend system components using Asterisk libraries.</li>
-          <li>Delivered cloud telephony solutions via SIP trunking.</li>
+          <li>Led development team for VoIP core implementation using Asterisk libraries for Airtel's cloud telephony offering.</li>
+          <li>Architected solutions for Asia's leading telecom provider serving massive influx of large-scale customers.</li>
+          <li>Delivered carrier-grade cloud telephony solutions with focus on scalability and reliability.</li>
         </ul>
       </div>
       <div class="experience-item">
-        <h3>Senior Software Engineer at Plivo (2018 - 2020)</h3>
+        <h3>Senior Software Engineer at Plivo Zentrunk (2018 - 2020)</h3>
         <ul>
-          <li>Designed the SIP trunk service architecture for Plivo Zentrunk.</li>
-          <li>Owned and optimized core SIP backend platform, including inbound call flows, security, and media route
-            optimization.</li>
+          <li>Led product shaping and crucial optimizations of the SIP platform for Plivo's SIP trunking solution.</li>
+          <li>Owned inbound call flows, SRTP security, Call Insights, hangup codes, CDR, and media route optimization.</li>
+          <li>Implemented call handover leveraging PoP architecture while actively onboarding SME customers globally.</li>
+          <li>Won company's <strong>first-ever Best Performer</strong> award within 3 months of joining.</li>
         </ul>
       </div>
       <div class="experience-item">
-        <h3>Software Engineer at IPC Systems, Inc. (2016 - 2018)</h3>
+        <h3>Software Engineer at IPC Unigy 360 via TechMahindra (2016 - 2018)</h3>
         <ul>
-          <li>Implemented software-based VoIP turret phone systems.</li>
-          <li>Designed and delivered a full-stack distributed CPaaS from inception to delivery.</li>
+          <li>Core member of product development team for soft turret financial communications platform.</li>
+          <li>Architected and programmed microservice-based WebSocket signaller, queues, caches, NoSQL DBs, REST and SIP services.</li>
+          <li>Built no-latency, secure audio call platform integrating Genband Spidr gateway and Radisys Media Server.</li>
+          <li>Won <strong>McGyver Award for Technical Excellence</strong> and Pat on Back awards for efficient deliveries.</li>
         </ul>
       </div>
       <div class="experience-item">
         <h3>Software Engineer at Above Solutions (2014 - 2016)</h3>
         <ul>
-          <li>Programmed modules for Wowza engine, CloudFront distribution, and adaptive streams for HLS, RTSP, and
-            RTMP.</li>
-          <li>Researched and innovated media engines for WebRTC to legacy codecs.</li>
+          <li>Built TangoFX suite of CaaS and live streaming solutions as independent pluggable modules.</li>
+          <li>Developed Jiyo platform's live streaming service (Jiyo NOW) with complete ownership of architecture and implementation.</li>
+          <li>Created transcoders for WebRTC to legacy codecs (H264) using FFmpeg, GStreamer, and media codec libraries.</li>
+          <li>Implemented adaptive streaming, session security, and AWS CloudFront CDN distribution.</li>
         </ul>
       </div>
       <div class="experience-item">
-        <h3>Software Engineer at Tech Mahindra (2011 - 2014)</h3>
+        <h3>Software Engineer at Telecom Practice Labs, TCS (2011 - 2014)</h3>
         <ul>
-          <li>Conceptualized and implemented "Telecom Service Orchestration and Transformation Engine" for clients.</li>
-          <li>Designed call flows and architecture for interaction of IMS SIP Servlets with existing telecom
-            applications.</li>
+          <li>Core member conceptualizing Telecom Service Orchestration and Transformation Engine.</li>
+          <li>Designed WebRTC flow to IMS/SIP Servlets and telecom core via IN-SIP, SIP-Web using RhinoTAS and Mobicents.</li>
+          <li>Developed SIP applications in IMS platform, designed call flows for end-to-end telecom applications.</li>
+          <li>Won <strong>Company Technical Excellence Award</strong> for 2013 and TCS Gems award.</li>
         </ul>
       </div>
       <div>
@@ -235,40 +170,9 @@
     </section>
 
     <section id="education" class="section">
-      <style>
-        /* Styling for Education Section */
-        #education {
-          background-color: #f9f9f9;
-          padding: 2em;
-          border-radius: 10px;
-          box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-          margin-top: 2em;
-        }
-        .education-item {
-          margin-bottom: 2em;
-        }
-        .education-item h3 {
-          color: #007bff;
-          font-size: 1.2em;
-          margin-bottom: 0.2em;
-        }
-        .education-item p {
-          font-size: 1em;
-          color: #555;
-          margin: 0.2em 0;
-        }
-        .education-item ul {
-          list-style: square;
-          margin-left: 1.5em;
-        }
-        .education-item ul li {
-          color: #555;
-          margin-bottom: 0.5em;
-        }
-      </style>
       <h2>Education</h2>
       <h3>Master of Science in Computer Science</h3>
-      <p>Seattle University (2021 - 2022, GPA: 3.83/4)</p>
+      <p>Seattle University (January 2021 - December 2022, GPA: 3.83/4.0)</p>
       <ul>
        <li>Academic Scholarship</li>
         <li>Open Source contributor to OpenStack at GraceHopper</li>
@@ -277,8 +181,8 @@
         <li>Winner at Azure AI hactkathon for the project developed in course Software as a Servcie called Cinemarkup [ <a target="_blank" href="docs/slides/Garbage picking crypto mining Robot, RamuDroid v8.pdf">Slides</a> ] [ <a target="_blank" href="docs/slides/Outdoor garbage picking Robot’s path mapping.pdf">Slides</a> ]</li>
       </ul>
       
-      <h3>Bachelor of Engineering in Computer Science (2007-2011, 77% out of 100)</h3>
-      <p>Anna University Chennai</p>
+      <h3>Bachelor of Engineering in Information Technology</h3>
+      <p>Anna University Chennai (June 2007 - June 2011, 77% out of 100)</p>
       <ul>
         <li> Academic Scholarship</li>
         <li> Inplant Traning at BSNL District Telecom Traning Center [ <a target="_blank" href="https://www.linkedin.com/in/altanai/details/experience/158424977/multiple-media-viewer/?profileId=ACoAAAJpfqkB6Mh_Ku-ay3GTa5882sjocXgVaXM&treasuryMediaId=1605640116173">Certificate</a> </li>
@@ -290,67 +194,6 @@
     <!-- Projects -->
     <section id="projects" class="section">
 
-      <style>
-        /* Projects Section */
-        #projects {
-          background-color: #f8f9fa;
-          /* padding: 50px 10%; */
-          /* text-align: center; */
-        }
-    
-        #projects h2 {
-          /* font-size: 36px; */
-          margin-bottom: 30px;
-          color: #333;
-        }
-    
-        .projects-container {
-          display: grid;
-          grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
-          gap: 20px;
-        }
-    
-        .project-card {
-          background-color: #ffffff;
-          border: 1px solid #ddd;
-          padding: 20px;
-          border-radius: 10px;
-          box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-          transition: transform 0.2s, box-shadow 0.2s;
-        }
-    
-        .project-card:hover {
-          transform: translateY(-5px);
-          box-shadow: 0 8px 15px rgba(0, 0, 0, 0.15);
-        }
-    
-        .project-card h3 {
-          font-size: 24px;
-          color: #244a73;
-          margin-bottom: 10px;
-        }
-    
-        .project-card p {
-          color: #555;
-          font-size: 16px;
-          line-height: 1.6;
-          margin-bottom: 15px;
-        }
-    
-        .project-card a {
-          display: inline-block;
-          color: #fff;
-          background-color: #007bff;
-          padding: 10px 15px;
-          border-radius: 5px;
-          text-decoration: none;
-          transition: background-color 0.2s;
-        }
-    
-        .project-card a:hover {
-          background-color: #0056b3;
-        }
-      </style>
 
       <h2>Enterprise Projects</h2>
 
@@ -527,200 +370,331 @@
       </div>
 
 
-<!-- Open Source Projects -->
-
+    <!-- Open Source Projects -->
+    <section id="projects" class="section">
+      <h2>Open Source Projects</h2>
+      
       <style>
+        /* GitHub Repositories Styling */
+        #repos-container {
+          display: grid;
+          grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+          gap: 1.5rem;
+          margin-top: 2rem;
+        }
+
         .repo-box {
-          border: 1px solid #ccc;
-          padding: 15px;
-          width: 300px;
-          margin: 20px;
-          font-family: Arial, sans-serif;
-          background-color: #f9f9f9;
-          display: inline-block;
-          vertical-align: top;
+          background: rgba(255, 255, 255, 0.9);
+          border-radius: 12px;
+          padding: 1.5rem;
+          box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+          border-left: 4px solid #8b5cf6;
+          position: relative;
+          transition: all 0.3s ease;
+          margin: 0;
+          width: auto;
+        }
+
+        .repo-box:hover {
+          transform: translateY(-5px);
+          box-shadow: 0 8px 25px rgba(0, 0, 0, 0.15);
         }
 
         .repo-box h2 {
           margin-top: 0;
+          margin-bottom: 1rem;
+          color: #2d3748;
+          font-size: 1.2rem;
         }
 
         .repo-box div {
-          margin: 5px 0;
+          margin: 0.75rem 0;
+          font-size: 0.9rem;
+          color: #4a5568;
+          line-height: 1.5;
         }
 
         .repo-avatar {
-          width: 50px;
-          height: 50px;
+          width: 40px;
+          height: 40px;
           border-radius: 50%;
+          float: right;
+          margin-top: -10px;
         }
 
         .repo-link {
-          color: #0366d6;
+          color: #8b5cf6;
           text-decoration: none;
+          font-weight: 600;
+          transition: color 0.3s ease;
         }
 
         .repo-link:hover {
+          color: #7c3aed;
           text-decoration: underline;
         }
+
+        .loading {
+          text-align: center;
+          color: #666;
+          font-style: italic;
+          padding: 2rem;
+          background: rgba(255, 255, 255, 0.9);
+          border-radius: 12px;
+          box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+        }
+
+        .error {
+          text-align: center;
+          color: #dc3545;
+          padding: 2rem;
+          background: rgba(248, 215, 218, 0.9);
+          border: 1px solid #f5c6cb;
+          border-radius: 12px;
+          margin: 1rem 0;
+          box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+        }
+
+        @media (max-width: 768px) {
+          #repos-container {
+            grid-template-columns: 1fr;
+            gap: 1rem;
+          }
+          
+          .repo-box {
+            padding: 1rem;
+          }
+        }
       </style>
+      
+      <p style="margin-bottom: 2rem; color: #4a5568; text-align: center; font-style: italic;">
+        This is a non-exhaustive list. Please visit <a href="https://github.com/altanai?tab=repositories" target="_blank" style="color: #8b5cf6; text-decoration: none; font-weight: 500;">github.com/altanai</a> for all projects.
+      </p>
+      
+      <div id="repos-container">
+        <div class="loading">Loading open source projects...</div>
+      </div>
+
       <script>
+        async function fetchWithTimeout(url, timeout = 5000) {
+          const controller = new AbortController();
+          const timeoutId = setTimeout(() => controller.abort(), timeout);
+          
+          try {
+            const response = await fetch(url, { signal: controller.signal });
+            clearTimeout(timeoutId);
+            return response;
+          } catch (error) {
+            clearTimeout(timeoutId);
+            throw error;
+          }
+        }
 
         async function fetchRepoLanguages(repoName) {
-          const response = await fetch(`https://api.github.com/repos/${repoName}/languages`);
-          const languages = await response.json();
-          return Object.keys(languages).join(', ') || 'None';
+          try {
+            const response = await fetchWithTimeout(`https://api.github.com/repos/${repoName}/languages`);
+            if (!response.ok) {
+              return 'N/A';
+            }
+            const languages = await response.json();
+            const languageNames = Object.keys(languages);
+            return languageNames.length > 0 ? languageNames.join(', ') : 'N/A';
+          } catch (error) {
+            console.error(`Error fetching languages for ${repoName}:`, error);
+            return 'N/A';
+          }
         }
 
         async function fetchRepoInfo(repoName) {
-          const response = await fetch(`https://api.github.com/repos/${repoName}`);
-          const data = await response.json();
-
-          if (data.message === "Not Found") {
-            return { name: repoName, message: 'Repository not found.' };
+          try {
+            const [repoResponse, languagesPromise] = await Promise.all([
+              fetchWithTimeout(`https://api.github.com/repos/${repoName}`),
+              fetchRepoLanguages(repoName)
+            ]);
+            
+            if (!repoResponse.ok) {
+              return {
+                name: repoName.split('/')[1],
+                message: `Unable to fetch repository data (${repoResponse.status})`
+              };
+            }
+            
+            const repoData = await repoResponse.json();
+            const languages = await languagesPromise;
+            
+            return {
+              name: repoData.name,
+              description: repoData.description || 'No description available',
+              stars: repoData.stargazers_count,
+              forks: repoData.forks_count,
+              languages: languages,
+              repoUrl: repoData.html_url,
+              owner: repoData.owner.login,
+              avatarUrl: repoData.owner.avatar_url
+            };
+          } catch (error) {
+            console.error(`Error fetching info for ${repoName}:`, error);
+            return {
+              name: repoName.split('/')[1],
+              message: 'Error loading repository data'
+            };
           }
-
-          const owner = data.owner.login;
-          const avatarUrl = data.owner.avatar_url;
-          const repoUrl = data.html_url;
-          const languages = await fetchRepoLanguages(repoName);
-
-          return {
-            name: data.name,
-            stars: data.stargazers_count,
-            forks: data.forks_count,
-            // languages: Object.keys(data.languages || {}).join(', ') || 'None',
-            languages: languages,
-            description: data.description || 'No description available.',
-            avatarUrl: avatarUrl,
-            repoUrl: repoUrl,
-            owner: owner
-          };
         }
 
         async function displayRepos() {
-          const repoNames = ['altanai/kamailioexamples', 'altanai/opensipsexamples', 'altanai/freeswitchexamples', 'altanai/asteriskexamples'];
+          const repoNames = [
+            'altanai/kamailioexamples',
+            'altanai/opensipsexamples', 
+            'altanai/freeswitchexamples',
+            'altanai/asteriskexamples'
+          ];
           const container = document.getElementById('repos-container');
+          
+          try {
+            // Clear loading indicator
+            container.innerHTML = '';
+            
+            // Fetch all repositories in parallel with error handling
+            const repoPromises = repoNames.map(repoName => fetchRepoInfo(repoName));
+            const results = await Promise.allSettled(repoPromises);
+            
+            results.forEach((result, index) => {
+              const repoBox = document.createElement('div');
+              repoBox.className = 'repo-box';
 
-          for (const repoName of repoNames) {
-            const repoData = await fetchRepoInfo(repoName);
-            const repoBox = document.createElement('div');
-            repoBox.className = 'repo-box';
+              if (result.status === 'fulfilled') {
+                const repoData = result.value;
+                
+                if (repoData.message) {
+                  // Handle API errors gracefully
+                  repoBox.innerHTML = `
+                    <h2>${repoData.name}</h2>
+                    <div class="error">${repoData.message}</div>
+                  `;
+                } else {
+                  // Display successful repo data
+                  const languagesList = repoData.languages.split(', ').slice(0, 3).join(', ');
+                  const moreLanguages = repoData.languages.split(', ').length > 3 ? '...' : '';
+                  
+                  repoBox.innerHTML = `
+                    <img class="repo-avatar" src="${repoData.avatarUrl}" alt="${repoData.owner}'s avatar" />
+                    <h2><a class="repo-link" href="${repoData.repoUrl}" target="_blank">${repoData.name}</a></h2>
+                    <div><strong>Stars:</strong> ${repoData.stars} | <strong>Forks:</strong> ${repoData.forks}</div>
+                    <div><strong>Languages:</strong> ${languagesList}${moreLanguages}</div>
+                    <div><strong>Description:</strong> ${repoData.description}</div>
+                  `;
+                }
+              } else {
+                // Handle promise rejection
+                const repoName = repoNames[index].split('/')[1];
+                repoBox.innerHTML = `
+                  <h2>${repoName}</h2>
+                  <div class="error">Failed to load repository data</div>
+                `;
+              }
 
-            if (repoData.message) {
-              repoBox.innerHTML = `<h2>${repoData.name}</h2><div>${repoData.message}</div>`;
-            } else {
-              repoBox.innerHTML = `
-                  <img class="repo-avatar" src="${repoData.avatarUrl}" alt="${repoData.owner}'s avatar" />
-                  <h2><a class="repo-link" href="${repoData.repoUrl}" target="_blank">${repoData.name}</a></h2>
-                  <div>Stars: ${repoData.stars}</div>
-                  <div>Forks: ${repoData.forks}</div>
-                  <div>Languages: ${repoData.languages}</div>
-                  <div>Description: ${repoData.description}</div>
-              `;
-            }
-
-            container.appendChild(repoBox);
+              container.appendChild(repoBox);
+            });
+            
+          } catch (error) {
+            container.innerHTML = '<div class="error">Failed to load repositories. Please check your internet connection.</div>';
+            console.error('Error loading repositories:', error);
           }
         }
 
-        window.onload = displayRepos;
+        // Load repositories when the page loads
+        document.addEventListener('DOMContentLoaded', displayRepos);
       </script>
-
-      <h2>Open Source Projects</h2>
-      This is a non-exhaustive list. Please look at https://github.com/altanai?tab=repositories for projects.
-      <div id="repos-container"></div>
 
     </section>
 
     <!-- Skills -->
     <section id="skills" class="section">
-      <h2>Skills</h2>
+      <h2>Technical Expertise</h2>
 
-      <style>
-        body {
-          font-family: Arial, sans-serif;
-          line-height: 1.6;
-        }
 
-        .skills-section {
-          margin: 20px 0;
-        }
-
-        .skills-section h2 {
-          text-align: center;
-          color: #333;
-        }
-
-        .skills-list {
-          display: grid;
-          grid-template-columns: repeat(3, 1fr);
-          gap: 20px;
-        }
-
-        .skill-item {
-          background-color: #f4f4f4;
-          padding: 15px;
-          border-radius: 5px;
-          text-align: center;
-          box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-        }
-
-        .skill-item h3 {
-          color: #0073e6;
-        }
-      </style>
-
-      I specialize in real-time communication technologies, particularly Voice over IP (VoIP), WebRTC, and media streaming protocols. 
-      My extensive experience in telecommunication platforms, real-time communication algorithms, and protocols underscores my proficiency in developing and optimizing complex distributed systems.
-      My expertise encompasses a broad range of skills:
+      <div class="skills-intro">
+        <strong>Focused on real-time streaming and communication through protocol innovation and system optimization.</strong><br>
+        Extensive experience spanning from low-level networking protocols to distributed system architecture, with particular expertise in 
+        ultra-low latency applications and carrier-grade telecommunications platforms.
+      </div>
       
-      <div class="skills-list">
-        <div class="skill-item">
-          <h3>Networking</h3>
-          <ul>
-            <li>IP Routing</li>
-            <li>Firewall Configuration</li>
-            <li>SASE</li>
-            <li>Tunneling SD WAN, , VPN, NAT,</li>
-            <li>MASQUE, IPSec, AutoVPN</li>
-            <li>Traffic analyzer tshark, sipP, tcpdump, sngrep, iperf</li>
+      <div class="skills-grid">
+        
+        <div class="skill-category">
+          <div class="skill-header">
+            <div class="skill-icon">
+              <i class="fas fa-network-wired"></i>
+            </div>
+            <h3 class="skill-title">Networking & Security</h3>
+          </div>
+          <ul class="skill-list">
+            <li class="skill-item">SD-WAN, SASE, VPN Headends</li>
+            <li class="skill-item">AutoVPN, IKEv2, IPSec, MASQUE</li>
+            <li class="skill-item">Multi Uplinks, HA Enhancement</li>
+            <li class="skill-item">NAT Traversal, Tunneling Protocols</li>
+            <li class="skill-item">Cisco Umbrella Integration</li>
+            <li class="skill-item">Traffic Analysis: tshark, sipP, tcpdump, sngrep, iperf</li>
           </ul>
         </div>
-        <div class="skill-item">
-          <h3>RealTime Communication and Streaming</h3>
-          <ul>
-            <li> WebRTC</li>
-            <li>Low latency streaming with RTP/RTCP UDP packetization. Rate adaptation and Congestion control models.</li>
-            <li>SIP trunks via Kamailio, Asterisk, Freeswitch, Opensips </li>
-            <li>SDP manipulation, call routing</li>
-            <li>Media Server Wowza, Live 555, Janus, RTPengine, MP4 parserN</li>
-            <li>RTP topologies Mesh, MCU, SVC, SFU, mixers, bridges
-              FFmpeg, GStreamer, Janus</li>
+
+        <div class="skill-category">
+          <div class="skill-header">
+            <div class="skill-icon">
+              <i class="fas fa-broadcast-tower"></i>
+            </div>
+            <h3 class="skill-title">RealTime Communication & Streaming</h3>
+          </div>
+          <ul class="skill-list">
+            <li class="skill-item">WebRTC, Ultra-low Latency UDP Packetization</li>
+            <li class="skill-item">Rate Adaptation, Bandwidth Estimation, Congestion Control</li>
+            <li class="skill-item">Loss Recovery, RTP/RTCP Stream Optimization</li>
+            <li class="skill-item">SIP Trunks: Kamailio, Asterisk, Freeswitch, Opensips</li>
+            <li class="skill-item">SDP Manipulation, Call Routing, SRTP Security</li>
+            <li class="skill-item">Media Servers: Wowza, Live555, Janus, RTPengine</li>
+            <li class="skill-item">RTP Topologies: Mesh, MCU, SVC, SFU, Mixers, Bridges</li>
+            <li class="skill-item">Transcoding: FFmpeg, GStreamer, H264, VP8/VP9</li>
           </ul>
         </div>
-        <div class="skill-item">
-          <h3>Programming Languages</h3>
-          <ul>
-            <li>Rust</li>
-            <li>Go</li>
-            <li>Python</li>
-            <li>NodeJs and JavaScript</li>
-            <li>C++</li>
-            <li>Java</li>
-            <li>Lua</li>
+
+        <div class="skill-category">
+          <div class="skill-header">
+            <div class="skill-icon">
+              <i class="fas fa-code"></i>
+            </div>
+            <h3 class="skill-title">Programming Languages</h3>
+          </div>
+          <ul class="skill-list">
+            <li class="skill-item">Rust (Systems Programming)</li>
+            <li class="skill-item">C (Low-level Networking)</li>
+            <li class="skill-item">Java (Enterprise Applications)</li>
+            <li class="skill-item">Go (Microservices, Performance)</li>
+            <li class="skill-item">Python (ML, Automation, APIs)</li>
+            <li class="skill-item">Node.js & JavaScript (Real-time Apps)</li>
+            <li class="skill-item">C++ (Media Processing)</li>
           </ul>
         </div>
-        <div class="skill-item">
-          <h3>System Design and Architecture</h3>
-          <ul>
-            <li>Scalable System Design</li>
-            <li>Distributed system</li>
-            <li>Daisy chaning points of presence(PoP) for performamce optimizations</li>
-            <li>serverless Event driven systems</li>
-            <li>Distributed reliable queue</li>
+
+        <div class="skill-category">
+          <div class="skill-header">
+            <div class="skill-icon">
+              <i class="fas fa-sitemap"></i>
+            </div>
+            <h3 class="skill-title">System Design & Architecture</h3>
+          </div>
+          <ul class="skill-list">
+            <li class="skill-item">Scalable System Design</li>
+            <li class="skill-item">Distributed Systems across PoPs</li>
+            <li class="skill-item">Serverless, Event-driven Systems</li>
+            <li class="skill-item">Distributed Reliable Queues</li>
+            <li class="skill-item">Microservices Architecture</li>
+            <li class="skill-item">High Availability (HA) Systems</li>
+            <li class="skill-item">Performance Optimization</li>
+            <li class="skill-item">Load Balancing & CDN Integration</li>
           </ul>
-        </di>
+        </div>
+
+      </div>
 
     </section>
 
@@ -729,14 +703,39 @@
       <!-- <h2>Publications</h2> -->
       <ul>
         <h2>Books</h2>
-        <ul>
-          <li>
-            <strong>WebRTC Integrator's Guide</strong> <br>
-            Authors: Altanai Bisht <br>
-            Year: 2014 <br>
-            <a href="https://www.packtpub.com/in/web-development/webrtc-integrators-guide">More Details</a>
-          </li>
-        </ul>
+        
+        
+        <div class="books-grid">
+          <div class="book-card">
+            <div class="book-cover">
+              <img src="images/webrtc_intgerators_guide_book.jpg" 
+                   alt="WebRTC Integrator's Guide Book Cover" 
+                   onerror="this.src='https://via.placeholder.com/120x180/3b82f6/ffffff?text=WebRTC+Guide'">
+            </div>
+            <div class="book-content">
+              <h3 class="book-title">WebRTC Integrator's Guide</h3>
+              <div class="book-author">by Altanai Bisht</div>
+              <div class="book-year">2014</div>
+              <div class="book-description">
+                A comprehensive resource for developers and telecom engineers aiming to master WebRTC technology and build robust real-time communication solutions. 
+                The book covers setting up scalable WebRTC infrastructures, integrating WebRTC with SIP, IMS, and legacy PSTN systems, and offers insights into 
+                protocol interconversion and codec transcoding. Structured to simplify intricate concepts, making it accessible for learners with basic telecom 
+                and programming background.
+              </div>
+              <div class="book-links">
+                <a href="https://www.amazon.com/WebRTC-Integrators-Guide-Altanai/dp/1783981261" target="_blank" class="book-link">
+                  <i class="fab fa-amazon"></i> Amazon
+                </a>
+                <a href="https://www.packtpub.com/in/web-development/webrtc-integrators-guide" target="_blank" class="book-link">
+                  <i class="fas fa-book"></i> Packt Publishing
+                </a>
+                <a href="https://www.oreilly.com/library/view/webrtc-integrators-guide/9781783981267/" target="_blank" class="book-link">
+                  <i class="fas fa-external-link-alt"></i> O'Reilly
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
   
         <h2>Patents</h2>
         <ul>
@@ -756,29 +755,6 @@
             Kini, S. (2024). MULTI-MODAL CONTEXTUAL SEARCH FOR ENTERPRISE CONTENT.</li>
         </ul>
 
-        <h2>Refereed Publications</h2>
-        <li>
-          Wilson, A., Bisht, A., & Milkowski, L. (2023). Robotic Tomato Detection Using YOLOv3 with Pre and
-          Post-Processing: Evaluation Through Gazebo Simulation and Real-World Laboratory Testing. 2023 Seventh IEEE
-          International Conference on Robotic Computing (IRC), 255–259. IEEE.
-          [ <a target="_blank" href="https://ieeexplore.ieee.org/document/10473556">Full Paper</a> ]
-
-        </li>
-
-        <li>
-          Mishra, A., Bisht, A., & Zhu, T. (2023). Do batteries for peak shaving green the grid? Proceedings of the 14th
-          International Green and Sustainable Computing Conference, 29–35.
-          [ <a target="_blank" href="https://www.academia.edu/11925353/TangoFX_Sessions_WebRTC_Chrome_Extension">Full
-            Paper</a> ]
-          [ <a target="_blank" href="https://youtu.be/sKOT_6cYgbs?si=-hm_h6T3h8J8HDs6&t=58">Demo</a> ]
-          <!-- [ <a target="_blank" href="https://blog.apnic.net/2022/11/11/continuous-in-network-round-trip-time-monitoring/">Blog post</a> ]  -->
-          <!-- [ <a target="_blank" href="docs/slides/2022_sigcomm_dart.pptx">Slides</a> ]  -->
-          [ <a target="_blank"
-            href="docs/posters/poster v5.5 Does Renewable and Energy Storage Integration  Green the Electric Grid_.pdf">Poster</a>
-          ]
-          [ <a target="_blank" href="https://dl.acm.org/doi/10.1145/3634769.3634805">ACM DL</a> ]</p>
-        </li>
-
         <h2>Internet Stanadard proposal</h2>
         <li>
           <strong>Path Selection in Multi Tunnel SD-WAN</strong> <br>
@@ -789,120 +765,175 @@
           [ <a target="_blank" href="https://youtu.be/lrog8pT0nfs?si=KUvtj-xHXfgXlYIF&t=2103">Video</a> ]
         </li>
 
-        <h2>Research Papers and preprints</h2>
+      </ul>
+    </section>
 
-        These publications reflect my contributions in fields of WebRTC, VoIP, CNN, video processing, cryptocurrency environmental impact and renewable energy implementations.
-        <!-- <li>
-          <strong>Journal:</strong> Abdelraouf, A., Adeleye, A., Agarwal, T., Aggarwal, A., Agumey, P., Akbarinigjeh,
-          M., … Others. (n.d.). 2023 Seventh IEEE International Conference on Robotic Computing (IRC)|
-          979-8-3503-9574-7/23/$31.00© 2023 IEEE| DOI: 10.1109/IRC59093. 2023.00070.
-        </li> -->
-        <li>
-          Bisht, A., Mendes, A. C. de S., Thoreson, J. D., II, & Samavi, S. (2023). Low Latency Video Denoising for
-          Online Conferencing Using CNN Architectures. arXiv Preprint arXiv:2302. 08638.
-          [ <a target="_blank" href="https://doi.org/10.48550/arXiv.2302.08638">Full
-            Paper</a> ]
-        </li>
+    <!-- Research Papers Section -->
+    <section id="research-papers" class="section">
+      <h2>Research Papers and Preprints</h2>
+      
+      
+      <p style="margin-bottom: 2rem; color: #4a5568; text-align: center; font-style: italic;">
+        Publications reflecting contributions in WebRTC, VoIP, CNN, video processing, cryptocurrency environmental impact, and renewable energy implementations.
+      </p>
+      
+      <div class="research-grid">
+        
+        <div class="research-card">
+          <div class="research-year">2023</div>
+          <div class="research-type">arXiv Preprint</div>
+          <div class="research-title">Low Latency Video Denoising for Online Conferencing Using CNN Architectures</div>
+          <div class="research-authors">Bisht, A., Mendes, A. C. de S., Thoreson, J. D., II, & Samavi, S.</div>
+          <div class="research-venue">arXiv:2302.08638</div>
+          <div class="research-links">
+            <a href="https://doi.org/10.48550/arXiv.2302.08638" target="_blank" class="research-link">
+              <i class="fas fa-file-pdf"></i> Full Paper
+            </a>
+          </div>
+        </div>
 
-        <li>
-          Bisht, A., Wilson, A., Jeffreys, Z., & Samavi, S. (2022). Does crypto kill? Relationship between electricity
-          consumption carbon footprints and bitcoin transactions. arXiv Preprint arXiv:2206. 03227.
-          [ <a target="_blank" href="https://doi.org/10.48550/arXiv.2206.03227">Full
-            Paper</a> ]
-        </li>
+        <div class="research-card">
+          <div class="research-year">2022</div>
+          <div class="research-type">arXiv Preprint</div>
+          <div class="research-title">Does Crypto Kill? Relationship Between Electricity Consumption, Carbon Footprints and Bitcoin Transactions</div>
+          <div class="research-authors">Bisht, A., Wilson, A., Jeffreys, Z., & Samavi, S.</div>
+          <div class="research-venue">arXiv:2206.03227</div>
+          <div class="research-links">
+            <a href="https://doi.org/10.48550/arXiv.2206.03227" target="_blank" class="research-link">
+              <i class="fas fa-file-pdf"></i> Full Paper
+            </a>
+          </div>
+        </div>
 
-        <li>
-          Bisht, A. (2021). Carbon Footprint by Battery based Energy storage and Peak shaving Algorithms - Altanai​.
-          <!-- [ <a target="_blank" href="https://www.academia.edu/11925353/TangoFX_Sessions_WebRTC_Chrome_Extension">Full Paper</a> ]  -->
-          [ <a target="_blank" href="https://www.youtube.com/watch?v=J8XV9_e7cCw&t=1538s">Presentation</a> ]
-          [ <a target="_blank" href="https://www.seattleu.edu/cejs/events/earth-talks/earth-talks-2022/">Article</a> ]
-          [ <a target="_blank" href="docs/slides/2022_sigcomm_dart.pptx">Slides</a> ]
-          <!-- [ <a target="_blank" href="https://dl.acm.org/doi/10.1145/3544216.3544222">ACM DL</a> ]</p> -->
-        </li>
+        <div class="research-card">
+          <div class="research-year">2021</div>
+          <div class="research-type">Research Paper</div>
+          <div class="research-title">Carbon Footprint by Battery Based Energy Storage and Peak Shaving Algorithms</div>
+          <div class="research-authors">Bisht, A.</div>
+          <div class="research-venue">Earth Talks 2022, Seattle University</div>
+          <div class="research-links">
+            <a href="https://www.youtube.com/watch?v=J8XV9_e7cCw&t=1538s" target="_blank" class="research-link">
+              <i class="fas fa-play"></i> Presentation
+            </a>
+            <a href="https://www.seattleu.edu/cejs/events/earth-talks/earth-talks-2022/" target="_blank" class="research-link">
+              <i class="fas fa-newspaper"></i> Article
+            </a>
+            <a href="docs/slides/2022_sigcomm_dart.pptx" target="_blank" class="research-link">
+              <i class="fas fa-presentation"></i> Slides
+            </a>
+          </div>
+        </div>
 
-        <li>
-          Bisht, A. (2019). Ramudroid: An Open Source Powered Robot.
-          Https://Www.Opensourceindia.in/Speakers-2019/Altanai-Bisht/, 2019, Open-Source.
-          [ <a target="_blank" href="https://www.academia.edu/11925353/TangoFX_Sessions_WebRTC_Chrome_Extension">Full
-            Paper</a> ]
-          [ <a target="_blank" href="https://youtu.be/sKOT_6cYgbs?si=-hm_h6T3h8J8HDs6&t=58">Demo</a> ]
-          [ <a target="_blank"
-            href="https://blog.apnic.net/2022/11/11/continuous-in-network-round-trip-time-monitoring/">Blog post</a> ]
-          [ <a target="_blank" href="docs/slides/2022_sigcomm_dart.pptx">Slides</a> ]
-          [ <a target="_blank" href="https://dl.acm.org/doi/10.1145/3544216.3544222">ACM DL</a> ]</p>
-        </li>
+        <div class="research-card">
+          <div class="research-year">2019</div>
+          <div class="research-type">Conference Paper</div>
+          <div class="research-title">Ramudroid: An Open Source Powered Robot</div>
+          <div class="research-authors">Bisht, A.</div>
+          <div class="research-venue">Open Source India Conference</div>
+          <div class="research-links">
+            <a href="https://www.academia.edu/11925353/TangoFX_Sessions_WebRTC_Chrome_Extension" target="_blank" class="research-link">
+              <i class="fas fa-file-pdf"></i> Full Paper
+            </a>
+            <a href="https://youtu.be/sKOT_6cYgbs?si=-hm_h6T3h8J8HDs6&t=58" target="_blank" class="research-link">
+              <i class="fas fa-video"></i> Demo
+            </a>
+            <a href="https://blog.apnic.net/2022/11/11/continuous-in-network-round-trip-time-monitoring/" target="_blank" class="research-link">
+              <i class="fas fa-blog"></i> Blog Post
+            </a>
+            <a href="https://dl.acm.org/doi/10.1145/3544216.3544222" target="_blank" class="research-link">
+              <i class="fas fa-external-link-alt"></i> ACM DL
+            </a>
+          </div>
+        </div>
 
-        <li>
-          Aagri, D. K., & Bisht, A. (2018). Export and import of renewable energy by hybrid MicroGrid via IoT. 2018 3rd
-          International Conference on Internet of Things: Smart Innovation and Usages (IoT-SIU), 1–4. IEEE.
-          [ <a target="_blank" href="https://www.academia.edu/11925353/TangoFX_Sessions_WebRTC_Chrome_Extension">Full
-            Paper</a> ]
-          <!-- [ <a target="_blank" href="https://youtu.be/sKOT_6cYgbs?si=-hm_h6T3h8J8HDs6&t=58">Demo</a> ]  -->
-          <!-- [ <a target="_blank" href="https://blog.apnic.net/2022/11/11/continuous-in-network-round-trip-time-monitoring/">Blog post</a> ]  -->
-          [ <a target="_blank" href="docs/slides/Solar Hybrid Micro Grid and Power transactions_altanai.pdf">Slides</a>
-          ]
-          <!-- [ <a target="_blank" href="docs/posters/poster v5.5 Does Renewable and Energy Storage Integration  Green the Electric Grid_.pdf">Poster</a> ]  -->
-          [ <a target="_blank" href="https://dl.acm.org/doi/10.1145/3634769.3634805">ACM DL</a> ]</p>
-        </li>
+        <div class="research-card">
+          <div class="research-year">2018</div>
+          <div class="research-type">IEEE Conference</div>
+          <div class="research-title">Export and Import of Renewable Energy by Hybrid MicroGrid via IoT</div>
+          <div class="research-authors">Aagri, D. K., & Bisht, A.</div>
+          <div class="research-venue">IEEE IoT-SIU Conference</div>
+          <div class="research-links">
+            <a href="https://www.academia.edu/11925353/TangoFX_Sessions_WebRTC_Chrome_Extension" target="_blank" class="research-link">
+              <i class="fas fa-file-pdf"></i> Full Paper
+            </a>
+            <a href="docs/slides/Solar Hybrid Micro Grid and Power transactions_altanai.pdf" target="_blank" class="research-link">
+              <i class="fas fa-presentation"></i> Slides
+            </a>
+            <a href="https://dl.acm.org/doi/10.1145/3634769.3634805" target="_blank" class="research-link">
+              <i class="fas fa-external-link-alt"></i> ACM DL
+            </a>
+          </div>
+        </div>
 
-        <li>
-          Bisht, A. (2017). TangoFX Sessions WebRTC Chrome Extension. Https://Www. Academia.
-          Edu/11925353/TangoFX_Sessions_WebRTC_Chrome_Extension.
-          [ <a target="_blank" href="https://www.academia.edu/11925353/TangoFX_Sessions_WebRTC_Chrome_Extension">Full
-            Paper</a> ]
-          [ <a target="_blank" href="https://youtu.be/sKOT_6cYgbs?si=-hm_h6T3h8J8HDs6&t=58">Demo</a> ]
-          [ <a target="_blank" href="https://telecom.altanai.com/tag/tfx-sessions/">Blog post</a> ]
-          [ <a target="_blank" href="https://www.linkedin.com/pulse/tangofx-sessions-altanai-bisht/">Article</a> ]
-          <!-- [ <a target="_blank" href="docs/slides/2022_sigcomm_dart.pptx">Slides</a> ]  -->
-          [ <a target="_blank" href="https://dl.acm.org/doi/10.1145/3544216.3544222">ACM DL</a> ]</p>
-        </li>
+        <div class="research-card">
+          <div class="research-year">2017</div>
+          <div class="research-type">Technical Paper</div>
+          <div class="research-title">TangoFX Sessions WebRTC Chrome Extension</div>
+          <div class="research-authors">Bisht, A.</div>
+          <div class="research-venue">Academia.edu</div>
+          <div class="research-links">
+            <a href="https://www.academia.edu/11925353/TangoFX_Sessions_WebRTC_Chrome_Extension" target="_blank" class="research-link">
+              <i class="fas fa-file-pdf"></i> Full Paper
+            </a>
+            <a href="https://youtu.be/sKOT_6cYgbs?si=-hm_h6T3h8J8HDs6&t=58" target="_blank" class="research-link">
+              <i class="fas fa-video"></i> Demo
+            </a>
+            <a href="https://telecom.altanai.com/tag/tfx-sessions/" target="_blank" class="research-link">
+              <i class="fas fa-blog"></i> Blog Post
+            </a>
+            <a href="https://www.linkedin.com/pulse/tangofx-sessions-altanai-bisht/" target="_blank" class="research-link">
+              <i class="fas fa-newspaper"></i> Article
+            </a>
+          </div>
+        </div>
 
-        <li>
-          <strong>whitepaper:</strong> Bisht, A. (2012b). webrtc whitepaper. Https://Www. Academia.
-          Edu/4293745/Webrtc_whitepaper.
-          <p class="presources">
-            [ <a target="_blank" href="https://www.academia.edu/4293745/webrtc_whitepaper">Full Paper</a> ]
-            [ <a target="_blank" href="https://telecom.altanai.com/tag/webrtc-2/">Blog post</a> ]
-            [ <a target="_blank" href="docs/slides/2022_sigcomm_dart.pptx">Slides</a> ]
-        </li>
+        <div class="research-card">
+          <div class="research-year">2012</div>
+          <div class="research-type">Whitepaper</div>
+          <div class="research-title">WebRTC Whitepaper</div>
+          <div class="research-authors">Bisht, A.</div>
+          <div class="research-venue">Academia.edu</div>
+          <div class="research-links">
+            <a href="https://www.academia.edu/4293745/webrtc_whitepaper" target="_blank" class="research-link">
+              <i class="fas fa-file-pdf"></i> Full Paper
+            </a>
+            <a href="https://telecom.altanai.com/tag/webrtc-2/" target="_blank" class="research-link">
+              <i class="fas fa-blog"></i> Blog Post
+            </a>
+          </div>
+        </div>
 
+        <div class="research-card">
+          <div class="research-year">2011</div>
+          <div class="research-type">Research Project</div>
+          <div class="research-title">Information Highway: Digital Key-Controlled Vehicle Access System</div>
+          <div class="research-authors">Bisht, A.</div>
+          <div class="research-venue">ResearchGate</div>
+          <div class="research-description">Integration of mobile devices, vehicles, and internet using GSM, GPS, and GIS technologies.</div>
+        </div>
 
-        <li>
-          <strong>Brochure:</strong> Bisht, A. (2012a). Converged Telecom Services - Brochure. Https://Www. Academia.
-          Edu/3648658/Converged_Telecom_Services_-_Brochure.
-          <!-- [ <a target="_blank" href="https://www.academia.edu/4293745/webrtc_whitepaper">Full Paper</a> ] 
-            [ <a target="_blank" href="https://telecom.altanai.com/tag/webrtc-2/">Blog post</a> ] 
-            [ <a target="_blank" href="docs/slides/2022_sigcomm_dart.pptx">Slides</a> ]  -->
-        </li>
+        <div class="research-card">
+          <div class="research-year">2010</div>
+          <div class="research-type">Technical Report</div>
+          <div class="research-title">Latest Trends in IT Enterprise Content Management System</div>
+          <div class="research-authors">Bisht, A.</div>
+          <div class="research-venue">Academia.edu</div>
+        </div>
 
-        <li>
-          Bisht, A. (n.d.-a). Cloud computing charecteristics and types. Https://Www. Academia.
-          Edu/4159671/Cloud_computing_charecteristics_and_types_altanai_bisht_2nd_year_part_III.
-        </li>
+        <div class="research-card">
+          <div class="research-year">2008</div>
+          <div class="research-type">Technical Report</div>
+          <div class="research-title">Internet Access to Rural Areas Using Wi-Fi Technology</div>
+          <div class="research-authors">Bisht, A.</div>
+          <div class="research-venue">Academia.edu</div>
+        </div>
 
-        <li>
-          Bisht, A. (2010). Latest Trends in IT Enterprise Content Management System. Https://Www. Academia.
-          Edu/4159672/Current_Trends_in_Information_Technology_altanai_bisht_college_3rd_year.
-        </li>
+      </div>
+    </section>
 
-        <li>
-          Bisht, A. (2008). INTERNET ACCESS TO THE RURAL AREAS USING Wi-Fi TECHNOLOGY. Https://Www. Academia.
-          Edu/4159676/Internet_acess_to_rural_areas_using_wifi_altanai_bisht_1st_year.
-        </li>
-
-
-        <li>
-          Bisht, A. (n.d.-b). Legacy ( Intelligent Network SS7) to Next Generation ( IMS JAINSLEE SIP ) Transformation.
-          Https://Www. Academia.
-          Edu/7412324/Legacy_Intelligent_Network_SS7_to_Next_Generation_IMS_JAINSLEE_SIP_Transformation.
-        </li>
-
-
-        <li>
-          Bisht, A. (2011). Information Highway, Digital key controlled Vehicle Access system. Https://Www.
-          Researchgate. Net/Publication/345224453_INFORMATION_HIGHWAY_Digital_key-controlled_Vehicle_Access_system. Vel
-          Tech MultiTech Dr RR Dr SR Engineering college.
-        </li>
+    <section id="publications" className="section">
+      <!-- <h2>Publications</h2> -->
+      <ul>
 
 
         <h2> Technical Articles</h2>
@@ -959,256 +990,214 @@
     </section>
 
 
-    <section id="presentations">
+    <section id="presentations" class="section">
       <h2>Presentations</h2>
-    <style>
-      /* Styling for the Presentations section */
-      #presentations {
-        font-family: Arial, sans-serif;
-        margin: 20px 0;
-      }
+    <div class="presentations-grid">
 
-      #presentations h2 {
-        text-align: center;
-        font-size: 2rem;
-        color: #333;
-        margin-bottom: 20px;
-        text-transform: uppercase;
-      }
-
-      #presentations ul {
-        list-style-type: none;
-        padding: 0;
-      }
-
-      #presentations li {
-        background-color: #f9f9f9;
-        padding: 15px;
-        margin-bottom: 15px;
-        border-radius: 8px;
-        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-        font-size: 1rem;
-      }
-
-      #presentations li strong {
-        /* font-size: 1.1rem; */
-        color: #244a73;
-      }
-
-      #presentations li a {
-        color: #1a73e8;
-        text-decoration: none;
-        /* font-weight: bold; */
-      }
-
-      #presentations li a:hover {
-        text-decoration: underline;
-      }
-
-      #presentations li .year {
-        font-style: italic;
-        color: #666;
-      }
-
-      #presentations li .links {
-        margin-top: 10px;
-      }
-
-      #presentations li .links a {
-        margin-right: 15px;
-        font-size: 0.9rem;
-      }
-
-      #presentations li .links a:hover {
-        color: #d32f2f;
-      }
-  </style>
-    <ul>
-
-      <li>
-        <strong> Path Selection in Multi Tunnel SD-WAN</strong> <br>
-        <span class="year"> IETF 117 (2023) </span><br>
-        <div class="links">
-          [ <a href="https://youtu.be/lrog8pT0nfs?si=bnwBq7J25hjBjp8g&t=2116">Video</a> ]
+      <div class="presentation-card">
+        <div class="presentation-title">Path Selection in Multi Tunnel SD-WAN</div>
+        <div class="presentation-venue">IETF 117</div>
+        <div class="presentation-year">2023</div>
+        <div class="presentation-links">
+          <a href="https://youtu.be/lrog8pT0nfs?si=bnwBq7J25hjBjp8g&t=2116" target="_blank" class="presentation-link">
+            <i class="fas fa-play"></i> Video
+          </a>
+        </div>
         </div>
 
-        <!-- [ <a href="https://www.seattleu.edu/cejs/events/earth-talks/earth-talks-2022/">Article</a> ] -->
-        <!-- [ <a href="docs/slides/ML_in_VoIP_Altanai_WiDSMysuru_sep2020.pdf">Slides</a> ] -->
-      </li>
-
-      <li>
-        <strong>Carbon Footprint Analysis from Web and Phone Calls </strong> <br>
-        <span class="year"> Seattle University Big Data Course: 2022 </span><br> 
-        <div class="links">
-          <!-- [ <a href="https://www.seattleu.edu/cejs/events/earth-talks/earth-talks-2022/">Article</a> ] -->
-          [ <a href="https://youtu.be/mcF1CMZH9sY?si=mdjL1w9G2a_VF1mo">Video</a> ]
+      <div class="presentation-card">
+        <div class="presentation-title">Carbon Footprint Analysis from Web and Phone Calls</div>
+        <div class="presentation-venue">Seattle University Big Data Course</div>
+        <div class="presentation-year">2022</div>
+        <div class="presentation-links">
+          <a href="https://youtu.be/mcF1CMZH9sY?si=mdjL1w9G2a_VF1mo" target="_blank" class="presentation-link">
+            <i class="fas fa-play"></i> Video
+          </a>
         </div>
-      </li>
+      </div>
 
-
-      <li>
-        <strong>Energy Efficient VoIP systems</strong><br>
-        <span class="year"> RTC Conf and Expo IEEE at Illinois Tech (2021) </span><br>
-        <div class="links">
-          [ <a href="https://www.rtc-conference.com/2021/presentation/?hid=862">Abstract</a> ]
-          [ <a href="https://www.youtube.com/watch?v=AmH1fx4U1rY&list=PLpKNVpFmUKiMMd4P8hBxcGz8nsawyQf_T&index=30">Video</a> ]
-          [ <a href="docs/slides/Energy-Efficient-VoIP-systems.pdf">Slides</a> ]
+      <div class="presentation-card">
+        <div class="presentation-title">Energy Efficient VoIP Systems</div>
+        <div class="presentation-venue">RTC Conf and Expo IEEE at Illinois Tech</div>
+        <div class="presentation-year">2021</div>
+        <div class="presentation-links">
+          <a href="https://www.rtc-conference.com/2021/presentation/?hid=862" target="_blank" class="presentation-link">
+            <i class="fas fa-file-alt"></i> Abstract
+          </a>
+          <a href="https://www.youtube.com/watch?v=AmH1fx4U1rY&list=PLpKNVpFmUKiMMd4P8hBxcGz8nsawyQf_T&index=30" target="_blank" class="presentation-link">
+            <i class="fas fa-play"></i> Video
+          </a>
+          <a href="docs/slides/Energy-Efficient-VoIP-systems.pdf" target="_blank" class="presentation-link">
+            <i class="fas fa-presentation"></i> Slides
+          </a>
         </div>
-      </li>
+      </div>
 
+      <div class="presentation-card">
+        <div class="presentation-title">Practical Byzantine Fault Tolerance</div>
+        <div class="presentation-venue">Seattle University Distributed Systems Course</div>
+        <div class="presentation-year">2021</div>
+        <div class="presentation-links">
+          <a href="docs/slides/Practical Byzantine Fault Tolerance by Altanai.pdf" target="_blank" class="presentation-link">
+            <i class="fas fa-presentation"></i> Slides
+          </a>
+        </div>
+      </div>
 
-      <li>
-        <strong>Practical byzantine fault toleranc at Seattle University Distributed systems Course</strong> <br>
-        Year: 2021 <br>
-        [ <a href="docs/slides/Practical Byzantine Fault Tolerance by Altanai.pdf">slides</a> ]
-        <!-- [ <a href="https://youtu.be/mcF1CMZH9sY?si=mdjL1w9G2a_VF1mo">Video</a> ] -->
-      </li>
+      <div class="presentation-card">
+        <div class="presentation-title">Machine Learning in VoIP</div>
+        <div class="presentation-venue">Women in Data Science (WiDS) Mysuru</div>
+        <div class="presentation-year">2020</div>
+        <div class="presentation-links">
+          <a href="https://www.youtube.com/live/E4M4cFwryzs?si=GnpEqQcG_RFIvKmm&t=21598" target="_blank" class="presentation-link">
+            <i class="fas fa-play"></i> Video
+          </a>
+          <a href="docs/slides/ML_in_VoIP_Altanai_WiDSMysuru_sep2020.pdf" target="_blank" class="presentation-link">
+            <i class="fas fa-presentation"></i> Slides
+          </a>
+        </div>
+      </div>
 
-      <li>
-        <strong>Women in Data Science (WiDs) Mysuru</strong> <br>
-        Year: 2020 <br>
-        [ <a href="https://www.youtube.com/live/E4M4cFwryzs?si=GnpEqQcG_RFIvKmm&t=21598">Video</a> ]
-        <!-- [ <a href="https://www.seattleu.edu/cejs/events/earth-talks/earth-talks-2022/">Article</a> ] -->
-        [ <a href="docs/slides/ML_in_VoIP_Altanai_WiDSMysuru_sep2020.pdf">Slides</a> ]
-      </li>
+      <div class="presentation-card">
+        <div class="presentation-title">WebRTC Development and Applications</div>
+        <div class="presentation-venue">jQuery Conference</div>
+        <div class="presentation-year">2016</div>
+        <div class="presentation-links">
+          <a href="https://www.youtube.com/watch?v=Npc2xSLcSoI&t=49s" target="_blank" class="presentation-link">
+            <i class="fas fa-play"></i> Video
+          </a>
+        </div>
+      </div>
 
-      <li>
-        <strong>JqueryConf</strong> <br>
-        Year: - <br>
-        [ <a href="https://www.youtube.com/watch?v=Npc2xSLcSoI&t=49s">Video</a> ]
-        <!-- [ <a href="https://www.seattleu.edu/cejs/events/earth-talks/earth-talks-2022/">Article</a> ] -->
-        <!-- [ <a href="docs/slides/ML_in_VoIP_Altanai_WiDSMysuru_sep2020.pdf">Slides</a> ] -->
-      </li>
+      <div class="presentation-card">
+        <div class="presentation-title">Real-time Communication Technologies</div>
+        <div class="presentation-venue">KrankyGeek WebRTC Conference</div>
+        <div class="presentation-year">2016</div>
+        <div class="presentation-links">
+          <a href="https://www.youtube.com/watch?v=E5O969z-2rM&t=46s" target="_blank" class="presentation-link">
+            <i class="fas fa-play"></i> Video
+          </a>
+        </div>
+      </div>
 
-      <li>
-        <strong>krankyGeek</strong> <br>
-        Year: - <br>
-        [ <a href="https://www.youtube.com/watch?v=E5O969z-2rM&t=46s">Video</a> ]
-        <!-- [ <a href="https://www.seattleu.edu/cejs/events/earth-talks/earth-talks-2022/">Article</a> ] -->
-        <!-- [ <a href="docs/slides/ML_in_VoIP_Altanai_WiDSMysuru_sep2020.pdf">Slides</a> ] -->
-      </li>
+      <div class="presentation-card">
+        <div class="presentation-title">Blockchain and Peer-to-Peer Communications</div>
+        <div class="presentation-venue">Blockchain Summit</div>
+        <div class="presentation-year">2020</div>
+        <div class="presentation-links">
+          <a href="https://www.youtube.com/watch?v=3yHVYeKUh_Y&t=836s" target="_blank" class="presentation-link">
+            <i class="fas fa-play"></i> Video
+          </a>
+        </div>
+        </div>
 
-      <li>
-        <strong>blockchain summit </strong> <br>
-        Year: - <br>
-        [ <a href="https://www.youtube.com/watch?v=3yHVYeKUh_Y&t=836s">Video</a> ]
-        <!-- [ <a href="https://www.seattleu.edu/cejs/events/earth-talks/earth-talks-2022/">Article</a> ] -->
-        <!-- [ <a href="docs/slides/ML_in_VoIP_Altanai_WiDSMysuru_sep2020.pdf">Slides</a> ] -->
-      </li>
+      <div class="presentation-card">
+        <div class="presentation-title">IoT Cleaning Robot Development</div>
+        <div class="presentation-venue">BarCamp Bangalore</div>
+        <div class="presentation-year">2015</div>
+        <div class="presentation-links">
+          <a href="https://barcampbangalore.com/bcb/monsoon-2015/bot-to-do-outdoor-cleaning-iot-webrtc-ai" target="_blank" class="presentation-link">
+            <i class="fas fa-newspaper"></i> Article
+          </a>
+        </div>
+      </div>
 
-      <li>
-        <strong>Hackaday </strong> <br>
-        Year: - <br>
-        <!-- [ <a href="https://www.youtube.com/watch?v=3yHVYeKUh_Y&t=836s">Video</a> ] -->
-        <!-- [ <a href="https://www.seattleu.edu/cejs/events/earth-talks/earth-talks-2022/">Article</a> ] -->
-        <!-- [ <a href="docs/slides/ML_in_VoIP_Altanai_WiDSMysuru_sep2020.pdf">Slides</a> ] -->
-      </li>
-
-      <li>
-        <strong>Earth Day </strong> <br>
-        Year: - <br>
-        [ <a href="https://vimeo.com/manage/videos/702292704">Video</a> ]
-        <!-- [ <a href="https://www.seattleu.edu/cejs/events/earth-talks/earth-talks-2022/">Article</a> ] -->
-        <!-- [ <a href="docs/slides/ML_in_VoIP_Altanai_WiDSMysuru_sep2020.pdf">Slides</a> ] -->
-      </li>
-
-      <li>
-        <strong>OSIdays</strong> <br>
-        Year: - <br>
-        [ <a href="https://vimeo.com/manage/videos/702292704">Video</a> ]
-        <!-- [ <a href="https://www.seattleu.edu/cejs/events/earth-talks/earth-talks-2022/">Article</a> ] -->
-        <!-- [ <a href="docs/slides/ML_in_VoIP_Altanai_WiDSMysuru_sep2020.pdf">Slides</a> ] -->
-      </li>
-
-      <li> 
-        <strong>Gitcomitshow</strong> <br>
-        Year: - <br>
-        <!-- [ <a href="https://vimeo.com/manage/videos/702292704">Video</a> ] -->
-        <!-- [ <a href="https://www.seattleu.edu/cejs/events/earth-talks/earth-talks-2022/">Article</a> ] -->
-        <!-- [ <a href="docs/slides/ML_in_VoIP_Altanai_WiDSMysuru_sep2020.pdf">Slides</a> ] -->
-      </li>
-
-      <li>
-        <Strong>BarCamp Bangalore</strong> <br>
-          Year: - <br>
-        [ <a href="https://barcampbangalore.com/bcb/monsoon-2015/bot-to-do-outdoor-cleaning-iot-webrtc-ai">Article</a> ]
-      </li>
-
-    </ul>
+        </div>
 
     </section>
 
     <!-- Awards -->
     <section id="awards" class="section">
-      <style>
-        /* Styling for Awards Section */
-        #awards {
-          background-color: #f9f9f9;
-          padding: 2em;
-          border-radius: 10px;
-          box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-        }
-        .award-item {
-          margin-bottom: 1.5em;
-        }
-        .award-title {
-          font-weight: bold;
-          color: #244a73;
-        }
-        .award-description {
-          margin-left: 1em;
-          color: #555;
-        }
-        .award-link a {
-          color: #007bff;
-          text-decoration: none;
-        }
-        .award-link a:hover {
-          text-decoration: underline;
-        }
-      </style>
-
       <h2>Awards and Honors</h2>
-      <div class="award-item">
-        <p class="award-title">Winner at Microsoft's Azure AI Hackathon for first 50 qualifying entries(2025)</p>
-      </div>
-      <div class="award-item">
-        <p class="award-title"> Work Appreciation by CIO and Head Cloud and Security business at Airtel (2020)</p>
-        <p class="award-description"> Link:https://www.linkedin.com/in/altanai/overlay/experience/1677271094/multiple-media-viewer/?profileId=ACoAAAJpfqkB6Mh_Ku-ay3GTa5882sjocXgVaXM&treasuryMediaId=1605599568192 </p>
-      </div>
-      <div class="award-item">
-        <p class="award-title">McGyver Award for Technical Excellence at IPC (2018)</p>
-        <p class="award-description">Link : https://www.linkedin.com/in/altanai/details/experience/1216566452/multiple-media-viewer/?profileId=ACoAAAJpfqkB6Mh_Ku-ay3GTa5882sjocXgVaXM&treasuryMediaId=1738800534050&type=IMAGE</p>
-      </div>
-      <div class="award-item">
-        <p class="award-title">Pat on the Back Award at Tech Mahindra (2018)</p>
-        <p class="award-description">Link : https://www.linkedin.com/in/altanai/details/experience/1605597722806/single-media-viewer/?profileId=ACoAAAJpfqkB6Mh_Ku-ay3GTa5882sjocXgVaXM</p>
-      </div>
-      <div class="award-item">
-        <p class="award-title">TCS Gems for Company Technical Excellence (2013)</p>
-        <p class="award-description">Awarded at Tata Consultancy Services for outstanding technical contributions.</p>
-        <p class="award-description">Link : https://www.linkedin.com/in/altanai/details/experience/158424977/multiple-media-viewer/?profileId=ACoAAAJpfqkB6Mh_Ku-ay3GTa5882sjocXgVaXM&treasuryMediaId=1605640116173</p>
-      </div>
-      <div class="award-item">
-        <p class="award-title">ILP Kudos (2012)</p>
-        <p class="award-description">Link :https://www.linkedin.com/in/altanai/details/experience/158424977/multiple-media-viewer/?profileId=ACoAAAJpfqkB6Mh_Ku-ay3GTa5882sjocXgVaXM&treasuryMediaId=1605640116173</p>
-      </div>
-      <div class="award-item">
-        <p class="award-title">Best Final Year Project- Information Highway (2011)</p>
-        <p class="award-description">Integration of mobile devices, vehicles, and internet using GSM, GPS, and GIS. Secured 100% marks and "Best Final Year Project" award.</p>
+      
+
+      <div class="awards-grid">
+        
+        <div class="award-card">
+          <div class="award-year">2025</div>
+          <div class="award-title">Winner at Microsoft's Azure AI Hackathon</div>
+          <div class="award-organization">Microsoft Azure</div>
+          <div class="award-description">Recognition for innovative AI solution among the first 50 qualifying entries in the competitive hackathon.</div>
       </div>
 
-      <div class="award-item">
-        <p class="award-title">First Position at QQuest Case Analysis</p>
-        <p class="award-description">Organized by Anna University.</p>
+        <div class="award-card">
+          <div class="award-year">2020</div>
+          <div class="award-title">Work Appreciation Award</div>
+          <div class="award-organization">Airtel IQ</div>
+          <div class="award-description">Recognition by CIO and Head of Cloud and Security business for outstanding contributions to cloud telephony platform.</div>
+          <a href="https://www.linkedin.com/in/altanai/" target="_blank" class="award-link">
+            <i class="fas fa-certificate"></i> View Certificate
+          </a>
       </div>
-      <div class="award-item">
-        <p class="award-title">2nd Position at Veltech University & Sai Ram Engineering College</p>
-        <p class="award-description">Project on Automatic Data Capturing and Geo-location Technology (J2ME, RFID, Wireless).</p>
+
+        <div class="award-card">
+          <div class="award-year">2018</div>
+          <div class="award-title">McGyver Award for Technical Excellence</div>
+          <div class="award-organization">IPC Systems</div>
+          <div class="award-description">Awarded for innovative technical solutions and exceptional problem-solving in financial communications systems.</div>
+          <a href="https://www.linkedin.com/in/altanai/" target="_blank" class="award-link">
+            <i class="fas fa-award"></i> View Award
+          </a>
       </div>
-      <div class="award-item">
-        <p class="award-title">2nd Position at GKM Engineering College & DMI College</p>
-        <p class="award-description">Project: Electronic Content Management System (ECMS).</p>
+
+        <div class="award-card">
+          <div class="award-year">2018</div>
+          <div class="award-title">Pat on the Back Award</div>
+          <div class="award-organization">Tech Mahindra</div>
+          <div class="award-description">Recognition for exceptional performance and quality deliveries in client projects.</div>
+          <a href="https://www.linkedin.com/in/altanai/" target="_blank" class="award-link">
+            <i class="fas fa-thumbs-up"></i> View Recognition
+          </a>
+      </div>
+
+        <div class="award-card">
+          <div class="award-year">2013</div>
+          <div class="award-title">TCS Gems for Company Technical Excellence</div>
+          <div class="award-organization">Tata Consultancy Services</div>
+          <div class="award-description">Awarded for outstanding technical contributions and innovative solutions in telecom service orchestration.</div>
+          <a href="https://www.linkedin.com/in/altanai/" target="_blank" class="award-link">
+            <i class="fas fa-gem"></i> View Certificate
+          </a>
+      </div>
+
+        <div class="award-card">
+          <div class="award-year">2012</div>
+          <div class="award-title">ILP Kudos Award</div>
+          <div class="award-organization">Tata Consultancy Services</div>
+          <div class="award-description">Recognition during Initial Learning Program for exceptional performance and dedication.</div>
+          <a href="https://www.linkedin.com/in/altanai/" target="_blank" class="award-link">
+            <i class="fas fa-star"></i> View Recognition
+          </a>
+      </div>
+
+        <div class="award-card">
+          <div class="award-year">2011</div>
+          <div class="award-title">Best Final Year Project - Information Highway</div>
+          <div class="award-organization">Anna University</div>
+          <div class="award-description">Integration of mobile devices, vehicles, and internet using GSM, GPS, and GIS. Secured 100% marks and "Best Project" award.</div>
+      </div>
+
+        <div class="award-card">
+          <div class="award-year">2011</div>
+          <div class="award-title">First Position - QQuest Case Analysis</div>
+          <div class="award-organization">Anna University</div>
+          <div class="award-description">First place in competitive case analysis competition demonstrating analytical and problem-solving skills.</div>
+      </div>
+
+        <div class="award-card">
+          <div class="award-year">2010</div>
+          <div class="award-title">2nd Position - Data Capturing Technology</div>
+          <div class="award-organization">Veltech University & Sai Ram Engineering College</div>
+          <div class="award-description">Second place for project on Automatic Data Capturing and Geo-location Technology using J2ME, RFID, and Wireless technologies.</div>
+      </div>
+
+        <div class="award-card">
+          <div class="award-year">2010</div>
+          <div class="award-title">2nd Position - Electronic Content Management</div>
+          <div class="award-organization">GKM Engineering College & DMI College</div>
+          <div class="award-description">Second place for Electronic Content Management System (ECMS) project demonstrating software development excellence.</div>
+        </div>
+
       </div>
 
     </section>
@@ -1216,40 +1205,70 @@
     <!-- Media Coverage -->
     <section id="media" class="section">
       <h2>Media Coverage</h2>
-      <div class="award-item award-link">
-        <p class="award-title">Top 50 Global Thought Leaders and Influencers on Telecom (2025)</p>
-        <p class="award-description">Annual Ranking by Thinkers360.</p>
-        <p><a href="https://www.thinkers360.com/top-50-global-thought-leaders-and-influencers-on-telecom-2025/" target="_blank" rel="noopener noreferrer">View Ranking</a></p>
+      
+      
+      <div class="media-grid">
+        
+        <div class="media-card">
+          <div class="media-year">2025</div>
+          <div class="media-title">Top 50 Global Thought Leaders and Influencers on Telecom</div>
+          <div class="media-source">Thinkers360</div>
+          <div class="media-description">Annual ranking recognizing global expertise and influence in telecommunications industry.</div>
+          <a href="https://www.thinkers360.com/top-50-global-thought-leaders-and-influencers-on-telecom-2025/" target="_blank" class="media-link">
+            <i class="fas fa-trophy"></i> View Ranking
+          </a>
       </div>
 
-      <div class="award-item award-link">
-        <p class="award-title">About the Author: Altanai Bisht</p>
-        <!-- <p class="award-description">On thinking process behind Ramudroid the garbage picking robot</p> -->
-        <p><a href="https://www.google.com/search?sca_esv=7e44f643f11633e6&sxsrf=AHTn8zqNEhBD6EynY8U8_f0XTfqi1TvWOA:1738800712849&q=%E2%80%9CHere+at+WebRTC.ventures,+we+pride+ourselves+on+offering+our+clients+the+opportunity+to+work+with+extremely+bright+developers,+like+Altanai.%E2%80%9D&source=lnms&fbs=ABzOT_CWdhQLP1FcmU5B0fn3xuWpA-dk4wpBWOGsoR7DG5zJBjLjqIC1CYKD9D-DQAQS3Z6fZ--OaZn3DMTxQWxLIg4hW_wnpGGXBIfLuKGahloLhnZGQEgJMSN8f3Kw2BNDLUJr7w9IJQVb4F9J1sNi-WtNWhcuugrFhu_gcxdcdYKutvEsXQQOs5RMzLcolTfZgGP2ZBlQuPZlX50846v6lcNnCu5tFw&sa=X&ved=2ahUKEwjghcy24a2LAxWXMDQIHZcBFkAQ0pQJegQIDRAB&biw=1919&bih=958&dpr=1" target="_blank" rel="noopener noreferrer">Interview video</a></p>
+        <div class="media-card">
+          <div class="media-year">2022</div>
+          <div class="media-title">Seattle U Graduate Students Are Building a Droid That Collects Trash</div>
+          <div class="media-source">The Spectator</div>
+          <div class="media-description">Feature article on the autonomous cleaning robot project developed during graduate studies.</div>
+          <a href="https://seattlespectator.com/2022/03/12/seattle-u-graduate-students-are-building-a-droid-that-collects-trash/" target="_blank" class="media-link">
+            <i class="fas fa-newspaper"></i> Read Article
+          </a>
       </div>
 
-      <div class="award-item award-link">
-        <p class="award-title">The Spectator</p>
-        <p class="award-description">Seattle U Graduate Students Are Building a Droid That Collects Trash</p>
-        <p><a href="https://seattlespectator.com/2022/03/12/seattle-u-graduate-students-are-building-a-droid-that-collects-trash/" target="_blank" rel="noopener noreferrer">News Article</a></p>
+        <div class="media-card">
+          <div class="media-year">2022</div>
+          <div class="media-title">How I Built an Autonomous Cleaning Robot</div>
+          <div class="media-source">InvideLabs</div>
+          <div class="media-description">Technical showcase and interview discussing the development process of RamuDroid cleaning robot.</div>
+          <a href="https://blog.invidelabs.com/tech-talk-how-i-built-an-autonomous-cleaning-robot-showcase/" target="_blank" class="media-link">
+            <i class="fas fa-video"></i> Watch Interview
+          </a>
       </div>
 
-      <div class="award-item award-link">
-        <p class="award-title">Open Source India </p>
-        <p class="award-description">Speaker 2019</p>
-        <p><a href="https://www.opensourceindia.in/speakers-2019/altanai-bisht/" target="_blank" rel="noopener noreferrer">Article</a></p>
+        <div class="media-card">
+          <div class="media-year">2022</div>
+          <div class="media-title">Featured Developer Profile</div>
+          <div class="media-source">WebRTC.ventures</div>
+          <div class="media-description">"Here at WebRTC.ventures, we pride ourselves on offering our clients the opportunity to work with extremely bright developers, like Altanai."</div>
+          <a href="https://webrtc.ventures/blog/webrtc-developer-interviews-altanai-bisht/" target="_blank" class="media-link">
+            <i class="fas fa-user-circle"></i> Read Profile
+          </a>
       </div>
 
-      <div class="award-item award-link">
-        <p class="award-title">Interview with  UNext Learning </p>
-        <p class="award-description">On thinking process behind Ramudroid the garbage picking robot</p>
-        <p><a href="https://www.youtube.com/watch?v=Gwtee6RZrWE" target="_blank" rel="noopener noreferrer">Interview video</a></p>
+        <div class="media-card">
+          <div class="media-year">2019</div>
+          <div class="media-title">Featured Speaker</div>
+          <div class="media-source">Open Source India</div>
+          <div class="media-description">Speaker profile and session details for Open Source India conference presentation.</div>
+          <a href="https://www.opensourceindia.in/speakers-2019/altanai-bisht/" target="_blank" class="media-link">
+            <i class="fas fa-microphone"></i> Speaker Info
+          </a>
       </div>
 
-      <div class="award-item award-link">
-        <p class="award-title">invidelabs </p>
-        <p class="award-description">How I built an autonomous cleaning robot | Showcase by Altanai</p>
-        <p><a href="https://blog.invidelabs.com/tech-talk-how-i-built-an-autonomous-cleaning-robot-showcase/" target="_blank" rel="noopener noreferrer">Interview video</a></p>
+        <div class="media-card">
+          <div class="media-year">2022</div>
+          <div class="media-title">RamuDroid: Autonomous Cleaning Robot</div>
+          <div class="media-source">UNext Learning</div>
+          <div class="media-description">Interview discussing the thought process and technical approach behind the garbage-picking robot project.</div>
+          <a href="https://www.youtube.com/watch?v=Gwtee6RZrWE" target="_blank" class="media-link">
+            <i class="fas fa-play"></i> Watch Interview
+          </a>
+        </div>
+
       </div>
 
     </section>
@@ -1259,59 +1278,30 @@
       <h2>Contact</h2>
       <!-- FontAwesome for icons -->
       <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
-      <style>
-        .social-icons {
-          display: flex;
-          justify-content: center;
-          gap: 20px;
-          margin-top: 20px;
-        }
 
-        .social-icons a {
-          font-size: 30px;
-          color: #333;
-          text-decoration: none;
-          padding: 10px;
-          transition: color 0.3s;
-        }
-
-        .social-icons a:hover {
-          color: #0077b5;
-          /* Change color on hover */
-        }
-
-        .social-icons a.linkedin:hover {
-          color: #0e76a8;
-          /* LinkedIn blue */
-        }
-
-        .social-icons a.stackoverflow:hover {
-          color: #f48024;
-          /* StackOverflow orange */
-        }
-
-        .social-icons a.blog:hover {
-          color: #0a74da;
-          /* Blog blue */
-        }
-      </style>
-
-      <p>Feel free to reach out via any of the following platforms:</p>
+      <div class="contact-info">
+        <p><strong>Location:</strong> Seattle, WA</p>
+        <p><strong>Phone:</strong> +1 (425) 516-9961</p>
+        <p><strong>Email:</strong> altanai@outlook.com</p>
+        <p><strong>Website:</strong> <a href="https://telecom.altanai.com" target="_blank">telecom.altanai.com</a></p>
+      </div>
+      
+      <p>Connect with me on social platforms:</p>
 
       <div class="social-icons">
         <!-- LinkedIn Icon -->
-        <a href="https://www.linkedin.com/in/your-profile" target="_blank" class="linkedin" title="LinkedIn">
+        <a href="https://www.linkedin.com/in/altanai" target="_blank" class="linkedin" title="LinkedIn">
           <i class="fab fa-linkedin"></i>
         </a>
 
         <!-- StackOverflow Icon -->
-        <a href="https://stackoverflow.com/users/your-user-id" target="_blank" class="stackoverflow"
+        <a href="https://stackoverflow.com/users/1553625/altanai" target="_blank" class="stackoverflow"
           title="StackOverflow">
           <i class="fab fa-stack-overflow"></i>
         </a>
 
         <!-- Blog Icon -->
-        <a href="https://your-blog.com" target="_blank" class="blog" title="My Blog">
+        <a href="https://telecom.altanai.com" target="_blank" class="blog" title="Telecom Blog">
           <i class="fas fa-rss"></i>
         </a>
       </div>
