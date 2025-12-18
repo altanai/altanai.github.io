@@ -35,6 +35,7 @@
     <a href="#education">Education</a>
     <a href="#projects">Projects</a>
     <a href="#skills">Technical Expertise</a>
+    <a href="#exhibitions">Presentations</a>
     <a href="#awards">Awards and Honors</a>
     <a href="#publications">Publications</a>
     <a href="#media">Media Coverage</a>
@@ -750,7 +751,10 @@
 
         <h2>Technical Disclosures</h2>
         <ul>
-          <li>Tunnel Weight Algorithm to Improve Virtual Private Network Performance (2023) - Altanai Bisht</li>
+          <li>
+            Bisht, Altanai, "<strong>TUNNEL WEIGHT ALGORITHM TO IMPROVE VIRTUAL PRIVATE NETWORK PERFORMANCE</strong>", Technical Disclosure Commons, (September 15, 2023)
+            [ <a href="https://www.tdcommons.org/dpubs_series/6249" target="_blank" rel="noopener noreferrer">Link</a> ]
+          </li>
           <li>Multi-Modal Contextual Search for Enterprise Content (2024) - Sabra, A., Gopikrishnan, R., Bisht, A., Dahir, H., Babu, K. B. H., &
             Kini, S. (2024). MULTI-MODAL CONTEXTUAL SEARCH FOR ENTERPRISE CONTENT.</li>
         </ul>
@@ -990,121 +994,324 @@
     </section>
 
 
-    <section id="presentations" class="section">
+    <!-- Presentations -->
+    <section id="exhibitions" class="section">
       <h2>Presentations</h2>
-    <div class="presentations-grid">
+      
+      <style>
+        .presentation-card-with-thumb {
+          display: flex;
+          gap: 1rem;
+          align-items: flex-start;
+        }
+        .presentation-thumb {
+          width: 120px;
+          height: 90px;
+          object-fit: cover;
+          border-radius: 6px;
+          flex-shrink: 0;
+          box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+        }
+        .presentation-content {
+          flex: 1;
+        }
+        @media (max-width: 600px) {
+          .presentation-card-with-thumb {
+            flex-direction: column;
+          }
+          .presentation-thumb {
+            width: 100%;
+            height: 140px;
+          }
+        }
+      </style>
+      
+      <p style="margin-bottom: 2rem; color: #4a5568; text-align: center; font-style: italic;">
+        Technical work displayed at prestigious conferences, industry events, and maker communities worldwide. 
+        <a href="https://www.slideshare.net/altanai" target="_blank" style="color: #8b5cf6; text-decoration: none; font-weight: 500;">View all 39 presentations on SlideShare</a>
+      </p>
 
-      <div class="presentation-card">
-        <div class="presentation-title">Path Selection in Multi Tunnel SD-WAN</div>
-        <div class="presentation-venue">IETF 117</div>
-        <div class="presentation-year">2023</div>
-        <div class="presentation-links">
-          <a href="https://youtu.be/lrog8pT0nfs?si=bnwBq7J25hjBjp8g&t=2116" target="_blank" class="presentation-link">
-            <i class="fas fa-play"></i> Video
-          </a>
-        </div>
+      <div class="presentations-grid">
+
+        <div class="presentation-card" style="border-left-color: #0ea5e9;">
+          <div class="presentation-title">Path Selection in Multi Tunnel SD-WAN</div>
+          <div class="presentation-venue">IETF 117</div>
+          <div class="presentation-year">2023</div>
+          <div class="presentation-description" style="font-size: 0.85rem; color: #6b7280; margin: 0.5rem 0;">Internet Engineering Task Force - Global internet standards body</div>
+          <div class="presentation-links">
+            <a href="https://youtu.be/lrog8pT0nfs?si=bnwBq7J25hjBjp8g&t=2116" target="_blank" class="presentation-link">
+              <i class="fas fa-play"></i> Video
+            </a>
+            <a href="https://datatracker.ietf.org/meeting/117/materials/slides-117-intarea-path-selection-in-multi-tunnel-sd-wan-00" target="_blank" class="presentation-link">
+              <i class="fas fa-file-powerpoint"></i> Slides
+            </a>
+          </div>
         </div>
 
-      <div class="presentation-card">
-        <div class="presentation-title">Carbon Footprint Analysis from Web and Phone Calls</div>
-        <div class="presentation-venue">Seattle University Big Data Course</div>
-        <div class="presentation-year">2022</div>
-        <div class="presentation-links">
-          <a href="https://youtu.be/mcF1CMZH9sY?si=mdjL1w9G2a_VF1mo" target="_blank" class="presentation-link">
-            <i class="fas fa-play"></i> Video
-          </a>
+        <div class="presentation-card" style="border-left-color: #22c55e;">
+          <div class="presentation-card-with-thumb">
+            <img src="docs/slides/thumbnails/energy-efficient-voip.png" alt="Energy Efficient VoIP Systems" class="presentation-thumb" onerror="this.style.display='none'">
+            <div class="presentation-content">
+              <div class="presentation-title">Energy Efficient VoIP Systems</div>
+              <div class="presentation-venue">RTC Conf and Expo IEEE at Illinois Tech</div>
+              <div class="presentation-year">2021</div>
+              <div class="presentation-description" style="font-size: 0.85rem; color: #6b7280; margin: 0.5rem 0;">IEEE Real-Time Communications Conference</div>
+              <div class="presentation-links">
+                <a href="https://www.rtc-conference.com/2021/presentation/?hid=862" target="_blank" class="presentation-link">
+                  <i class="fas fa-file-alt"></i> Abstract
+                </a>
+                <a href="https://www.youtube.com/watch?v=AmH1fx4U1rY&list=PLpKNVpFmUKiMMd4P8hBxcGz8nsawyQf_T&index=30" target="_blank" class="presentation-link">
+                  <i class="fas fa-play"></i> Video
+                </a>
+                <a href="docs/slides/Energy-Efficient-VoIP-systems.pdf" target="_blank" class="presentation-link">
+                  <i class="fas fa-file-pdf"></i> PDF
+                </a>
+              </div>
+            </div>
+          </div>
         </div>
+
+        <div class="presentation-card" style="border-left-color: #ec4899;">
+          <div class="presentation-card-with-thumb">
+            <img src="docs/slides/thumbnails/ramudroid-gracehopper.png" alt="RamuDroid at Grace Hopper" class="presentation-thumb" onerror="this.style.display='none'">
+            <div class="presentation-content">
+              <div class="presentation-title">RamuDroid: Autonomous Cleaning Robot</div>
+              <div class="presentation-venue">Grace Hopper Celebration</div>
+              <div class="presentation-year">2016</div>
+              <div class="presentation-description" style="font-size: 0.85rem; color: #6b7280; margin: 0.5rem 0;">World's largest gathering of women technologists (~20,000 attendees)</div>
+              <div class="presentation-links">
+                <a href="https://www.slideshare.net/altanai/ramu-droid-gracehopper" target="_blank" class="presentation-link">
+                  <i class="fas fa-file-powerpoint"></i> Slides
+                </a>
+                <a href="docs/slides/Garbage picking crypto mining Robot, RamuDroid v8.pdf" target="_blank" class="presentation-link">
+                  <i class="fas fa-file-pdf"></i> PDF
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="presentation-card" style="border-left-color: #ec4899;">
+          <div class="presentation-title">RamuDroid v7.0</div>
+          <div class="presentation-venue">Women in Robotics Conference</div>
+          <div class="presentation-year">2021</div>
+          <div class="presentation-description" style="font-size: 0.85rem; color: #6b7280; margin: 0.5rem 0;">Premier global conference for women in robotics industry</div>
+          <div class="presentation-links">
+            <a href="https://www.slideshare.net/altanai/ramudroid-presented-in-woman-in-robotics-2021" target="_blank" class="presentation-link">
+              <i class="fas fa-file-powerpoint"></i> Slides
+            </a>
+          </div>
+        </div>
+
+        <div class="presentation-card" style="border-left-color: #10b981;">
+          <div class="presentation-title">WebRTC in IoT</div>
+          <div class="presentation-venue">KrankyGeek WebRTC Conference</div>
+          <div class="presentation-year">2016</div>
+          <div class="presentation-description" style="font-size: 0.85rem; color: #6b7280; margin: 0.5rem 0;">Leading WebRTC developer community conference</div>
+          <div class="presentation-links">
+            <a href="https://www.youtube.com/watch?v=E5O969z-2rM&t=46s" target="_blank" class="presentation-link">
+              <i class="fas fa-play"></i> Video
+            </a>
+            <a href="https://www.slideshare.net/altanai/webrtc-in-iot-presented-in-krankygeek" target="_blank" class="presentation-link">
+              <i class="fas fa-file-powerpoint"></i> Slides
+            </a>
+          </div>
+        </div>
+
+        <div class="presentation-card" style="border-left-color: #f59e0b;">
+          <div class="presentation-title">RamuDroid Hardware Project</div>
+          <div class="presentation-venue">Hackaday</div>
+          <div class="presentation-year">2016</div>
+          <div class="presentation-description" style="font-size: 0.85rem; color: #6b7280; margin: 0.5rem 0;">Global maker and hardware community platform</div>
+          <div class="presentation-links">
+            <a href="https://www.slideshare.net/altanai/hackaday-ramudroid-65" target="_blank" class="presentation-link">
+              <i class="fas fa-file-powerpoint"></i> Slides
+            </a>
+          </div>
+        </div>
+
+        <div class="presentation-card" style="border-left-color: #3b82f6;">
+          <div class="presentation-title">Plivo WebRTC Telephony in Browser</div>
+          <div class="presentation-venue">Industry Technical Showcase</div>
+          <div class="presentation-year">2018</div>
+          <div class="presentation-description" style="font-size: 0.85rem; color: #6b7280; margin: 0.5rem 0;">Enterprise SIP trunking and WebRTC integration</div>
+          <div class="presentation-links">
+            <a href="https://www.slideshare.net/altanai/plivo-webrtc-telephony-in-your-browser" target="_blank" class="presentation-link">
+              <i class="fas fa-file-powerpoint"></i> Slides
+            </a>
+          </div>
+        </div>
+
+        <div class="presentation-card" style="border-left-color: #10b981;">
+          <div class="presentation-card-with-thumb">
+            <img src="docs/slides/thumbnails/solar-hybrid-microgrid.png" alt="Hybrid Smart Grid" class="presentation-thumb" onerror="this.style.display='none'">
+            <div class="presentation-content">
+              <div class="presentation-title">Hybrid Smart Grid System for Renewable Energy</div>
+              <div class="presentation-venue">IEEE IoT-SIU Conference</div>
+              <div class="presentation-year">2018</div>
+              <div class="presentation-description" style="font-size: 0.85rem; color: #6b7280; margin: 0.5rem 0;">IoT-enabled renewable energy management systems</div>
+              <div class="presentation-links">
+                <a href="https://www.slideshare.net/altanai/hybrid-smart-grid-system-for-renewable-energy" target="_blank" class="presentation-link">
+                  <i class="fas fa-file-powerpoint"></i> Slides
+                </a>
+                <a href="docs/slides/Solar Hybrid Micro Grid and Power transactions_altanai.pdf" target="_blank" class="presentation-link">
+                  <i class="fas fa-file-pdf"></i> PDF
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="presentation-card" style="border-left-color: #8b5cf6;">
+          <div class="presentation-card-with-thumb">
+            <img src="docs/slides/thumbnails/ml-voip-wids.png" alt="ML in VoIP at WiDS" class="presentation-thumb" onerror="this.style.display='none'">
+            <div class="presentation-content">
+              <div class="presentation-title">Machine Learning in Voice over IP</div>
+              <div class="presentation-venue">Women in Data Science (WiDS) Mysuru</div>
+              <div class="presentation-year">2020</div>
+              <div class="presentation-description" style="font-size: 0.85rem; color: #6b7280; margin: 0.5rem 0;">Stanford-initiated global conference for women in data science</div>
+              <div class="presentation-links">
+                <a href="https://www.youtube.com/live/E4M4cFwryzs?si=GnpEqQcG_RFIvKmm&t=21598" target="_blank" class="presentation-link">
+                  <i class="fas fa-play"></i> Video
+                </a>
+                <a href="https://www.slideshare.net/altanai/machine-learning-applications-in-voice-over-ip" target="_blank" class="presentation-link">
+                  <i class="fas fa-file-powerpoint"></i> Slides
+                </a>
+                <a href="docs/slides/ML_in_VoIP_Altanai_WiDSMysuru_sep2020.pdf" target="_blank" class="presentation-link">
+                  <i class="fas fa-file-pdf"></i> PDF
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="presentation-card" style="border-left-color: #ef4444;">
+          <div class="presentation-title">Telecom Network & SIEM Logs Analysis using ML</div>
+          <div class="presentation-venue">Technical Showcase</div>
+          <div class="presentation-year">2020</div>
+          <div class="presentation-description" style="font-size: 0.85rem; color: #6b7280; margin: 0.5rem 0;">Network security analytics and machine learning</div>
+          <div class="presentation-links">
+            <a href="https://www.slideshare.net/altanai/telecom-network-siem-logs-analysis-using-machine-learning" target="_blank" class="presentation-link">
+              <i class="fas fa-file-powerpoint"></i> Slides
+            </a>
+          </div>
+        </div>
+
+        <div class="presentation-card" style="border-left-color: #06b6d4;">
+          <div class="presentation-title">RamuDroid for Swachh Bharat Abhiyaan</div>
+          <div class="presentation-venue">National Initiative Showcase</div>
+          <div class="presentation-year">2016</div>
+          <div class="presentation-description" style="font-size: 0.85rem; color: #6b7280; margin: 0.5rem 0;">Robotics for India's Clean India Mission</div>
+          <div class="presentation-links">
+            <a href="https://www.slideshare.net/altanai/ramu-droid-for-swach-bharat-abhiyaan" target="_blank" class="presentation-link">
+              <i class="fas fa-file-powerpoint"></i> Slides
+            </a>
+          </div>
+        </div>
+
+        <div class="presentation-card" style="border-left-color: #6366f1;">
+          <div class="presentation-title">Media Streams in IoT via WebRTC</div>
+          <div class="presentation-venue">Technical Conference</div>
+          <div class="presentation-year">2016</div>
+          <div class="presentation-description" style="font-size: 0.85rem; color: #6b7280; margin: 0.5rem 0;">Real-time media streaming for IoT devices</div>
+          <div class="presentation-links">
+            <a href="https://www.slideshare.net/altanai/media-streams-in-iot-via-webrtc" target="_blank" class="presentation-link">
+              <i class="fas fa-file-powerpoint"></i> Slides
+            </a>
+          </div>
+        </div>
+
+        <div class="presentation-card" style="border-left-color: #14b8a6;">
+          <div class="presentation-title">Current Trends and Innovations in VoIP</div>
+          <div class="presentation-venue">Industry Showcase</div>
+          <div class="presentation-year">2020</div>
+          <div class="presentation-description" style="font-size: 0.85rem; color: #6b7280; margin: 0.5rem 0;">State of VoIP technology and future directions</div>
+          <div class="presentation-links">
+            <a href="https://www.slideshare.net/altanai/current-trends-and-innovations-in-voice-over-ip" target="_blank" class="presentation-link">
+              <i class="fas fa-file-powerpoint"></i> Slides
+            </a>
+          </div>
+        </div>
+
+        <div class="presentation-card" style="border-left-color: #a855f7;">
+          <div class="presentation-card-with-thumb">
+            <img src="docs/slides/thumbnails/pbft.png" alt="Practical Byzantine Fault Tolerance" class="presentation-thumb" onerror="this.style.display='none'">
+            <div class="presentation-content">
+              <div class="presentation-title">Practical Byzantine Fault Tolerance</div>
+              <div class="presentation-venue">Academic Showcase</div>
+              <div class="presentation-year">2021</div>
+              <div class="presentation-description" style="font-size: 0.85rem; color: #6b7280; margin: 0.5rem 0;">Distributed consensus and fault tolerance systems</div>
+              <div class="presentation-links">
+                <a href="https://www.slideshare.net/altanai/practical-byzantine-fault-tolerance-by-altanai" target="_blank" class="presentation-link">
+                  <i class="fas fa-file-powerpoint"></i> Slides
+                </a>
+                <a href="docs/slides/Practical Byzantine Fault Tolerance by Altanai.pdf" target="_blank" class="presentation-link">
+                  <i class="fas fa-file-pdf"></i> PDF
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="presentation-card" style="border-left-color: #f97316;">
+          <div class="presentation-card-with-thumb">
+            <img src="docs/slides/thumbnails/blockchain-webrtc.png" alt="Blockchain P2P Communications" class="presentation-thumb" onerror="this.style.display='none'">
+            <div class="presentation-content">
+              <div class="presentation-title">Blockchain and Peer-to-Peer Communications</div>
+              <div class="presentation-venue">Blockchain Summit</div>
+              <div class="presentation-year">2020</div>
+              <div class="presentation-description" style="font-size: 0.85rem; color: #6b7280; margin: 0.5rem 0;">Decentralized VoIP communication over WebRTC</div>
+              <div class="presentation-links">
+                <a href="https://www.youtube.com/watch?v=3yHVYeKUh_Y&t=836s" target="_blank" class="presentation-link">
+                  <i class="fas fa-play"></i> Video
+                </a>
+                <a href="docs/slides/Blockchain and Peer to Peer VOIP communication over WebRTC by altanai .pdf" target="_blank" class="presentation-link">
+                  <i class="fas fa-file-pdf"></i> PDF
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="presentation-card" style="border-left-color: #eab308;">
+          <div class="presentation-title">WebRTC Development and Applications</div>
+          <div class="presentation-venue">jQuery Conference</div>
+          <div class="presentation-year">2016</div>
+          <div class="presentation-description" style="font-size: 0.85rem; color: #6b7280; margin: 0.5rem 0;">Web development conference - WebRTC integration</div>
+          <div class="presentation-links">
+            <a href="https://www.youtube.com/watch?v=Npc2xSLcSoI&t=49s" target="_blank" class="presentation-link">
+              <i class="fas fa-play"></i> Video
+            </a>
+          </div>
+        </div>
+
+        <div class="presentation-card" style="border-left-color: #84cc16;">
+          <div class="presentation-title">IoT Cleaning Robot Development</div>
+          <div class="presentation-venue">BarCamp Bangalore</div>
+          <div class="presentation-year">2015</div>
+          <div class="presentation-description" style="font-size: 0.85rem; color: #6b7280; margin: 0.5rem 0;">Unconference for tech community in India</div>
+          <div class="presentation-links">
+            <a href="https://barcampbangalore.com/bcb/monsoon-2015/bot-to-do-outdoor-cleaning-iot-webrtc-ai" target="_blank" class="presentation-link">
+              <i class="fas fa-newspaper"></i> Article
+            </a>
+          </div>
+        </div>
+
+        <div class="presentation-card" style="border-left-color: #64748b;">
+          <div class="presentation-title">Carbon Footprint Analysis from Web and Phone Calls</div>
+          <div class="presentation-venue">Seattle University</div>
+          <div class="presentation-year">2022</div>
+          <div class="presentation-description" style="font-size: 0.85rem; color: #6b7280; margin: 0.5rem 0;">Big Data course research presentation</div>
+          <div class="presentation-links">
+            <a href="https://youtu.be/mcF1CMZH9sY?si=mdjL1w9G2a_VF1mo" target="_blank" class="presentation-link">
+              <i class="fas fa-play"></i> Video
+            </a>
+          </div>
+        </div>
+
       </div>
-
-      <div class="presentation-card">
-        <div class="presentation-title">Energy Efficient VoIP Systems</div>
-        <div class="presentation-venue">RTC Conf and Expo IEEE at Illinois Tech</div>
-        <div class="presentation-year">2021</div>
-        <div class="presentation-links">
-          <a href="https://www.rtc-conference.com/2021/presentation/?hid=862" target="_blank" class="presentation-link">
-            <i class="fas fa-file-alt"></i> Abstract
-          </a>
-          <a href="https://www.youtube.com/watch?v=AmH1fx4U1rY&list=PLpKNVpFmUKiMMd4P8hBxcGz8nsawyQf_T&index=30" target="_blank" class="presentation-link">
-            <i class="fas fa-play"></i> Video
-          </a>
-          <a href="docs/slides/Energy-Efficient-VoIP-systems.pdf" target="_blank" class="presentation-link">
-            <i class="fas fa-presentation"></i> Slides
-          </a>
-        </div>
-      </div>
-
-      <div class="presentation-card">
-        <div class="presentation-title">Practical Byzantine Fault Tolerance</div>
-        <div class="presentation-venue">Seattle University Distributed Systems Course</div>
-        <div class="presentation-year">2021</div>
-        <div class="presentation-links">
-          <a href="docs/slides/Practical Byzantine Fault Tolerance by Altanai.pdf" target="_blank" class="presentation-link">
-            <i class="fas fa-presentation"></i> Slides
-          </a>
-        </div>
-      </div>
-
-      <div class="presentation-card">
-        <div class="presentation-title">Machine Learning in VoIP</div>
-        <div class="presentation-venue">Women in Data Science (WiDS) Mysuru</div>
-        <div class="presentation-year">2020</div>
-        <div class="presentation-links">
-          <a href="https://www.youtube.com/live/E4M4cFwryzs?si=GnpEqQcG_RFIvKmm&t=21598" target="_blank" class="presentation-link">
-            <i class="fas fa-play"></i> Video
-          </a>
-          <a href="docs/slides/ML_in_VoIP_Altanai_WiDSMysuru_sep2020.pdf" target="_blank" class="presentation-link">
-            <i class="fas fa-presentation"></i> Slides
-          </a>
-        </div>
-      </div>
-
-      <div class="presentation-card">
-        <div class="presentation-title">WebRTC Development and Applications</div>
-        <div class="presentation-venue">jQuery Conference</div>
-        <div class="presentation-year">2016</div>
-        <div class="presentation-links">
-          <a href="https://www.youtube.com/watch?v=Npc2xSLcSoI&t=49s" target="_blank" class="presentation-link">
-            <i class="fas fa-play"></i> Video
-          </a>
-        </div>
-      </div>
-
-      <div class="presentation-card">
-        <div class="presentation-title">Real-time Communication Technologies</div>
-        <div class="presentation-venue">KrankyGeek WebRTC Conference</div>
-        <div class="presentation-year">2016</div>
-        <div class="presentation-links">
-          <a href="https://www.youtube.com/watch?v=E5O969z-2rM&t=46s" target="_blank" class="presentation-link">
-            <i class="fas fa-play"></i> Video
-          </a>
-        </div>
-      </div>
-
-      <div class="presentation-card">
-        <div class="presentation-title">Blockchain and Peer-to-Peer Communications</div>
-        <div class="presentation-venue">Blockchain Summit</div>
-        <div class="presentation-year">2020</div>
-        <div class="presentation-links">
-          <a href="https://www.youtube.com/watch?v=3yHVYeKUh_Y&t=836s" target="_blank" class="presentation-link">
-            <i class="fas fa-play"></i> Video
-          </a>
-        </div>
-        </div>
-
-      <div class="presentation-card">
-        <div class="presentation-title">IoT Cleaning Robot Development</div>
-        <div class="presentation-venue">BarCamp Bangalore</div>
-        <div class="presentation-year">2015</div>
-        <div class="presentation-links">
-          <a href="https://barcampbangalore.com/bcb/monsoon-2015/bot-to-do-outdoor-cleaning-iot-webrtc-ai" target="_blank" class="presentation-link">
-            <i class="fas fa-newspaper"></i> Article
-          </a>
-        </div>
-      </div>
-
-        </div>
-
     </section>
+
 
     <!-- Awards -->
     <section id="awards" class="section">
